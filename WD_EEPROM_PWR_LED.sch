@@ -1,0 +1,1210 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 10 20
+Title "WatchDog, EEPROM, Power LED "
+Date "2022-01-04"
+Rev "1.00"
+Comp "ApotheoTech LLC"
+Comment1 "SCH: APT-KRIA-FMC"
+Comment2 "Author: Chance Reimer"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ApotheoTech:TPS3430WDRCR IC19
+U 1 1 616A8F27
+P 4250 3000
+F 0 "IC19" H 4250 3665 50  0000 C CNN
+F 1 "TPS3430WDRCR" H 4250 3574 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:TPS3430WDRCR" H 5075 3350 50  0001 L CNN
+F 3 "https://www.tij.co.jp/lit/ds/symlink/tps3430.pdf?ts=1614313111942&ref_url=https%253A%252F%252Fwww.tij.co.jp%252Fproduct%252Fjp%252FTPS3430" H 5075 3250 50  0001 L CNN
+F 4 "Window Watchdog Timer With Programmable Reset Delay" H 5075 3150 50  0001 L CNN "Description"
+F 5 "1" H 5075 3050 50  0001 L CNN "Height"
+F 6 "595-TPS3430WDRCR" H 5075 2975 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS3430WDRCR?qs=w%2Fv1CP2dgqqCtqjQEACEPw%3D%3D" H 5075 2875 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 5075 2775 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPS3430WDRCR" H 5075 2675 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4250 3000
+	1    0    0    -1  
+$EndComp
+Text Notes 590  965  0    236  ~ 47
+WatchDog Timer, EEPROM, and Power LED Signals
+Wire Wire Line
+	13000 5000 13000 6000
+Connection ~ 13000 5000
+Wire Wire Line
+	13000 4000 13000 5000
+Connection ~ 13000 4000
+Connection ~ 13000 3000
+Wire Wire Line
+	13000 3000 13000 4000
+Wire Wire Line
+	12600 6000 13000 6000
+$Comp
+L Device:LED D18
+U 1 1 6171137F
+P 12450 6000
+F 0 "D18" H 12443 6217 50  0000 C CNN
+F 1 "LED" H 12443 6126 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 12450 6000 50  0001 C CNN
+F 3 "~" H 12450 6000 50  0001 C CNN
+F 4 "SML-LX0603GW-TR" H 12450 6000 50  0001 C CNN "PartNumber"
+	1    12450 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 6000 12300 6000
+$Comp
+L Device:R R?
+U 1 1 61711377
+P 11850 6000
+AR Path="/5F71E4A6/61711377" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/61711377" Ref="R?"  Part="1" 
+AR Path="/6314F719/61711377" Ref="R?"  Part="1" 
+AR Path="/61640879/61711377" Ref="R174"  Part="1" 
+F 0 "R174" V 11880 6245 50  0000 C CNN
+F 1 "261" V 11890 5790 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 11780 6000 50  0001 C CNN
+F 3 "~" H 11850 6000 50  0001 C CNN
+F 4 "ERJ-2RKF2610X" V 11850 6000 50  0001 C CNN "PartNumber"
+F 5 "1/10W" V 11850 6000 50  0001 C CNN "Power"
+F 6 "https://www.digikey.com/en/products/detail/ERJ-2RKF2610X/P261LCT-ND/194299?itemSeq=376143758" V 11850 6000 50  0001 C CNN "URL"
+	1    11850 6000
+	0    -1   -1   0   
+$EndComp
+Text HLabel 10950 5400 0    50   Input ~ 0
+CC_PS_PGOOD
+Wire Wire Line
+	11200 5400 10950 5400
+Wire Wire Line
+	11200 5500 11200 5400
+$Comp
+L power:GND #PWR0232
+U 1 1 6171136B
+P 10550 6000
+F 0 "#PWR0232" H 10550 5750 50  0001 C CNN
+F 1 "GND" V 10555 5872 50  0000 R CNN
+F 2 "" H 10550 6000 50  0001 C CNN
+F 3 "" H 10550 6000 50  0001 C CNN
+	1    10550 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 6000 10900 6000
+Wire Wire Line
+	11500 6000 11700 6000
+$Comp
+L ApotheoTech:DMN26D0UFB4-7 Q?
+U 1 1 61711363
+P 11200 5500
+AR Path="/6314F1AA/61711363" Ref="Q?"  Part="1" 
+AR Path="/62C99A69/61711363" Ref="Q?"  Part="1" 
+AR Path="/61640879/61711363" Ref="Q27"  Part="1" 
+F 0 "Q27" V 11880 5710 60  0000 L CNN
+F 1 "DMN26D0UFB4-7" V 11955 5710 60  0000 L CNN
+F 2 "ApotheoTech_CXP_Lib:DMN26D0UFB4-7" H 11700 5000 60  0001 C CNN
+F 3 "" H 11200 5500 60  0000 C CNN
+	1    11200 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12600 5000 13000 5000
+$Comp
+L Device:LED D17
+U 1 1 6171135C
+P 12450 5000
+F 0 "D17" H 12443 5217 50  0000 C CNN
+F 1 "LED" H 12443 5126 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 12450 5000 50  0001 C CNN
+F 3 "~" H 12450 5000 50  0001 C CNN
+F 4 "SML-LX0603GW-TR" H 12450 5000 50  0001 C CNN "PartNumber"
+	1    12450 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 5000 12300 5000
+$Comp
+L Device:R R?
+U 1 1 61711354
+P 11850 5000
+AR Path="/5F71E4A6/61711354" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/61711354" Ref="R?"  Part="1" 
+AR Path="/6314F719/61711354" Ref="R?"  Part="1" 
+AR Path="/61640879/61711354" Ref="R173"  Part="1" 
+F 0 "R173" V 11880 5245 50  0000 C CNN
+F 1 "261" V 11890 4790 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 11780 5000 50  0001 C CNN
+F 3 "~" H 11850 5000 50  0001 C CNN
+F 4 "ERJ-2RKF2610X" V 11850 5000 50  0001 C CNN "PartNumber"
+F 5 "1/10W" V 11850 5000 50  0001 C CNN "Power"
+F 6 "https://www.digikey.com/en/products/detail/ERJ-2RKF2610X/P261LCT-ND/194299?itemSeq=376143758" V 11850 5000 50  0001 C CNN "URL"
+	1    11850 5000
+	0    -1   -1   0   
+$EndComp
+Text HLabel 10950 4400 0    50   Input ~ 0
+PWRGD_FPD_M2C
+Wire Wire Line
+	11200 4400 10950 4400
+Wire Wire Line
+	11200 4500 11200 4400
+$Comp
+L power:GND #PWR0231
+U 1 1 61711348
+P 10550 5000
+F 0 "#PWR0231" H 10550 4750 50  0001 C CNN
+F 1 "GND" V 10555 4872 50  0000 R CNN
+F 2 "" H 10550 5000 50  0001 C CNN
+F 3 "" H 10550 5000 50  0001 C CNN
+	1    10550 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 5000 10900 5000
+Wire Wire Line
+	11500 5000 11700 5000
+$Comp
+L ApotheoTech:DMN26D0UFB4-7 Q?
+U 1 1 61711340
+P 11200 4500
+AR Path="/6314F1AA/61711340" Ref="Q?"  Part="1" 
+AR Path="/62C99A69/61711340" Ref="Q?"  Part="1" 
+AR Path="/61640879/61711340" Ref="Q26"  Part="1" 
+F 0 "Q26" V 11880 4710 60  0000 L CNN
+F 1 "DMN26D0UFB4-7" V 11955 4710 60  0000 L CNN
+F 2 "ApotheoTech_CXP_Lib:DMN26D0UFB4-7" H 11700 4000 60  0001 C CNN
+F 3 "" H 11200 4500 60  0000 C CNN
+	1    11200 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12600 4000 13000 4000
+$Comp
+L Device:LED D16
+U 1 1 61705A48
+P 12450 4000
+F 0 "D16" H 12443 4217 50  0000 C CNN
+F 1 "LED" H 12443 4126 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 12450 4000 50  0001 C CNN
+F 3 "~" H 12450 4000 50  0001 C CNN
+F 4 "SML-LX0603GW-TR" H 12450 4000 50  0001 C CNN "PartNumber"
+	1    12450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 4000 12300 4000
+$Comp
+L Device:R R?
+U 1 1 61705A40
+P 11850 4000
+AR Path="/5F71E4A6/61705A40" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/61705A40" Ref="R?"  Part="1" 
+AR Path="/6314F719/61705A40" Ref="R?"  Part="1" 
+AR Path="/61640879/61705A40" Ref="R172"  Part="1" 
+F 0 "R172" V 11880 4245 50  0000 C CNN
+F 1 "261" V 11890 3790 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 11780 4000 50  0001 C CNN
+F 3 "~" H 11850 4000 50  0001 C CNN
+F 4 "ERJ-2RKF2610X" V 11850 4000 50  0001 C CNN "PartNumber"
+F 5 "1/10W" V 11850 4000 50  0001 C CNN "Power"
+F 6 "https://www.digikey.com/en/products/detail/ERJ-2RKF2610X/P261LCT-ND/194299?itemSeq=376143758" V 11850 4000 50  0001 C CNN "URL"
+	1    11850 4000
+	0    -1   -1   0   
+$EndComp
+Text HLabel 10950 3400 0    50   Input ~ 0
+PWRGD_LPD_M2C
+Wire Wire Line
+	11200 3400 10950 3400
+Wire Wire Line
+	11200 3500 11200 3400
+$Comp
+L power:GND #PWR0230
+U 1 1 61705A34
+P 10550 4000
+F 0 "#PWR0230" H 10550 3750 50  0001 C CNN
+F 1 "GND" V 10555 3872 50  0000 R CNN
+F 2 "" H 10550 4000 50  0001 C CNN
+F 3 "" H 10550 4000 50  0001 C CNN
+	1    10550 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 4000 10900 4000
+Wire Wire Line
+	11500 4000 11700 4000
+$Comp
+L ApotheoTech:DMN26D0UFB4-7 Q?
+U 1 1 61705A2C
+P 11200 3500
+AR Path="/6314F1AA/61705A2C" Ref="Q?"  Part="1" 
+AR Path="/62C99A69/61705A2C" Ref="Q?"  Part="1" 
+AR Path="/61640879/61705A2C" Ref="Q25"  Part="1" 
+F 0 "Q25" V 11880 3710 60  0000 L CNN
+F 1 "DMN26D0UFB4-7" V 11955 3710 60  0000 L CNN
+F 2 "ApotheoTech_CXP_Lib:DMN26D0UFB4-7" H 11700 3000 60  0001 C CNN
+F 3 "" H 11200 3500 60  0000 C CNN
+	1    11200 3500
+	0    1    1    0   
+$EndComp
+Text GLabel 13000 2700 1    50   Input ~ 0
+UTIL_3V3
+Wire Wire Line
+	13000 3000 13000 2700
+Wire Wire Line
+	12600 3000 13000 3000
+$Comp
+L Device:LED D15
+U 1 1 616F9C1D
+P 12450 3000
+F 0 "D15" H 12443 3217 50  0000 C CNN
+F 1 "LED" H 12443 3126 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 12450 3000 50  0001 C CNN
+F 3 "~" H 12450 3000 50  0001 C CNN
+F 4 "SML-LX0603GW-TR" H 12450 3000 50  0001 C CNN "PartNumber"
+	1    12450 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 3000 12300 3000
+$Comp
+L Device:R R?
+U 1 1 616F325A
+P 11850 3000
+AR Path="/5F71E4A6/616F325A" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/616F325A" Ref="R?"  Part="1" 
+AR Path="/6314F719/616F325A" Ref="R?"  Part="1" 
+AR Path="/61640879/616F325A" Ref="R171"  Part="1" 
+F 0 "R171" V 11880 3245 50  0000 C CNN
+F 1 "261" V 11890 2790 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 11780 3000 50  0001 C CNN
+F 3 "~" H 11850 3000 50  0001 C CNN
+F 4 "ERJ-2RKF2610X" V 11850 3000 50  0001 C CNN "PartNumber"
+F 5 "1/10W" V 11850 3000 50  0001 C CNN "Power"
+F 6 "https://www.digikey.com/en/products/detail/ERJ-2RKF2610X/P261LCT-ND/194299?itemSeq=376143758" V 11850 3000 50  0001 C CNN "URL"
+	1    11850 3000
+	0    -1   -1   0   
+$EndComp
+Text HLabel 10950 2400 0    50   Input ~ 0
+PWROFF_C2M_N
+Wire Wire Line
+	11200 2400 10950 2400
+Wire Wire Line
+	11200 2500 11200 2400
+$Comp
+L power:GND #PWR0229
+U 1 1 616BE033
+P 10550 3000
+F 0 "#PWR0229" H 10550 2750 50  0001 C CNN
+F 1 "GND" V 10555 2872 50  0000 R CNN
+F 2 "" H 10550 3000 50  0001 C CNN
+F 3 "" H 10550 3000 50  0001 C CNN
+	1    10550 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 3000 10900 3000
+Wire Wire Line
+	11500 3000 11700 3000
+$Comp
+L ApotheoTech:DMN26D0UFB4-7 Q?
+U 1 1 616B926B
+P 11200 2500
+AR Path="/6314F1AA/616B926B" Ref="Q?"  Part="1" 
+AR Path="/62C99A69/616B926B" Ref="Q?"  Part="1" 
+AR Path="/61640879/616B926B" Ref="Q24"  Part="1" 
+F 0 "Q24" V 11880 2710 60  0000 L CNN
+F 1 "DMN26D0UFB4-7" V 11955 2710 60  0000 L CNN
+F 2 "ApotheoTech_CXP_Lib:DMN26D0UFB4-7" H 11700 2000 60  0001 C CNN
+F 3 "" H 11200 2500 60  0000 C CNN
+	1    11200 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12600 8000 13000 8000
+$Comp
+L Device:LED D20
+U 1 1 617AAD2D
+P 12450 8000
+F 0 "D20" H 12443 8217 50  0000 C CNN
+F 1 "LED" H 12443 8126 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 12450 8000 50  0001 C CNN
+F 3 "~" H 12450 8000 50  0001 C CNN
+F 4 "SML-LX0603GW-TR" H 12450 8000 50  0001 C CNN "PartNumber"
+	1    12450 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 8000 12300 8000
+$Comp
+L Device:R R?
+U 1 1 617AAD37
+P 11850 8000
+AR Path="/5F71E4A6/617AAD37" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/617AAD37" Ref="R?"  Part="1" 
+AR Path="/6314F719/617AAD37" Ref="R?"  Part="1" 
+AR Path="/61640879/617AAD37" Ref="R176"  Part="1" 
+F 0 "R176" V 11880 8245 50  0000 C CNN
+F 1 "261" V 11890 7790 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 11780 8000 50  0001 C CNN
+F 3 "~" H 11850 8000 50  0001 C CNN
+F 4 "ERJ-2RKF2610X" V 11850 8000 50  0001 C CNN "PartNumber"
+F 5 "1/10W" V 11850 8000 50  0001 C CNN "Power"
+F 6 "https://www.digikey.com/en/products/detail/ERJ-2RKF2610X/P261LCT-ND/194299?itemSeq=376143758" V 11850 8000 50  0001 C CNN "URL"
+	1    11850 8000
+	0    -1   -1   0   
+$EndComp
+Text HLabel 10950 7400 0    50   Input ~ 0
+CC_PL_PGOOD
+Wire Wire Line
+	11200 7400 10950 7400
+Wire Wire Line
+	11200 7500 11200 7400
+$Comp
+L power:GND #PWR0234
+U 1 1 617AAD40
+P 10550 8000
+F 0 "#PWR0234" H 10550 7750 50  0001 C CNN
+F 1 "GND" V 10555 7872 50  0000 R CNN
+F 2 "" H 10550 8000 50  0001 C CNN
+F 3 "" H 10550 8000 50  0001 C CNN
+	1    10550 8000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 8000 10900 8000
+Wire Wire Line
+	11500 8000 11700 8000
+$Comp
+L ApotheoTech:DMN26D0UFB4-7 Q?
+U 1 1 617AAD48
+P 11200 7500
+AR Path="/6314F1AA/617AAD48" Ref="Q?"  Part="1" 
+AR Path="/62C99A69/617AAD48" Ref="Q?"  Part="1" 
+AR Path="/61640879/617AAD48" Ref="Q29"  Part="1" 
+F 0 "Q29" V 11880 7710 60  0000 L CNN
+F 1 "DMN26D0UFB4-7" V 11955 7710 60  0000 L CNN
+F 2 "ApotheoTech_CXP_Lib:DMN26D0UFB4-7" H 11700 7000 60  0001 C CNN
+F 3 "" H 11200 7500 60  0000 C CNN
+	1    11200 7500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12600 7000 13000 7000
+$Comp
+L Device:LED D19
+U 1 1 617AAD50
+P 12450 7000
+F 0 "D19" H 12443 7217 50  0000 C CNN
+F 1 "LED" H 12443 7126 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 12450 7000 50  0001 C CNN
+F 3 "~" H 12450 7000 50  0001 C CNN
+F 4 "SML-LX0603GW-TR" H 12450 7000 50  0001 C CNN "PartNumber"
+	1    12450 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 7000 12300 7000
+$Comp
+L Device:R R?
+U 1 1 617AAD5A
+P 11850 7000
+AR Path="/5F71E4A6/617AAD5A" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/617AAD5A" Ref="R?"  Part="1" 
+AR Path="/6314F719/617AAD5A" Ref="R?"  Part="1" 
+AR Path="/61640879/617AAD5A" Ref="R175"  Part="1" 
+F 0 "R175" V 11880 7245 50  0000 C CNN
+F 1 "261" V 11890 6790 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 11780 7000 50  0001 C CNN
+F 3 "~" H 11850 7000 50  0001 C CNN
+F 4 "ERJ-2RKF2610X" V 11850 7000 50  0001 C CNN "PartNumber"
+F 5 "1/10W" V 11850 7000 50  0001 C CNN "Power"
+F 6 "https://www.digikey.com/en/products/detail/ERJ-2RKF2610X/P261LCT-ND/194299?itemSeq=376143758" V 11850 7000 50  0001 C CNN "URL"
+	1    11850 7000
+	0    -1   -1   0   
+$EndComp
+Text HLabel 10950 6400 0    50   Input ~ 0
+PWRGD_PL_M2C
+Wire Wire Line
+	11200 6400 10950 6400
+Wire Wire Line
+	11200 6500 11200 6400
+$Comp
+L power:GND #PWR0233
+U 1 1 617AAD63
+P 10550 7000
+F 0 "#PWR0233" H 10550 6750 50  0001 C CNN
+F 1 "GND" V 10555 6872 50  0000 R CNN
+F 2 "" H 10550 7000 50  0001 C CNN
+F 3 "" H 10550 7000 50  0001 C CNN
+	1    10550 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 7000 10900 7000
+Wire Wire Line
+	11500 7000 11700 7000
+$Comp
+L ApotheoTech:DMN26D0UFB4-7 Q?
+U 1 1 617AAD6B
+P 11200 6500
+AR Path="/6314F1AA/617AAD6B" Ref="Q?"  Part="1" 
+AR Path="/62C99A69/617AAD6B" Ref="Q?"  Part="1" 
+AR Path="/61640879/617AAD6B" Ref="Q28"  Part="1" 
+F 0 "Q28" V 11880 6710 60  0000 L CNN
+F 1 "DMN26D0UFB4-7" V 11955 6710 60  0000 L CNN
+F 2 "ApotheoTech_CXP_Lib:DMN26D0UFB4-7" H 11700 6000 60  0001 C CNN
+F 3 "" H 11200 6500 60  0000 C CNN
+	1    11200 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13000 6000 13000 7000
+Connection ~ 13000 6000
+Connection ~ 13000 7000
+Wire Wire Line
+	13000 7000 13000 8000
+Wire Wire Line
+	4700 2700 4800 2700
+Wire Wire Line
+	4800 2700 4800 2600
+Wire Wire Line
+	4800 2600 4700 2600
+Text GLabel 4800 1990 1    50   Input ~ 0
+PS_1V8
+$Comp
+L Device:C C?
+U 1 1 617C10DA
+P 5050 2240
+AR Path="/5F71E87D/617C10DA" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/617C10DA" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/617C10DA" Ref="C?"  Part="1" 
+AR Path="/6314F719/617C10DA" Ref="C?"  Part="1" 
+AR Path="/61640879/617C10DA" Ref="C198"  Part="1" 
+F 0 "C198" H 4890 2180 50  0000 C CNN
+F 1 "0.1uF" H 4830 2245 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5088 2090 50  0001 C CNN
+F 3 "~" H 5050 2240 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 5050 2240 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 5050 2240 50  0001 C CNN "Tolerance"
+F 6 "25V" H 4865 2320 50  0000 C CNN "Voltage"
+F 7 "X5R" H 5050 2240 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 5050 2240 50  0001 C CNN "URL"
+	1    5050 2240
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 2040 5050 2040
+Wire Wire Line
+	5050 2040 5050 2090
+Connection ~ 4800 2040
+Wire Wire Line
+	4800 2040 4800 1990
+Wire Wire Line
+	5050 2390 5050 2440
+$Comp
+L power:GND #PWR0227
+U 1 1 617C4530
+P 5050 2440
+F 0 "#PWR0227" H 5050 2190 50  0001 C CNN
+F 1 "GND" H 5055 2267 50  0000 C CNN
+F 2 "" H 5050 2440 50  0001 C CNN
+F 3 "" H 5050 2440 50  0001 C CNN
+	1    5050 2440
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2040 4800 2600
+Connection ~ 4800 2600
+Wire Wire Line
+	3800 2850 3550 2850
+Text HLabel 3550 2850 0    50   Input ~ 0
+MIO35_WD_OUT
+Wire Wire Line
+	4700 3200 4800 3200
+Wire Wire Line
+	4800 3200 4800 3300
+Wire Wire Line
+	4800 3300 4700 3300
+Wire Wire Line
+	4800 3300 4800 3500
+Connection ~ 4800 3300
+$Comp
+L power:GND #PWR0226
+U 1 1 61818019
+P 4800 3500
+F 0 "#PWR0226" H 4800 3250 50  0001 C CNN
+F 1 "GND" H 4805 3327 50  0000 C CNN
+F 2 "" H 4800 3500 50  0001 C CNN
+F 3 "" H 4800 3500 50  0001 C CNN
+	1    4800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61820119
+P 1750 2650
+AR Path="/5F71E87D/61820119" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/61820119" Ref="R?"  Part="1" 
+AR Path="/6314F719/61820119" Ref="R?"  Part="1" 
+AR Path="/61640879/61820119" Ref="R160"  Part="1" 
+F 0 "R160" H 1820 2741 50  0000 L CNN
+F 1 "10K" H 1820 2650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1680 2650 50  0001 C CNN
+F 3 "~" H 1750 2650 50  0001 C CNN
+F 4 "1%" H 1820 2559 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 1750 2650 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 1750 2650 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 1750 2650 50  0001 C CNN "URL"
+	1    1750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61821A64
+P 2150 2650
+AR Path="/5F71E87D/61821A64" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/61821A64" Ref="R?"  Part="1" 
+AR Path="/6314F719/61821A64" Ref="R?"  Part="1" 
+AR Path="/61640879/61821A64" Ref="R162"  Part="1" 
+F 0 "R162" H 2220 2741 50  0000 L CNN
+F 1 "10K" H 2220 2650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 2650 50  0001 C CNN
+F 3 "~" H 2150 2650 50  0001 C CNN
+F 4 "1%" H 2220 2559 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 2150 2650 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 2150 2650 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 2150 2650 50  0001 C CNN "URL"
+	1    2150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61823806
+P 2550 2650
+AR Path="/5F71E87D/61823806" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/61823806" Ref="R?"  Part="1" 
+AR Path="/6314F719/61823806" Ref="R?"  Part="1" 
+AR Path="/61640879/61823806" Ref="R164"  Part="1" 
+F 0 "R164" H 2620 2741 50  0000 L CNN
+F 1 "10K" H 2620 2650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2480 2650 50  0001 C CNN
+F 3 "~" H 2550 2650 50  0001 C CNN
+F 4 "1%" H 2620 2559 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 2550 2650 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 2550 2650 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 2550 2650 50  0001 C CNN "URL"
+F 8 "DNP" H 2550 2650 79  0000 C CNB "DNP"
+	1    2550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618251E4
+P 2900 2650
+AR Path="/5F71E87D/618251E4" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/618251E4" Ref="R?"  Part="1" 
+AR Path="/6314F719/618251E4" Ref="R?"  Part="1" 
+AR Path="/61640879/618251E4" Ref="R165"  Part="1" 
+F 0 "R165" H 2970 2741 50  0000 L CNN
+F 1 "10K" H 2970 2650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2830 2650 50  0001 C CNN
+F 3 "~" H 2900 2650 50  0001 C CNN
+F 4 "1%" H 2970 2559 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 2900 2650 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 2900 2650 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 2900 2650 50  0001 C CNN "URL"
+F 8 "DNP" H 2900 2650 79  0000 C CNB "DNP"
+	1    2900 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3000 2900 3000
+Wire Wire Line
+	2900 3000 2900 2800
+Wire Wire Line
+	3800 3100 2550 3100
+Wire Wire Line
+	2550 3100 2550 2800
+Wire Wire Line
+	3800 3200 2150 3200
+Wire Wire Line
+	2150 3200 2150 2800
+Wire Wire Line
+	3800 3300 1750 3300
+Wire Wire Line
+	1750 3300 1750 2800
+Wire Wire Line
+	1750 2500 1750 2400
+Wire Wire Line
+	1750 2400 2150 2400
+Wire Wire Line
+	2150 2400 2150 2500
+Wire Wire Line
+	2150 2400 2550 2400
+Wire Wire Line
+	2550 2400 2550 2500
+Connection ~ 2150 2400
+Wire Wire Line
+	2550 2400 2900 2400
+Connection ~ 2550 2400
+Wire Wire Line
+	2900 2400 2900 2500
+Wire Wire Line
+	1750 2400 1750 2300
+Connection ~ 1750 2400
+Text GLabel 1750 2300 1    50   Input ~ 0
+PS_1V8
+$Comp
+L Device:R R?
+U 1 1 6183E107
+P 1750 3550
+AR Path="/5F71E87D/6183E107" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/6183E107" Ref="R?"  Part="1" 
+AR Path="/6314F719/6183E107" Ref="R?"  Part="1" 
+AR Path="/61640879/6183E107" Ref="R161"  Part="1" 
+F 0 "R161" H 1820 3641 50  0000 L CNN
+F 1 "10K" H 1820 3550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1680 3550 50  0001 C CNN
+F 3 "~" H 1750 3550 50  0001 C CNN
+F 4 "1%" H 1820 3459 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 1750 3550 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 1750 3550 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 1750 3550 50  0001 C CNN "URL"
+F 8 "DNP" H 1750 3550 79  0000 C CNB "DNP"
+	1    1750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61840B16
+P 2150 3550
+AR Path="/5F71E87D/61840B16" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/61840B16" Ref="R?"  Part="1" 
+AR Path="/6314F719/61840B16" Ref="R?"  Part="1" 
+AR Path="/61640879/61840B16" Ref="R163"  Part="1" 
+F 0 "R163" H 2220 3641 50  0000 L CNN
+F 1 "10K" H 2220 3550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 3550 50  0001 C CNN
+F 3 "~" H 2150 3550 50  0001 C CNN
+F 4 "1%" H 2220 3459 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 2150 3550 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 2150 3550 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 2150 3550 50  0001 C CNN "URL"
+F 8 "DNP" H 2150 3550 79  0000 C CNB "DNP"
+	1    2150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3400 1750 3300
+Connection ~ 1750 3300
+Wire Wire Line
+	2150 3400 2150 3200
+Connection ~ 2150 3200
+Wire Wire Line
+	2150 3700 2150 3800
+Wire Wire Line
+	1750 3700 1750 3800
+$Comp
+L power:GND #PWR0220
+U 1 1 6184B57C
+P 2150 3800
+F 0 "#PWR0220" H 2150 3550 50  0001 C CNN
+F 1 "GND" H 2155 3627 50  0000 C CNN
+F 2 "" H 2150 3800 50  0001 C CNN
+F 3 "" H 2150 3800 50  0001 C CNN
+	1    2150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0219
+U 1 1 6184BFDB
+P 1750 3800
+F 0 "#PWR0219" H 1750 3550 50  0001 C CNN
+F 1 "GND" H 1755 3627 50  0000 C CNN
+F 2 "" H 1750 3800 50  0001 C CNN
+F 3 "" H 1750 3800 50  0001 C CNN
+	1    1750 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3100 2550 3400
+Connection ~ 2550 3100
+Wire Wire Line
+	2900 3000 2900 3400
+Connection ~ 2900 3000
+Text Label 3050 3000 0    50   ~ 0
+WATCHDOG_CRST
+Text Label 3050 3100 0    50   ~ 0
+WATCHDOG_CWD
+Text Label 3050 3200 0    50   ~ 0
+WATCHDOG_SET0
+Text Label 3050 3300 0    50   ~ 0
+WATCHDOG_SET1
+Wire Wire Line
+	4700 2850 5550 2850
+Text Label 4800 2850 0    50   ~ 0
+WATCHDOG_WDO_N
+$Comp
+L Device:C C?
+U 1 1 61866752
+P 2550 3550
+AR Path="/5F71E87D/61866752" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/61866752" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/61866752" Ref="C?"  Part="1" 
+AR Path="/6314F719/61866752" Ref="C?"  Part="1" 
+AR Path="/61640879/61866752" Ref="C196"  Part="1" 
+F 0 "C196" H 2495 3390 50  0000 C CNN
+F 1 "0.22uF" H 2415 3455 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2588 3400 50  0001 C CNN
+F 3 "~" H 2550 3550 50  0001 C CNN
+F 4 "CGA2B1X5R1C224K050BC" H 2550 3550 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 2550 3550 50  0001 C CNN "Tolerance"
+F 6 "16V" H 2455 3655 50  0000 C CNN "Voltage"
+F 7 "X5R" H 2550 3550 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/tdk-corporation/CGA2B1X5R1C224K050BC/2781303" V 2550 3550 50  0001 C CNN "URL"
+F 9 "DNP" H 2550 3550 79  0000 C CNB "DNP"
+	1    2550 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 3700 2550 3800
+$Comp
+L power:GND #PWR0221
+U 1 1 6186EFB2
+P 2550 3800
+F 0 "#PWR0221" H 2550 3550 50  0001 C CNN
+F 1 "GND" H 2555 3627 50  0000 C CNN
+F 2 "" H 2550 3800 50  0001 C CNN
+F 3 "" H 2550 3800 50  0001 C CNN
+	1    2550 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3700 2900 3800
+$Comp
+L power:GND #PWR0222
+U 1 1 61871502
+P 2900 3800
+F 0 "#PWR0222" H 2900 3550 50  0001 C CNN
+F 1 "GND" H 2905 3627 50  0000 C CNN
+F 2 "" H 2900 3800 50  0001 C CNN
+F 3 "" H 2900 3800 50  0001 C CNN
+	1    2900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6187886E
+P 2900 3550
+AR Path="/5F71E87D/6187886E" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/6187886E" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/6187886E" Ref="C?"  Part="1" 
+AR Path="/6314F719/6187886E" Ref="C?"  Part="1" 
+AR Path="/61640879/6187886E" Ref="C197"  Part="1" 
+F 0 "C197" H 2730 3495 50  0000 C CNN
+F 1 "0.22uF" H 2645 3560 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2938 3400 50  0001 C CNN
+F 3 "~" H 2900 3550 50  0001 C CNN
+F 4 "CGA2B1X5R1C224K050BC" H 2900 3550 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 2900 3550 50  0001 C CNN "Tolerance"
+F 6 "16V" H 2705 3625 50  0000 C CNN "Voltage"
+F 7 "X5R" H 2900 3550 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/tdk-corporation/CGA2B1X5R1C224K050BC/2781303" V 2900 3550 50  0001 C CNN "URL"
+	1    2900 3550
+	-1   0    0    1   
+$EndComp
+Text Notes 1670 1845 0    157  ~ 0
+Watchdog Timer
+Text Notes 10185 2105 0    157  ~ 0
+Power Status LEDs
+Text Notes 1460 4750 0    157  ~ 0
+EEPROM
+Wire Notes Line
+	8500 7000 1000 7000
+Wire Notes Line
+	1000 10500 1000 1500
+Wire Notes Line
+	1000 4450 8500 4450
+Wire Notes Line
+	15000 1500 15000 9500
+Wire Notes Line
+	14995 9500 8495 9500
+Wire Notes Line
+	1000 1500 15000 1500
+$Comp
+L Connector_Generic:Conn_01x03 J16
+U 1 1 618C5810
+P 5750 2850
+F 0 "J16" H 5830 2892 50  0000 L CNN
+F 1 "Conn_01x03" H 5830 2801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5750 2850 50  0001 C CNN
+F 3 "~" H 5750 2850 50  0001 C CNN
+	1    5750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2750 5450 2750
+Wire Wire Line
+	5450 2750 5450 2600
+Wire Wire Line
+	5450 2600 5700 2600
+Wire Wire Line
+	5550 2950 5450 2950
+Wire Wire Line
+	5450 2950 5450 3100
+Wire Wire Line
+	5450 3100 6100 3100
+Text HLabel 6100 3100 2    50   Input ~ 0
+PS_SRST_C2M_N
+Text HLabel 6100 2600 2    50   Input ~ 0
+MIO26
+Text GLabel 5700 2150 1    50   Input ~ 0
+PS_1V8
+$Comp
+L Device:R R?
+U 1 1 618DC4CE
+P 5700 2400
+AR Path="/5F71E87D/618DC4CE" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/618DC4CE" Ref="R?"  Part="1" 
+AR Path="/6314F719/618DC4CE" Ref="R?"  Part="1" 
+AR Path="/61640879/618DC4CE" Ref="R170"  Part="1" 
+F 0 "R170" H 5770 2491 50  0000 L CNN
+F 1 "10K" H 5770 2400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5630 2400 50  0001 C CNN
+F 3 "~" H 5700 2400 50  0001 C CNN
+F 4 "1%" H 5770 2309 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 5700 2400 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 5700 2400 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 5700 2400 50  0001 C CNN "URL"
+	1    5700 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2250 5700 2150
+Wire Wire Line
+	5700 2550 5700 2600
+Connection ~ 5700 2600
+Wire Wire Line
+	5700 2600 6100 2600
+$Comp
+L ApotheoTech:M24C64-DRDW8TP_K IC20
+U 1 1 618EDF14
+P 4250 6150
+F 0 "IC20" H 4250 6475 50  0000 C CNN
+F 1 "M24C64-DRDW8TP_K" H 4250 6384 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:M24C64-DRDW8TP_K" H 5100 6250 50  0001 L CNN
+F 3 "https://www.st.com/en/memories/m24c64-dre.html" H 5100 6150 50  0001 L CNN
+F 4 "EEPROM MEMORY" H 5100 6050 50  0001 L CNN "Description"
+F 5 "1.2" H 5100 5950 50  0001 L CNN "Height"
+F 6 "511-M24C64-DRDW8TP/K" H 5100 5850 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/M24C64-DRDW8TP-K?qs=bzW4KIwE9U3XymQV%2FF9kSw%3D%3D" H 5100 5750 50  0001 L CNN "Mouser Price/Stock"
+F 8 "STMicroelectronics" H 5100 5650 50  0001 L CNN "Manufacturer_Name"
+F 9 "M24C64-DRDW8TP/K" H 5100 5550 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4250 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6050 3100 6050
+Wire Wire Line
+	3800 6150 3100 6150
+Wire Wire Line
+	3800 6300 3100 6300
+Wire Wire Line
+	3800 6400 3700 6400
+Wire Wire Line
+	3700 6500 3800 6500
+Wire Wire Line
+	3700 6400 3700 6500
+Connection ~ 3700 6500
+Wire Wire Line
+	3700 6500 3700 6750
+$Comp
+L power:GND #PWR0225
+U 1 1 619083D0
+P 3700 6750
+F 0 "#PWR0225" H 3700 6500 50  0001 C CNN
+F 1 "GND" H 3705 6577 50  0000 C CNN
+F 2 "" H 3700 6750 50  0001 C CNN
+F 3 "" H 3700 6750 50  0001 C CNN
+	1    3700 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6190E3F3
+P 5300 6500
+AR Path="/5F71E87D/6190E3F3" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/6190E3F3" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/6190E3F3" Ref="C?"  Part="1" 
+AR Path="/6314F719/6190E3F3" Ref="C?"  Part="1" 
+AR Path="/61640879/6190E3F3" Ref="C199"  Part="1" 
+F 0 "C199" H 5140 6440 50  0000 C CNN
+F 1 "0.1uF" H 5080 6505 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5338 6350 50  0001 C CNN
+F 3 "~" H 5300 6500 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 5300 6500 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 5300 6500 50  0001 C CNN "Tolerance"
+F 6 "25V" H 5115 6580 50  0000 C CNN "Voltage"
+F 7 "X5R" H 5300 6500 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 5300 6500 50  0001 C CNN "URL"
+	1    5300 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0228
+U 1 1 6190E3FA
+P 5300 6750
+F 0 "#PWR0228" H 5300 6500 50  0001 C CNN
+F 1 "GND" H 5305 6577 50  0000 C CNN
+F 2 "" H 5300 6750 50  0001 C CNN
+F 3 "" H 5300 6750 50  0001 C CNN
+	1    5300 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6650 5300 6700
+Wire Wire Line
+	5300 6700 4850 6700
+Wire Wire Line
+	4850 6700 4850 6500
+Wire Wire Line
+	4850 6500 4700 6500
+Connection ~ 5300 6700
+Wire Wire Line
+	5300 6700 5300 6750
+Wire Wire Line
+	4700 6325 5050 6325
+Wire Wire Line
+	5300 6325 5300 6350
+Wire Wire Line
+	5300 6325 5600 6325
+Connection ~ 5300 6325
+Text GLabel 5600 6325 2    50   Input ~ 0
+PS_3V3
+Text GLabel 3100 6300 0    50   Input ~ 0
+PS_3V3
+Wire Wire Line
+	4700 6150 4850 6150
+Wire Wire Line
+	4850 6150 4850 5900
+Wire Wire Line
+	4850 5900 5050 5900
+$Comp
+L Device:R R?
+U 1 1 619360FB
+P 5050 6100
+AR Path="/5F71E87D/619360FB" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/619360FB" Ref="R?"  Part="1" 
+AR Path="/61640879/619360FB" Ref="R168"  Part="1" 
+F 0 "R168" H 5120 6191 50  0000 L CNN
+F 1 "1K" H 5120 6100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4980 6100 50  0001 C CNN
+F 3 "~" H 5050 6100 50  0001 C CNN
+F 4 "1%" H 5120 6009 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 5050 6100 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1001X‎ " H 5050 6100 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/ERJ-2RKF1001X/P1.00KLCT-ND/97341?itemSeq=374394520" H 5050 6100 50  0001 C CNN "URL"
+	1    5050 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5950 5050 5900
+Connection ~ 5050 5900
+Wire Wire Line
+	5050 6325 5050 6250
+Connection ~ 5050 6325
+Wire Wire Line
+	5050 6325 5300 6325
+Wire Wire Line
+	5050 5900 5300 5900
+$Comp
+L Device:R R?
+U 1 1 6196BD57
+P 5450 5900
+AR Path="/5F71E4A6/6196BD57" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/6196BD57" Ref="R?"  Part="1" 
+AR Path="/61640879/6196BD57" Ref="R169"  Part="1" 
+F 0 "R169" V 5410 5680 50  0000 C CNN
+F 1 "0" V 5420 6040 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5380 5900 50  0001 C CNN
+F 3 "~" H 5450 5900 50  0001 C CNN
+F 4 "CRCW04020000Z0EDHP" V 5450 5900 50  0001 C CNN "PartNumber"
+F 5 "1/5W" V 5540 5900 50  0000 C CNN "Power"
+F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 5450 5900 50  0001 C CNN "URL"
+	1    5450 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 5900 5850 5900
+Text HLabel 5850 5900 2    50   Input ~ 0
+EEPROM_WC_N
+Text Notes 8555 2990 0    50   ~ 0
+Active Low (Power good from System Power supplies)\nIf this LED is off, there is no power to the system (probably)\n* Check 3V3_UTIL\n* Check 5V to system\n* Check Hot plug detect switch is On or off,\n* Check cable is plugged in\n
+Text Notes 9870 3760 0    50   ~ 0
+PWRGD from Module
+Text Notes 9845 4755 0    50   ~ 0
+PWRGD from Module
+Text Notes 9845 6775 0    50   ~ 0
+PWRGD from Module
+Text Notes 8695 5830 0    50   ~ 0
+Active Low (Power Good for PS side), if this LED is off,\nthe PS Side power supplies aren't working, \ncheck VCCOEN_PS_M2C
+Text Notes 8645 7895 0    50   ~ 0
+Active Low (Power Good for PL side), if this LED is off,\nthe PL Side power supplies aren't working, \ncheck VCCOEN_PL_M2C\nAlso check any of the Power supplies for PL
+Wire Wire Line
+	5600 9500 6000 9500
+Wire Wire Line
+	5000 9500 5300 9500
+$Comp
+L Device:R R?
+U 1 1 614A9ECC
+P 4850 9500
+AR Path="/5F71E4A6/614A9ECC" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/614A9ECC" Ref="R?"  Part="1" 
+AR Path="/6314F719/614A9ECC" Ref="R?"  Part="1" 
+AR Path="/61640879/614A9ECC" Ref="R167"  Part="1" 
+F 0 "R167" V 4880 9745 50  0000 C CNN
+F 1 "261" V 4890 9290 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4780 9500 50  0001 C CNN
+F 3 "~" H 4850 9500 50  0001 C CNN
+F 4 "ERJ-2RKF2610X" V 4850 9500 50  0001 C CNN "PartNumber"
+F 5 "1/10W" V 4850 9500 50  0001 C CNN "Power"
+F 6 "https://www.digikey.com/en/products/detail/ERJ-2RKF2610X/P261LCT-ND/194299?itemSeq=376143758" V 4850 9500 50  0001 C CNN "URL"
+	1    4850 9500
+	0    -1   -1   0   
+$EndComp
+Text HLabel 3950 8900 0    50   Input ~ 0
+PS_ERROR_STATUS_M2C
+Wire Wire Line
+	4200 8900 3950 8900
+Wire Wire Line
+	4200 9000 4200 8900
+$Comp
+L power:GND #PWR0224
+U 1 1 614A9ED5
+P 3550 9500
+F 0 "#PWR0224" H 3550 9250 50  0001 C CNN
+F 1 "GND" V 3555 9372 50  0000 R CNN
+F 2 "" H 3550 9500 50  0001 C CNN
+F 3 "" H 3550 9500 50  0001 C CNN
+	1    3550 9500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 9500 3900 9500
+Wire Wire Line
+	4500 9500 4700 9500
+$Comp
+L ApotheoTech:DMN26D0UFB4-7 Q?
+U 1 1 614A9EDD
+P 4200 9000
+AR Path="/6314F1AA/614A9EDD" Ref="Q?"  Part="1" 
+AR Path="/62C99A69/614A9EDD" Ref="Q?"  Part="1" 
+AR Path="/61640879/614A9EDD" Ref="Q23"  Part="1" 
+F 0 "Q23" V 4880 9210 60  0000 L CNN
+F 1 "DMN26D0UFB4-7" V 4955 9210 60  0000 L CNN
+F 2 "ApotheoTech_CXP_Lib:DMN26D0UFB4-7" H 4700 8500 60  0001 C CNN
+F 3 "" H 4200 9000 60  0000 C CNN
+	1    4200 9000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D13
+U 1 1 614A9EE5
+P 5450 8500
+F 0 "D13" H 5443 8717 50  0000 C CNN
+F 1 "Red LED" H 5443 8626 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 5450 8500 50  0001 C CNN
+F 3 "~" H 5450 8500 50  0001 C CNN
+F 4 "APT1608SURCK" H 5450 8500 50  0001 C CNN "PartNumber"
+	1    5450 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 8500 5300 8500
+$Comp
+L Device:R R?
+U 1 1 614A9EEF
+P 4850 8500
+AR Path="/5F71E4A6/614A9EEF" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/614A9EEF" Ref="R?"  Part="1" 
+AR Path="/6314F719/614A9EEF" Ref="R?"  Part="1" 
+AR Path="/61640879/614A9EEF" Ref="R166"  Part="1" 
+F 0 "R166" V 4880 8745 50  0000 C CNN
+F 1 "261" V 4890 8290 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4780 8500 50  0001 C CNN
+F 3 "~" H 4850 8500 50  0001 C CNN
+F 4 "ERJ-2RKF2610X" V 4850 8500 50  0001 C CNN "PartNumber"
+F 5 "1/10W" V 4850 8500 50  0001 C CNN "Power"
+F 6 "https://www.digikey.com/en/products/detail/ERJ-2RKF2610X/P261LCT-ND/194299?itemSeq=376143758" V 4850 8500 50  0001 C CNN "URL"
+	1    4850 8500
+	0    -1   -1   0   
+$EndComp
+Text HLabel 3950 7900 0    50   Input ~ 0
+PS_ERROR_OUT_M2C
+Wire Wire Line
+	4200 7900 3950 7900
+Wire Wire Line
+	4200 8000 4200 7900
+$Comp
+L power:GND #PWR0223
+U 1 1 614A9EF8
+P 3550 8500
+F 0 "#PWR0223" H 3550 8250 50  0001 C CNN
+F 1 "GND" V 3555 8372 50  0000 R CNN
+F 2 "" H 3550 8500 50  0001 C CNN
+F 3 "" H 3550 8500 50  0001 C CNN
+	1    3550 8500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 8500 3900 8500
+Wire Wire Line
+	4500 8500 4700 8500
+$Comp
+L ApotheoTech:DMN26D0UFB4-7 Q?
+U 1 1 614A9F00
+P 4200 8000
+AR Path="/6314F1AA/614A9F00" Ref="Q?"  Part="1" 
+AR Path="/62C99A69/614A9F00" Ref="Q?"  Part="1" 
+AR Path="/61640879/614A9F00" Ref="Q22"  Part="1" 
+F 0 "Q22" V 4880 8210 60  0000 L CNN
+F 1 "DMN26D0UFB4-7" V 4955 8210 60  0000 L CNN
+F 2 "ApotheoTech_CXP_Lib:DMN26D0UFB4-7" H 4700 7500 60  0001 C CNN
+F 3 "" H 4200 8000 60  0000 C CNN
+	1    4200 8000
+	0    1    1    0   
+$EndComp
+Text Notes 1110 7305 0    157  ~ 0
+PS Error Status
+Wire Wire Line
+	6000 9500 6000 8500
+Wire Wire Line
+	5600 8500 6000 8500
+Wire Wire Line
+	6000 8500 6000 8400
+Connection ~ 6000 8500
+Text GLabel 6000 8400 1    50   Input ~ 0
+UTIL_3V3
+$Comp
+L Device:LED D14
+U 1 1 6150D5F8
+P 5450 9500
+F 0 "D14" H 5443 9717 50  0000 C CNN
+F 1 "Red LED" H 5443 9626 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 5450 9500 50  0001 C CNN
+F 3 "~" H 5450 9500 50  0001 C CNN
+F 4 "APT1608SURCK" H 5450 9500 50  0001 C CNN "PartNumber"
+	1    5450 9500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8500 10500 1000 10500
+Wire Notes Line
+	8500 1500 8500 10500
+Text GLabel 3100 6050 0    50   Input ~ 0
+I2C_SCL_PS_SIDE
+Text GLabel 3100 6150 0    50   BiDi ~ 0
+I2C_SDA_PS_SIDE
+$EndSCHEMATC

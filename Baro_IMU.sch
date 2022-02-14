@@ -1,0 +1,302 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 16 20
+Title ""
+Date "2022-01-04"
+Rev "1.00"
+Comp "ApotheoTech LLC"
+Comment1 "SCH: APT-KRIA-FMC"
+Comment2 "Author: Chance Reimer"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 790  3810 0    50   ~ 0
+Page 21 of 110 of ICM-42688-P
+Text Notes 660  920  0    157  ~ 31
+Barometer and IMU
+$Comp
+L ApotheoTech:ICM-42688-P U9
+U 1 1 61A8C484
+P 2500 2500
+F 0 "U9" H 1750 3140 50  0000 C CNN
+F 1 "ICM-42688-P" H 1990 3060 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:ICM-42688-P" H 2500 2500 50  0001 C CNN
+F 3 "" H 2500 2500 50  0001 C CNN
+	1    2500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1800 2500 1500
+Wire Wire Line
+	1800 2350 1400 2350
+Wire Wire Line
+	1800 2650 1400 2650
+Wire Wire Line
+	2400 3050 2400 3200
+Wire Wire Line
+	2500 3050 2500 3200
+Wire Wire Line
+	2600 3050 2600 3200
+Wire Wire Line
+	2600 3200 2500 3200
+Connection ~ 2500 3200
+$Comp
+L power:GND #PWR0180
+U 1 1 61A9125A
+P 2500 3700
+F 0 "#PWR0180" H 2500 3450 50  0001 C CNN
+F 1 "GND" H 2505 3527 50  0000 C CNN
+F 2 "" H 2500 3700 50  0001 C CNN
+F 3 "" H 2500 3700 50  0001 C CNN
+	1    2500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2550 3700 2550
+Text GLabel 1800 3200 0    50   Input ~ 0
+PL_3V3
+Wire Wire Line
+	1800 3200 2100 3200
+Wire Wire Line
+	3200 2350 3600 2350
+$Comp
+L power:GND #PWR0204
+U 1 1 61A93C0F
+P 3600 2350
+F 0 "#PWR0204" H 3600 2100 50  0001 C CNN
+F 1 "GND" V 3605 2177 50  0000 C CNN
+F 2 "" H 3600 2350 50  0001 C CNN
+F 3 "" H 3600 2350 50  0001 C CNN
+	1    3600 2350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3950 2650 2    50   Input ~ 0
+PL_3V3
+$Comp
+L Device:C C?
+U 1 1 61A9C971
+P 2100 3450
+AR Path="/5F71E87D/61A9C971" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/61A9C971" Ref="C?"  Part="1" 
+AR Path="/6104E394/61A9C971" Ref="C?"  Part="1" 
+AR Path="/637471EA/61A9C971" Ref="C?"  Part="1" 
+AR Path="/61AA736C/61A9C971" Ref="C?"  Part="1" 
+AR Path="/63747F19/61A9C971" Ref="C?"  Part="1" 
+AR Path="/61A5200E/61A9C971" Ref="C179"  Part="1" 
+F 0 "C179" H 1930 3370 50  0000 C CNN
+F 1 "0.01uF" H 1850 3440 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2138 3300 50  0001 C CNN
+F 3 "~" H 2100 3450 50  0001 C CNN
+F 4 "04023D103KAT2A" H 2100 3450 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 2100 3450 50  0001 C CNN "Tolerance"
+F 6 "25V" H 1905 3515 50  0000 C CNN "Voltage"
+F 7 "X5R" H 2100 3450 50  0001 C CNN "Temp_Val"
+	1    2100 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 3300 2100 3200
+Connection ~ 2100 3200
+Wire Wire Line
+	2100 3200 2400 3200
+Wire Wire Line
+	2100 3600 2100 3650
+Wire Wire Line
+	2100 3650 2500 3650
+Wire Wire Line
+	2500 3200 2500 3650
+Wire Wire Line
+	2500 3700 2500 3650
+Connection ~ 2500 3650
+$Comp
+L Device:C C?
+U 1 1 61AA6512
+P 3250 2850
+AR Path="/5F71E87D/61AA6512" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/61AA6512" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/61AA6512" Ref="C?"  Part="1" 
+AR Path="/6314F719/61AA6512" Ref="C?"  Part="1" 
+AR Path="/61AA736C/61AA6512" Ref="C?"  Part="1" 
+AR Path="/63747F19/61AA6512" Ref="C?"  Part="1" 
+AR Path="/61A5200E/61AA6512" Ref="C180"  Part="1" 
+F 0 "C180" H 3090 2790 50  0000 C CNN
+F 1 "0.1uF" H 3030 2855 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3288 2700 50  0001 C CNN
+F 3 "~" H 3250 2850 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 3250 2850 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 3250 2850 50  0001 C CNN "Tolerance"
+F 6 "25V" H 3065 2930 50  0000 C CNN "Voltage"
+F 7 "X5R" H 3250 2850 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 3250 2850 50  0001 C CNN "URL"
+	1    3250 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61AE65E0
+P 3700 2850
+AR Path="/5F71E87D/61AE65E0" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/61AE65E0" Ref="C?"  Part="1" 
+AR Path="/6314F1AA/61AE65E0" Ref="C?"  Part="1" 
+AR Path="/61A5200E/61AE65E0" Ref="C263"  Part="1" 
+F 0 "C263" H 3815 2941 50  0000 L CNN
+F 1 "2.2uF" H 3815 2850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3738 2700 50  0001 C CNN
+F 3 "~" H 3700 2850 50  0001 C CNN
+F 4 "+-10%" H 3700 2850 50  0001 C CNN "Tolerance"
+F 5 "25V" H 3815 2759 50  0000 L CNN "Voltage"
+F 6 "CL21B225KAFNNNE" H 3700 2850 50  0001 C CNN "PartNumber"
+	1    3700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2650 3250 2650
+Wire Wire Line
+	3700 2700 3700 2650
+Connection ~ 3700 2650
+Wire Wire Line
+	3700 2650 3950 2650
+Wire Wire Line
+	3250 2700 3250 2650
+Connection ~ 3250 2650
+Wire Wire Line
+	3250 2650 3700 2650
+Wire Wire Line
+	3250 3000 3250 3050
+Wire Wire Line
+	3250 3050 3700 3050
+Wire Wire Line
+	3700 3050 3700 3000
+Wire Wire Line
+	3700 3050 3700 3100
+Connection ~ 3700 3050
+$Comp
+L power:GND #PWR0321
+U 1 1 61AE9494
+P 3700 3100
+F 0 "#PWR0321" H 3700 2850 50  0001 C CNN
+F 1 "GND" H 3705 2927 50  0000 C CNN
+F 2 "" H 3700 3100 50  0001 C CNN
+F 3 "" H 3700 3100 50  0001 C CNN
+	1    3700 3100
+	1    0    0    -1  
+$EndComp
+Text HLabel 1400 1600 0    50   Input ~ 0
+SDI_ICM_42688
+Text HLabel 1400 1500 0    50   Input ~ 0
+SCLK_ICM_42688
+Wire Wire Line
+	2500 1500 1400 1500
+Wire Wire Line
+	1400 1600 2400 1600
+Wire Wire Line
+	2400 1600 2400 1800
+Wire Wire Line
+	2600 1800 2600 1400
+Wire Wire Line
+	2600 1400 1400 1400
+Text HLabel 1400 1400 0    50   Input ~ 0
+CS_ICM_42688
+Text HLabel 1400 2350 0    50   Output ~ 0
+SDO_ICM_42688
+Text HLabel 1400 2650 0    50   Output ~ 0
+INT_ICM_42688
+Text HLabel 3700 2550 2    50   Input ~ 0
+CLK_ICM_42688
+$Comp
+L ApotheoTech:ICP-10111 U34
+U 1 1 61A6D03E
+P 7800 2200
+F 0 "U34" H 7825 2575 50  0000 C CNN
+F 1 "ICP-10111" H 7825 2484 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:ICP-10111" H 7800 2200 50  0001 C CNN
+F 3 "" H 7800 2200 50  0001 C CNN
+	1    7800 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2150 8500 2150
+Wire Wire Line
+	8500 2150 8500 2350
+Wire Wire Line
+	8500 2350 8350 2350
+Wire Wire Line
+	8500 2350 8500 2500
+Connection ~ 8500 2350
+Wire Wire Line
+	7300 2050 7150 2050
+Wire Wire Line
+	7150 2050 7150 2600
+$Comp
+L power:GND #PWR0322
+U 1 1 61A70266
+P 8500 2600
+F 0 "#PWR0322" H 8500 2350 50  0001 C CNN
+F 1 "GND" H 8505 2427 50  0000 C CNN
+F 2 "" H 8500 2600 50  0001 C CNN
+F 3 "" H 8500 2600 50  0001 C CNN
+	1    8500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0323
+U 1 1 61A70D3B
+P 7150 2600
+F 0 "#PWR0323" H 7150 2350 50  0001 C CNN
+F 1 "GND" H 7155 2427 50  0000 C CNN
+F 2 "" H 7150 2600 50  0001 C CNN
+F 3 "" H 7150 2600 50  0001 C CNN
+	1    7150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61A74E86
+P 8750 2250
+AR Path="/5F71E87D/61A74E86" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/61A74E86" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/61A74E86" Ref="C?"  Part="1" 
+AR Path="/6314F719/61A74E86" Ref="C?"  Part="1" 
+AR Path="/61AA736C/61A74E86" Ref="C?"  Part="1" 
+AR Path="/63747F19/61A74E86" Ref="C?"  Part="1" 
+AR Path="/61A5200E/61A74E86" Ref="C264"  Part="1" 
+F 0 "C264" H 8590 2190 50  0000 C CNN
+F 1 "0.1uF" H 8530 2255 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8788 2100 50  0001 C CNN
+F 3 "~" H 8750 2250 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 8750 2250 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 8750 2250 50  0001 C CNN "Tolerance"
+F 6 "25V" H 8565 2330 50  0000 C CNN "Voltage"
+F 7 "X5R" H 8750 2250 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 8750 2250 50  0001 C CNN "URL"
+	1    8750 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 2400 8750 2500
+Wire Wire Line
+	8750 2500 8500 2500
+Connection ~ 8500 2500
+Wire Wire Line
+	8500 2500 8500 2600
+Wire Wire Line
+	8350 2050 8750 2050
+Wire Wire Line
+	8750 2050 8750 2100
+Wire Wire Line
+	8750 2050 9050 2050
+Connection ~ 8750 2050
+Text GLabel 9050 2050 2    50   Input ~ 0
+PL_3V3
+Wire Wire Line
+	7300 2250 6900 2250
+Text HLabel 6900 2250 0    50   BiDi ~ 0
+SDA_ICP_10111
+Wire Wire Line
+	7300 2350 6900 2350
+Text HLabel 6900 2350 0    50   Input ~ 0
+SCL_ICP_10111
+$EndSCHEMATC

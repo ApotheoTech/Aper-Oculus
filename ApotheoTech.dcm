@@ -1,0 +1,124 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 502570-0893
+F https://componentsearchengine.com/Datasheets/2/502570-0893.pdf
+$ENDCMP
+#
+$CMP 74AVC4T245RSVR-NT
+F http://www.ti.com/lit/gpn/SN74AVC4T245
+$ENDCMP
+#
+$CMP 87832-1420
+F http://www.molex.com/pdm_docs/sd/878321420_sd.pdf
+$ENDCMP
+#
+$CMP 93LC56B-I_SN
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21794G.pdf
+$ENDCMP
+#
+$CMP AGLN010V5-UCG36
+F https://www.microsemi.com/document-portal/doc_download/130695-igloo-nano-low-power-flash-fpgas-datasheet
+$ENDCMP
+#
+$CMP BM20B_0.8_-34DS-0.4V_51_
+F https://datasheet.lcsc.com/szlcsc/1909091109_Hirose-HRS-BM20B-0-8-34DS-0-4V-51_C424541.pdf
+$ENDCMP
+#
+$CMP DS90LV019TMTC_NOPB
+F http://www.ti.com/lit/ds/symlink/ds90lv019.pdf
+$ENDCMP
+#
+$CMP FDPC8011S
+D ON SEMICONDUCTOR - FDPC8011S - MOSFET, N-CH, DUAL, 25V/12V, 8PQFN
+F https://www.onsemi.com/pub/Collateral/FDPC8011S-D.pdf
+$ENDCMP
+#
+$CMP FH12-22S-0.5SH_55_
+F https://www.hirose.com/product/download/?distributor=digikey&type=2d&lang=en&num=FH12-22S-0.5SH(55)
+$ENDCMP
+#
+$CMP FT4232HL-REEL
+F http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT4232H.pdf
+$ENDCMP
+#
+$CMP GSB443133HR
+F https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/GSB443133HR_Dwg.pdf
+$ENDCMP
+#
+$CMP INA226AIDGSR
+F https://componentsearchengine.com/Datasheets/1/INA226AIDGSR.pdf
+$ENDCMP
+#
+$CMP INA260AIPW
+F http://www.ti.com/lit/gpn/ina260
+$ENDCMP
+#
+$CMP IRFHS8342TRPBF
+D N-MOSFET transistor, source/drain/gate
+K transistor NMOS N-MOS N-MOSFET
+F ~
+$ENDCMP
+#
+$CMP LVK25R005FER
+D Resistor 0R005 1% 2W 4 Terminal Ohmite LVK25 Series Metal Alloy Current Sensing Surface Mount Resistor 1% 2W +/-100ppm/C
+F https://datasheet.datasheetarchive.com/originals/distributors/DKDS-17/336209.pdf
+$ENDCMP
+#
+$CMP M24C64-DRDW8TP_K
+F https://www.st.com/en/memories/m24c64-dre.html
+$ENDCMP
+#
+$CMP MIC94325YMT-TR
+F 32264
+$ENDCMP
+#
+$CMP MP5016HGQH-Z
+F https://componentsearchengine.com/Datasheets/1/MP5016HGQH-Z.pdf
+$ENDCMP
+#
+$CMP NDS331N
+D MOSFET N-Ch LL FET Enhancement Mode
+F https://www.onsemi.com/pub/Collateral/NDS331N-D.PDF
+$ENDCMP
+#
+$CMP PI4ULS3V4857GEAEX
+F https://www.diodes.com/assets/Datasheets/PI4ULS3V4857.pdf
+$ENDCMP
+#
+$CMP SN74AVC2T245RSWR
+F http://www.ti.com/lit/ds/symlink/sn74avc2t245.pdf
+$ENDCMP
+#
+$CMP SN74AVC8T245PWR
+F http://www.ti.com/lit/gpn/sn74avc8t245
+$ENDCMP
+#
+$CMP SN74LVC1G08DSF2
+F http://www.ti.com/lit/gpn/SN74LVC1G08
+$ENDCMP
+#
+$CMP TCA9548ARGER
+F http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TCA9548A&&fileType=pdf
+$ENDCMP
+#
+$CMP TPD4E001DRLR
+F http://www.ti.com/lit/ds/symlink/tpd4e001.pdf
+$ENDCMP
+#
+$CMP TPD4E05U06DQAR
+F http://www.ti.com/lit/gpn/tpd4e05u06
+$ENDCMP
+#
+$CMP TPD4S012DRYR
+F https://www.ti.com/lit/gpn/TPD4S012
+$ENDCMP
+#
+$CMP TPS3430WDRCR
+F https://www.tij.co.jp/lit/ds/symlink/tps3430.pdf?ts=1614313111942&ref_url=https%253A%252F%252Fwww.tij.co.jp%252Fproduct%252Fjp%252FTPS3430
+$ENDCMP
+#
+$CMP USB3320C-EZK-TR
+F http://ww1.microchip.com/downloads/en/DeviceDoc/00001792B.pdf
+$ENDCMP
+#
+#End Doc Library

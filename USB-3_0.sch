@@ -1,0 +1,1068 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 20
+Title "USB3.0 and 2.0"
+Date "2022-01-04"
+Rev "1.00"
+Comp "ApotheoTech LLC"
+Comment1 "SCH: APT-KRIA-FMC"
+Comment2 "Author: Chance Reimer"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ApotheoTech:USB3320C-EZK-TR IC5
+U 1 1 611D5120
+P 3585 3290
+F 0 "IC5" H 4195 3990 50  0000 L CNN
+F 1 "USB3320C-EZK-TR" H 4205 3895 50  0000 L CNN
+F 2 "ApotheoTech_CXP_Lib:USB3320C-EZK-TR" H 5410 4040 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/00001792B.pdf" H 5410 3940 50  0001 L CNN
+F 4 "Highly Integrated Full Featured Hi-Speed USB 2.0 ULPI%D Transceiver" H 5410 3840 50  0001 L CNN "Description"
+F 5 "1" H 5410 3740 50  0001 L CNN "Height"
+F 6 "886-USB3320C-EZK-TR" H 5410 3640 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/USB3320C-EZK-TR?qs=pA5MXup5wxFLWWzXkMzUXA%3D%3D" H 5385 3940 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Microchip" H 5460 3765 50  0001 L CNN "Manufacturer_Name"
+F 9 "USB3320C-EZK-TR" H 5385 3690 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3585 3290
+	1    0    0    -1  
+$EndComp
+Text Notes 490  830  0    236  ~ 47
+USB 3.0 and USB 2.0 (HOST)
+Wire Wire Line
+	2610 2940 1810 2940
+Wire Wire Line
+	2610 3040 1810 3040
+Wire Wire Line
+	2610 3140 1810 3140
+Wire Wire Line
+	2610 3240 1810 3240
+Wire Wire Line
+	2610 3340 1810 3340
+Wire Wire Line
+	2610 3440 1810 3440
+Wire Wire Line
+	2610 3540 1810 3540
+Text HLabel 1810 2940 0    50   Output ~ 0
+MIO52_USB_CLK
+Text Notes 550  945  0    50   ~ 0
+Schematic from page 40/58 ZCU104
+Wire Wire Line
+	1560 1990 1560 1940
+Wire Wire Line
+	1560 1940 2010 1940
+Wire Wire Line
+	2010 1940 2010 1990
+Wire Wire Line
+	2010 1940 2460 1940
+Wire Wire Line
+	2460 1940 2460 1990
+Connection ~ 2010 1940
+Wire Wire Line
+	2460 2290 2460 2340
+Wire Wire Line
+	2460 2340 2010 2340
+Wire Wire Line
+	2010 2290 2010 2340
+Wire Wire Line
+	2010 2340 1560 2340
+Wire Wire Line
+	1560 2340 1560 2290
+Connection ~ 2010 2340
+Wire Wire Line
+	1560 2340 1560 2390
+Connection ~ 1560 2340
+$Comp
+L power:GND #PWR080
+U 1 1 6120214D
+P 1560 2390
+F 0 "#PWR080" H 1560 2140 50  0001 C CNN
+F 1 "GND" H 1565 2217 50  0000 C CNN
+F 2 "" H 1560 2390 50  0001 C CNN
+F 3 "" H 1560 2390 50  0001 C CNN
+	1    1560 2390
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3285 2590 3285 1940
+Connection ~ 2460 1940
+Wire Wire Line
+	2460 1940 3285 1940
+Wire Wire Line
+	3485 2590 3485 1940
+Wire Wire Line
+	3485 1940 3285 1940
+Connection ~ 3285 1940
+Wire Wire Line
+	3685 2590 3685 1940
+Wire Wire Line
+	3685 1940 3485 1940
+Connection ~ 3485 1940
+Connection ~ 1560 1940
+Text HLabel 1810 3040 0    50   Output ~ 0
+MIO55_USB_NXT
+Text HLabel 1810 3140 0    50   BiDi ~ 0
+MIO56_USB_DATA0
+Text HLabel 1810 3240 0    50   BiDi ~ 0
+MIO57_USB_DATA1
+Text HLabel 1810 3340 0    50   BiDi ~ 0
+MIO54_USB_DATA2
+Text HLabel 1810 3440 0    50   BiDi ~ 0
+MIO59_USB_DATA3
+Text HLabel 1810 3540 0    50   BiDi ~ 0
+MIO60_USB_DATA4
+Wire Wire Line
+	2610 3640 2360 3640
+Wire Wire Line
+	2360 3640 2360 4290
+Wire Wire Line
+	2360 4290 3485 4290
+Wire Wire Line
+	3485 4290 3485 3990
+Wire Wire Line
+	3485 4290 3785 4290
+Wire Wire Line
+	3785 4290 3785 3990
+Connection ~ 3485 4290
+NoConn ~ 3885 3990
+NoConn ~ 3985 3990
+Wire Wire Line
+	2360 4290 2110 4290
+Connection ~ 2360 4290
+Text HLabel 1810 4540 0    50   BiDi ~ 0
+MIO61_USB_DATA5
+Text HLabel 1810 4640 0    50   BiDi ~ 0
+MIO62_USB_DATA6
+Text HLabel 1810 4740 0    50   BiDi ~ 0
+MIO63_USB_DATA7
+Wire Wire Line
+	3285 3990 3285 4540
+Wire Wire Line
+	3285 4540 1810 4540
+Wire Wire Line
+	3385 3990 3385 4640
+Wire Wire Line
+	3385 4640 1810 4640
+Wire Wire Line
+	3685 3990 3685 4740
+Wire Wire Line
+	3685 4740 1810 4740
+Wire Wire Line
+	4560 3740 4810 3740
+Wire Wire Line
+	4810 3740 4810 3990
+$Comp
+L power:GND #PWR083
+U 1 1 6121BA1B
+P 4810 3990
+F 0 "#PWR083" H 4810 3740 50  0001 C CNN
+F 1 "GND" H 4815 3817 50  0000 C CNN
+F 2 "" H 4810 3990 50  0001 C CNN
+F 3 "" H 4810 3990 50  0001 C CNN
+	1    4810 3990
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3385 2590 3385 1540
+Wire Wire Line
+	3385 1540 1810 1540
+Text HLabel 1810 1440 0    50   Input ~ 0
+MIO58_USB_STP
+Text HLabel 1810 1540 0    50   Output ~ 0
+MIO53_USB_DIR
+Wire Wire Line
+	3585 2590 3585 1440
+Wire Wire Line
+	3585 1440 1810 1440
+Wire Wire Line
+	3785 2590 3785 1340
+Wire Wire Line
+	3785 1340 2200 1340
+Wire Wire Line
+	4560 3440 5110 3440
+Text Label 5110 3440 2    50   ~ 0
+ULPI0_D_N
+Wire Wire Line
+	4560 3540 5110 3540
+Text Label 5110 3540 2    50   ~ 0
+ULPI0_D_P
+$Comp
+L ApotheoTech:MIC2544-1YM-TR U14
+U 1 1 612F8DA4
+P 6330 4755
+F 0 "U14" H 6317 5162 60  0000 C CNN
+F 1 "MIC2544-1YM-TR" H 6317 5056 60  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:MIC2544-1YM-TR" H 6320 5065 60  0001 C CNN
+F 3 "" H 5730 4905 60  0000 C CNN
+	1    6330 4755
+	1    0    0    -1  
+$EndComp
+Text Notes 5475 4300 0    50   ~ 0
+The -1 is for active high enable. MUST HAVE -1
+Wire Wire Line
+	4560 3640 5310 3640
+Wire Wire Line
+	5310 3640 5310 4605
+Wire Wire Line
+	5310 4605 5770 4605
+Wire Wire Line
+	5765 4810 5610 4810
+Wire Wire Line
+	5610 4810 5610 5040
+$Comp
+L power:GND #PWR087
+U 1 1 61307EEC
+P 5610 5040
+F 0 "#PWR087" H 5610 4790 50  0001 C CNN
+F 1 "GND" H 5615 4867 50  0000 C CNN
+F 2 "" H 5610 5040 50  0001 C CNN
+F 3 "" H 5610 5040 50  0001 C CNN
+	1    5610 5040
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6870 4605 6960 4605
+Wire Wire Line
+	4560 3040 5110 3040
+$Comp
+L Device:R R?
+U 1 1 61337316
+P 4860 2940
+AR Path="/5F71E87D/61337316" Ref="R?"  Part="1" 
+AR Path="/6314DEA9/61337316" Ref="R72"  Part="1" 
+F 0 "R72" V 4910 3040 50  0000 L CNN
+F 1 "8.06k" V 4895 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4790 2940 50  0001 C CNN
+F 3 "~" H 4860 2940 50  0001 C CNN
+F 4 "1%" V 4855 2880 50  0000 L CNN "Tolerance"
+F 5 "0.1W" V 4815 3140 50  0000 C CNN "Power"
+F 6 "ERJ-2RKF8061X‎" H 4860 2940 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/ERJ-2RKF8061X/P8.06KLCT-ND/194525?itemSeq=374221613" V 4860 2940 50  0001 C CNN "URL"
+	1    4860 2940
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4560 2940 4710 2940
+$Comp
+L power:GND #PWR085
+U 1 1 6133B2DA
+P 5260 2940
+F 0 "#PWR085" H 5260 2690 50  0001 C CNN
+F 1 "GND" V 5265 2812 50  0000 R CNN
+F 2 "" H 5260 2940 50  0001 C CNN
+F 3 "" H 5260 2940 50  0001 C CNN
+	1    5260 2940
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4560 3140 4710 3140
+Wire Wire Line
+	5010 3140 6450 3140
+Wire Wire Line
+	6960 3140 6960 4605
+Wire Wire Line
+	6870 4805 6960 4805
+Wire Wire Line
+	6960 4805 6960 4605
+Connection ~ 6960 4605
+$Comp
+L Device:L L?
+U 1 1 613512BA
+P 7500 2850
+AR Path="/5F71E87D/613512BA" Ref="L?"  Part="1" 
+AR Path="/6314DEA9/613512BA" Ref="L8"  Part="1" 
+F 0 "L8" V 7455 2850 50  0000 C CNN
+F 1 "Ferrite 220" V 7550 2860 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 7500 2850 50  0001 C CNN
+F 3 "~" H 7500 2850 50  0001 C CNN
+F 4 "MPZ1608S221ATA00" V 7500 2850 50  0001 C CNN "PartNumber"
+	1    7500 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 2850 7750 2850
+Wire Wire Line
+	7750 2925 7750 2850
+Connection ~ 7750 2850
+Wire Wire Line
+	7650 3275 7750 3275
+Wire Wire Line
+	7750 3275 7750 3225
+Connection ~ 7750 3275
+Wire Wire Line
+	7350 2850 7200 2850
+Wire Wire Line
+	7200 2850 7200 2925
+Wire Wire Line
+	7200 3225 7200 3275
+Wire Wire Line
+	7200 3275 7350 3275
+Wire Wire Line
+	7200 3275 7200 3325
+Connection ~ 7200 3275
+$Comp
+L power:GND #PWR092
+U 1 1 61370EEA
+P 7200 3325
+F 0 "#PWR092" H 7200 3075 50  0001 C CNN
+F 1 "GND" H 7205 3152 50  0000 C CNN
+F 2 "" H 7200 3325 50  0001 C CNN
+F 3 "" H 7200 3325 50  0001 C CNN
+	1    7200 3325
+	1    0    0    -1  
+$EndComp
+Connection ~ 6960 3140
+Text Label 5585 3140 0    50   ~ 0
+USB_VBUS_SEL
+$Comp
+L Device:C C?
+U 1 1 6137B860
+P 5560 3540
+AR Path="/5F71E87D/6137B860" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/6137B860" Ref="C71"  Part="1" 
+F 0 "C71" H 5675 3631 50  0000 L CNN
+F 1 "2.2uF" H 5675 3540 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5598 3390 50  0001 C CNN
+F 3 "~" H 5560 3540 50  0001 C CNN
+F 4 "+-10%" H 5560 3540 50  0001 C CNN "Tolerance"
+F 5 "25V" H 5675 3449 50  0000 L CNN "Voltage"
+F 6 "CL21B225KAFNNNE" H 5560 3540 50  0001 C CNN "PartNumber"
+	1    5560 3540
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5560 3340 5560 3390
+Wire Wire Line
+	4560 3340 5560 3340
+Wire Wire Line
+	5560 3690 5560 3740
+$Comp
+L power:GND #PWR086
+U 1 1 613809A9
+P 5560 3740
+F 0 "#PWR086" H 5560 3490 50  0001 C CNN
+F 1 "GND" H 5565 3567 50  0000 C CNN
+F 2 "" H 5560 3740 50  0001 C CNN
+F 3 "" H 5560 3740 50  0001 C CNN
+	1    5560 3740
+	1    0    0    -1  
+$EndComp
+Text Label 5555 3340 2    50   ~ 0
+ULPIO_VDD33
+Wire Wire Line
+	6870 4700 7260 4700
+$Comp
+L Device:R R?
+U 1 1 613A1186
+P 5210 5140
+AR Path="/5F71E87D/613A1186" Ref="R?"  Part="1" 
+AR Path="/6314DEA9/613A1186" Ref="R74"  Part="1" 
+F 0 "R74" H 5280 5231 50  0000 L CNN
+F 1 "191" H 5280 5140 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5140 5140 50  0001 C CNN
+F 3 "~" H 5210 5140 50  0001 C CNN
+F 4 "1%" H 5280 5049 50  0000 L CNN "Tolerance"
+F 5 "CRCW0402191RFKED" H 5210 5140 50  0001 C CNN "PartNumber"
+F 6 "1/16W" H 5210 5140 50  0001 C CNN "Power"
+	1    5210 5140
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5210 4915 5210 4990
+Wire Wire Line
+	5210 4915 5770 4915
+Wire Wire Line
+	5210 5290 5210 5340
+$Comp
+L power:GND #PWR084
+U 1 1 613A7255
+P 5210 5340
+F 0 "#PWR084" H 5210 5090 50  0001 C CNN
+F 1 "GND" H 5215 5167 50  0000 C CNN
+F 2 "" H 5210 5340 50  0001 C CNN
+F 3 "" H 5210 5340 50  0001 C CNN
+	1    5210 5340
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 613AD852
+P 4460 4705
+AR Path="/5F71E87D/613AD852" Ref="R?"  Part="1" 
+AR Path="/5F71E4A6/613AD852" Ref="R?"  Part="1" 
+AR Path="/6314DEA9/613AD852" Ref="R71"  Part="1" 
+F 0 "R71" V 4500 4875 50  0000 L CNN
+F 1 "160" V 4510 4450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4390 4705 50  0001 C CNN
+F 3 "~" H 4460 4705 50  0001 C CNN
+F 4 "1%" V 4400 4480 50  0000 L CNN "Tolerance"
+F 5 "ERJ-2RKF1600X" H 4460 4705 50  0001 C CNN "PartNumber"
+	1    4460 4705
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 613AD859
+P 5010 4705
+AR Path="/5F71E87D/613AD859" Ref="D?"  Part="1" 
+AR Path="/6314DEA9/613AD859" Ref="D7"  Part="1" 
+F 0 "D7" H 5170 4645 50  0000 R CNN
+F 1 "5988A80107F" H 5255 4815 50  0000 R CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 5010 4705 50  0001 C CNN
+F 3 "~" H 5010 4705 50  0001 C CNN
+F 4 "" V 5010 4705 50  0001 C CNN "URL"
+F 5 "5988A80107F" H 5010 4705 50  0001 C CNN "PartNumber"
+	1    5010 4705
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5770 4705 5160 4705
+Wire Wire Line
+	4860 4705 4610 4705
+$Comp
+L power:GND #PWR088
+U 1 1 6138FCDF
+P 6060 3740
+F 0 "#PWR088" H 6060 3490 50  0001 C CNN
+F 1 "GND" H 6065 3567 50  0000 C CNN
+F 2 "" H 6060 3740 50  0001 C CNN
+F 3 "" H 6060 3740 50  0001 C CNN
+	1    6060 3740
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6060 3690 6060 3740
+$Comp
+L power:+5V #PWR089
+U 1 1 6138E958
+P 6210 3240
+F 0 "#PWR089" H 6210 3090 50  0001 C CNN
+F 1 "+5V" V 6225 3368 50  0000 L CNN
+F 2 "" H 6210 3240 50  0001 C CNN
+F 3 "" H 6210 3240 50  0001 C CNN
+	1    6210 3240
+	0    1    1    0   
+$EndComp
+Connection ~ 6060 3240
+Wire Wire Line
+	6060 3240 6210 3240
+Wire Wire Line
+	6060 3390 6060 3240
+Wire Wire Line
+	4560 3240 6060 3240
+$Comp
+L power:GND #PWR093
+U 1 1 613D8D82
+P 7260 5200
+F 0 "#PWR093" H 7260 4950 50  0001 C CNN
+F 1 "GND" H 7265 5027 50  0000 C CNN
+F 2 "" H 7260 5200 50  0001 C CNN
+F 3 "" H 7260 5200 50  0001 C CNN
+	1    7260 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7260 5150 7260 5200
+$Comp
+L power:+5V #PWR094
+U 1 1 613D8D89
+P 7410 4700
+F 0 "#PWR094" H 7410 4550 50  0001 C CNN
+F 1 "+5V" V 7425 4828 50  0000 L CNN
+F 2 "" H 7410 4700 50  0001 C CNN
+F 3 "" H 7410 4700 50  0001 C CNN
+	1    7410 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7260 4700 7410 4700
+Wire Wire Line
+	7260 4850 7260 4700
+Connection ~ 7260 4700
+$Comp
+L Device:L L?
+U 1 1 613E6F8E
+P 7500 3275
+AR Path="/5F71E87D/613E6F8E" Ref="L?"  Part="1" 
+AR Path="/6314DEA9/613E6F8E" Ref="L9"  Part="1" 
+F 0 "L9" V 7455 3275 50  0000 C CNN
+F 1 "Ferrite 220" V 7565 3280 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 7500 3275 50  0001 C CNN
+F 3 "~" H 7500 3275 50  0001 C CNN
+F 4 "MPZ1608S221ATA00" V 7500 3275 50  0001 C CNN "PartNumber"
+	1    7500 3275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9605 3050 9105 3050
+Wire Wire Line
+	9605 2950 9105 2950
+$Comp
+L ApotheoTech:TPD4E05U06DQAR D6
+U 1 1 614269D4
+P 2800 6500
+F 0 "D6" H 3400 6765 50  0000 C CNN
+F 1 "TPD4E05U06DQAR" H 3400 6674 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:TPD4E05U06DQAR" H 3850 6600 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/tpd4e05u06" H 3850 6500 50  0001 L CNN
+F 4 "4-Channel Ultra-Low-Capacitance IEC ESD Protection Diode" H 3850 6400 50  0001 L CNN "Description"
+F 5 "595-TPD4E05U06DQAR" H 3850 6200 50  0001 L CNN "Mouser Part Number"
+F 6 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPD4E05U06DQAR?qs=%2FCrDlo5IrVPi4woOvWz0qA%3D%3D" H 3850 6100 50  0001 L CNN "Mouser Price/Stock"
+F 7 "Texas Instruments" H 3850 6000 50  0001 L CNN "Manufacturer_Name"
+F 8 "TPD4E05U06DQAR" H 3850 5900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2800 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6700 2700 6700
+Wire Wire Line
+	2700 6700 2700 7000
+$Comp
+L power:GND #PWR081
+U 1 1 61430D5E
+P 2700 7000
+F 0 "#PWR081" H 2700 6750 50  0001 C CNN
+F 1 "GND" H 2705 6827 50  0000 C CNN
+F 2 "" H 2700 7000 50  0001 C CNN
+F 3 "" H 2700 7000 50  0001 C CNN
+	1    2700 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6700 4100 6700
+Wire Wire Line
+	4100 6700 4100 7000
+$Comp
+L power:GND #PWR082
+U 1 1 61431E57
+P 4100 7000
+F 0 "#PWR082" H 4100 6750 50  0001 C CNN
+F 1 "GND" H 4105 6827 50  0000 C CNN
+F 2 "" H 4100 7000 50  0001 C CNN
+F 3 "" H 4100 7000 50  0001 C CNN
+	1    4100 7000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6960 2850 6960 3140
+Wire Wire Line
+	7200 2850 6960 2850
+Connection ~ 7200 2850
+Wire Wire Line
+	7750 2850 9605 2850
+Wire Wire Line
+	9605 3550 9500 3550
+Wire Wire Line
+	9500 3550 9500 3950
+$Comp
+L power:GND #PWR095
+U 1 1 614F41D0
+P 9500 3950
+F 0 "#PWR095" H 9500 3700 50  0001 C CNN
+F 1 "GND" H 9505 3777 50  0000 C CNN
+F 2 "" H 9500 3950 50  0001 C CNN
+F 3 "" H 9500 3950 50  0001 C CNN
+	1    9500 3950
+	1    0    0    -1  
+$EndComp
+Text Label 8755 3350 0    50   ~ 0
+GT2_TX_C_N
+Text Label 8755 3450 0    50   ~ 0
+GT2_TX_C_P
+Text Label 10265 6000 2    50   ~ 0
+GT2_TX_C_N
+Text Label 10265 5800 2    50   ~ 0
+GT2_TX_C_P
+Wire Wire Line
+	9665 6000 10265 6000
+Wire Wire Line
+	9665 5800 10265 5800
+Wire Wire Line
+	9365 5800 9015 5800
+Wire Wire Line
+	9365 6000 9015 6000
+Text HLabel 9015 5800 0    50   Input ~ 0
+GTR_DP2_M2C_USB0_TX_P
+Text HLabel 9015 6000 0    50   Input ~ 0
+GTR_DP2_M2C_USB0_TX_N
+Text Label 1950 6900 0    50   ~ 0
+GT2_TX_C_N
+Text Label 1950 6800 0    50   ~ 0
+GT2_TX_C_P
+Text HLabel 1950 6500 0    50   Output ~ 0
+GTR_DP2_C2M_USB0_RX_P
+Text HLabel 1950 6600 0    50   Output ~ 0
+GTR_DP2_C2M_USB0_RX_N
+Wire Wire Line
+	1950 6800 2800 6800
+Wire Wire Line
+	1950 6900 2800 6900
+Text Label 4850 6900 2    50   ~ 0
+GT2_TX_C_N
+Text Label 4850 6800 2    50   ~ 0
+GT2_TX_C_P
+Wire Wire Line
+	4850 6800 4000 6800
+Wire Wire Line
+	4850 6900 4000 6900
+Wire Wire Line
+	2800 6500 1950 6500
+Wire Wire Line
+	2800 6600 1950 6600
+Text Label 4850 6600 2    50   ~ 0
+GT2_USB0_RX_N
+Text Label 4850 6500 2    50   ~ 0
+GT2_USB0_RX_P
+Wire Wire Line
+	4850 6500 4000 6500
+Wire Wire Line
+	4850 6600 4000 6600
+Text Label 8755 3650 0    50   ~ 0
+GT2_USB0_RX_N
+Text Label 8755 3750 0    50   ~ 0
+GT2_USB0_RX_P
+Wire Wire Line
+	8755 3750 9605 3750
+Wire Wire Line
+	8755 3650 9605 3650
+Wire Wire Line
+	8755 3450 9605 3450
+Wire Wire Line
+	8755 3350 9605 3350
+Text Label 2700 6500 2    50   ~ 0
+GT2_USB0_RX_P
+Text Label 2700 6600 2    50   ~ 0
+GT2_USB0_RX_N
+$Comp
+L Device:CP C?
+U 1 1 615E19FB
+P 6450 2900
+AR Path="/5F71E87D/615E19FB" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/615E19FB" Ref="C73"  Part="1" 
+F 0 "C73" H 6240 2820 50  0000 L CNN
+F 1 "120uF" H 6095 2885 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6488 2750 50  0001 C CNN
+F 3 "~" H 6450 2900 50  0001 C CNN
+F 4 "+-10%" H 6450 2900 50  0001 C CNN "Tolerance"
+F 5 "6.3V" H 6160 2965 50  0000 L CNN "Voltage"
+F 6 "" H 6450 2900 50  0001 C CNN "PartNumber"
+	1    6450 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6450 3140 6450 3050
+Connection ~ 6450 3140
+Wire Wire Line
+	6450 3140 6960 3140
+$Comp
+L power:GND #PWR090
+U 1 1 615EEF9B
+P 6450 2700
+F 0 "#PWR090" H 6450 2450 50  0001 C CNN
+F 1 "GND" H 6455 2527 50  0000 C CNN
+F 2 "" H 6450 2700 50  0001 C CNN
+F 3 "" H 6450 2700 50  0001 C CNN
+	1    6450 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6450 2750 6450 2700
+$Comp
+L ApotheoTech:TPD2EUSB30DRTR D8
+U 1 1 619EDE93
+P 6050 6550
+F 0 "D8" H 6050 6825 50  0000 C CNN
+F 1 "TPD2EUSB30DRTR" H 6050 6734 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:TPD2EUSB30DRTR" H 6910 6670 50  0001 L CNN
+F 3 "" H 6250 6590 50  0001 L CNN
+F 4 "Texas Instruments TPD2EUSB30DRTR Dual Bi-Directional TVS Diode Array, 45W peak, 3-Pin SOT" H 6900 6450 50  0001 L CNN "Description"
+F 5 "0.5" H 6900 6350 50  0001 L CNN "Height"
+F 6 "595-TPD2EUSB30DRTR" H 6900 6250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPD2EUSB30DRTR?qs=%2Fqzd9s%252BcLd6bPJi5HXCDvw%3D%3D" H 6900 6150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 6900 6050 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPD2EUSB30DRTR" H 6900 5950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6050 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 6550 6550 6550
+Wire Wire Line
+	6550 6550 6550 6750
+$Comp
+L power:GND #PWR091
+U 1 1 619FE325
+P 6550 6750
+F 0 "#PWR091" H 6550 6500 50  0001 C CNN
+F 1 "GND" H 6555 6577 50  0000 C CNN
+F 2 "" H 6550 6750 50  0001 C CNN
+F 3 "" H 6550 6750 50  0001 C CNN
+	1    6550 6750
+	1    0    0    -1  
+$EndComp
+Text Notes 1080 5775 0    118  ~ 0
+ESD protection for USB 3.0/2.0
+Text Notes 8215 5400 0    118  ~ 0
+USB3.0 TX AC Caps
+$Comp
+L Device:C C?
+U 1 1 6149A061
+P 9515 5800
+AR Path="/5F71E87D/6149A061" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/6149A061" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/6149A061" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/6149A061" Ref="C77"  Part="1" 
+F 0 "C77" V 9565 5940 50  0000 C CNN
+F 1 "0.1uF" V 9555 5640 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9553 5650 50  0001 C CNN
+F 3 "~" H 9515 5800 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 9515 5800 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 9515 5800 50  0001 C CNN "Tolerance"
+F 6 "25V" V 9465 5660 50  0000 C CNN "Voltage"
+F 7 "X5R" H 9515 5800 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 9515 5800 50  0001 C CNN "URL"
+	1    9515 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614A056C
+P 9515 6000
+AR Path="/5F71E87D/614A056C" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/614A056C" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/614A056C" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/614A056C" Ref="C78"  Part="1" 
+F 0 "C78" V 9565 6140 50  0000 C CNN
+F 1 "0.1uF" V 9555 5840 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9553 5850 50  0001 C CNN
+F 3 "~" H 9515 6000 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 9515 6000 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 9515 6000 50  0001 C CNN "Tolerance"
+F 6 "25V" V 9465 5860 50  0000 C CNN "Voltage"
+F 7 "X5R" H 9515 6000 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 9515 6000 50  0001 C CNN "URL"
+	1    9515 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614AF0B3
+P 7260 5000
+AR Path="/5F71E87D/614AF0B3" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/614AF0B3" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/614AF0B3" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/614AF0B3" Ref="C75"  Part="1" 
+F 0 "C75" H 7100 4940 50  0000 C CNN
+F 1 "0.1uF" H 7040 5005 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7298 4850 50  0001 C CNN
+F 3 "~" H 7260 5000 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 7260 5000 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 7260 5000 50  0001 C CNN "Tolerance"
+F 6 "25V" H 7075 5080 50  0000 C CNN "Voltage"
+F 7 "X5R" H 7260 5000 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 7260 5000 50  0001 C CNN "URL"
+	1    7260 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614BB48D
+P 1560 2140
+AR Path="/5F71E87D/614BB48D" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/614BB48D" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/614BB48D" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/614BB48D" Ref="C68"  Part="1" 
+F 0 "C68" H 1400 2080 50  0000 C CNN
+F 1 "0.1uF" H 1340 2145 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1598 1990 50  0001 C CNN
+F 3 "~" H 1560 2140 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 1560 2140 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 1560 2140 50  0001 C CNN "Tolerance"
+F 6 "25V" H 1375 2220 50  0000 C CNN "Voltage"
+F 7 "X5R" H 1560 2140 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 1560 2140 50  0001 C CNN "URL"
+	1    1560 2140
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614C15D6
+P 2010 2140
+AR Path="/5F71E87D/614C15D6" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/614C15D6" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/614C15D6" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/614C15D6" Ref="C69"  Part="1" 
+F 0 "C69" H 1850 2080 50  0000 C CNN
+F 1 "0.1uF" H 1790 2145 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2048 1990 50  0001 C CNN
+F 3 "~" H 2010 2140 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 2010 2140 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 2010 2140 50  0001 C CNN "Tolerance"
+F 6 "25V" H 1825 2220 50  0000 C CNN "Voltage"
+F 7 "X5R" H 2010 2140 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 2010 2140 50  0001 C CNN "URL"
+	1    2010 2140
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614C7B71
+P 2460 2140
+AR Path="/5F71E87D/614C7B71" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/614C7B71" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/614C7B71" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/614C7B71" Ref="C70"  Part="1" 
+F 0 "C70" H 2300 2080 50  0000 C CNN
+F 1 "0.1uF" H 2240 2145 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2498 1990 50  0001 C CNN
+F 3 "~" H 2460 2140 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 2460 2140 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 2460 2140 50  0001 C CNN "Tolerance"
+F 6 "25V" H 2275 2220 50  0000 C CNN "Voltage"
+F 7 "X5R" H 2460 2140 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 2460 2140 50  0001 C CNN "URL"
+	1    2460 2140
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614D4F7B
+P 6060 3540
+AR Path="/5F71E87D/614D4F7B" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/614D4F7B" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/614D4F7B" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/614D4F7B" Ref="C72"  Part="1" 
+F 0 "C72" H 5900 3480 50  0000 C CNN
+F 1 "0.1uF" H 5840 3545 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6098 3390 50  0001 C CNN
+F 3 "~" H 6060 3540 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 6060 3540 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 6060 3540 50  0001 C CNN "Tolerance"
+F 6 "25V" H 5875 3620 50  0000 C CNN "Voltage"
+F 7 "X5R" H 6060 3540 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 6060 3540 50  0001 C CNN "URL"
+	1    6060 3540
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614E7F6B
+P 7200 3075
+AR Path="/5F71E87D/614E7F6B" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/614E7F6B" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/614E7F6B" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/614E7F6B" Ref="C74"  Part="1" 
+F 0 "C74" H 7040 3015 50  0000 C CNN
+F 1 "0.1uF" H 6980 3080 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7238 2925 50  0001 C CNN
+F 3 "~" H 7200 3075 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 7200 3075 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 7200 3075 50  0001 C CNN "Tolerance"
+F 6 "25V" H 7015 3155 50  0000 C CNN "Voltage"
+F 7 "X5R" H 7200 3075 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 7200 3075 50  0001 C CNN "URL"
+	1    7200 3075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614EDFF4
+P 7750 3075
+AR Path="/5F71E87D/614EDFF4" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/614EDFF4" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/614EDFF4" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/614EDFF4" Ref="C76"  Part="1" 
+F 0 "C76" H 7590 3015 50  0000 C CNN
+F 1 "0.1uF" H 7530 3080 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7788 2925 50  0001 C CNN
+F 3 "~" H 7750 3075 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 7750 3075 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 7750 3075 50  0001 C CNN "Tolerance"
+F 6 "25V" H 7565 3155 50  0000 C CNN "Voltage"
+F 7 "X5R" H 7750 3075 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 7750 3075 50  0001 C CNN "URL"
+	1    7750 3075
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR096
+U 1 1 61CD2AA5
+P 10850 3800
+F 0 "#PWR096" H 10850 3550 50  0001 C CNN
+F 1 "GND" H 10855 3627 50  0000 C CNN
+F 2 "" H 10850 3800 50  0001 C CNN
+F 3 "" H 10850 3800 50  0001 C CNN
+	1    10850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 3750 10850 3800
+Text HLabel 1810 1340 0    50   Input ~ 0
+USB_RESET_N
+$Comp
+L Device:R R?
+U 1 1 613FF9A1
+P 2200 1150
+AR Path="/5F71E87D/613FF9A1" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/613FF9A1" Ref="R?"  Part="1" 
+AR Path="/6314F719/613FF9A1" Ref="R?"  Part="1" 
+AR Path="/6314DEA9/613FF9A1" Ref="R70"  Part="1" 
+F 0 "R70" H 2270 1241 50  0000 L CNN
+F 1 "10K" H 2270 1150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2130 1150 50  0001 C CNN
+F 3 "~" H 2200 1150 50  0001 C CNN
+F 4 "1%" H 2270 1059 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 2200 1150 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 2200 1150 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 2200 1150 50  0001 C CNN "URL"
+	1    2200 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61413E95
+P 4860 3140
+AR Path="/5F71E87D/61413E95" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/61413E95" Ref="R?"  Part="1" 
+AR Path="/6314F719/61413E95" Ref="R?"  Part="1" 
+AR Path="/6314DEA9/61413E95" Ref="R73"  Part="1" 
+F 0 "R73" V 4900 3295 50  0000 L CNN
+F 1 "10K" V 4900 2860 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4790 3140 50  0001 C CNN
+F 3 "~" H 4860 3140 50  0001 C CNN
+F 4 "1%" V 4800 2900 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 4860 3140 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 4860 3140 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 4860 3140 50  0001 C CNN "URL"
+	1    4860 3140
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 1300 2200 1340
+Connection ~ 2200 1340
+Wire Wire Line
+	2200 1340 1810 1340
+Wire Wire Line
+	2200 1000 2200 950 
+Wire Wire Line
+	2200 950  2450 950 
+Text GLabel 1500 1850 0    50   Input ~ 0
+PS_1V8
+Wire Wire Line
+	1500 1850 1560 1850
+Wire Wire Line
+	1560 1850 1560 1940
+Text GLabel 2450 950  2    50   Input ~ 0
+PS_1V8
+Text Label 9105 2950 0    50   ~ 0
+ULPI0_D_N
+Text Label 9105 3050 0    50   ~ 0
+ULPI0_D_P
+Text GLabel 2110 4290 0    50   Input ~ 0
+PS_1V8
+Text GLabel 4100 4800 3    50   Input ~ 0
+PS_3V3
+Wire Wire Line
+	4100 4800 4100 4705
+Wire Wire Line
+	4100 4705 4310 4705
+Wire Wire Line
+	5650 6600 5100 6600
+Text Label 5100 6600 0    50   ~ 0
+ULPI0_D_N
+Wire Wire Line
+	5650 6500 5100 6500
+Text Label 5100 6500 0    50   ~ 0
+ULPI0_D_P
+$Comp
+L ApotheoTech:GSB443133HR J5
+U 1 1 6162B195
+P 10055 3350
+F 0 "J5" H 9930 4090 50  0000 C CNN
+F 1 "GSB443133HR" H 9930 3999 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:GSB443133HR" H 11180 4025 50  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/GSB443133HR_Dwg.pdf" H 11180 4025 50  0001 L CNN
+F 4 "USB Connectors USB3.1 MICRO B R/A SMT 30ug" H 11180 3925 50  0001 L CNN "Description"
+F 5 "2.8" H 11180 3825 50  0001 L CNN "Height"
+F 6 "523-GSB443133HR" H 11180 3725 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Amphenol-Commercial-Products/GSB443133HR?qs=ToP8pWlZ0bPCSAKltjJIBg%3D%3D" H 11180 3625 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amphenol" H 11180 3525 50  0001 L CNN "Manufacturer_Name"
+F 9 "GSB443133HR" H 11180 3425 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10055 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9605 3150 9105 3150
+Text Label 9105 3150 0    50   ~ 0
+ULPIO_ID
+Wire Wire Line
+	9605 3250 8100 3250
+Wire Wire Line
+	8100 3250 8100 3275
+Wire Wire Line
+	7750 3275 8100 3275
+Wire Wire Line
+	10850 3350 10755 3350
+Wire Wire Line
+	10850 3350 10850 3450
+Wire Wire Line
+	10850 3350 10850 3250
+Wire Wire Line
+	10850 3250 10755 3250
+Connection ~ 10850 3350
+Wire Wire Line
+	10850 3250 10850 3150
+Wire Wire Line
+	10850 3150 10755 3150
+Connection ~ 10850 3250
+Wire Wire Line
+	10850 3150 10850 3050
+Wire Wire Line
+	10850 3050 10755 3050
+Connection ~ 10850 3150
+Wire Wire Line
+	10850 3050 10850 2950
+Wire Wire Line
+	10850 2950 10755 2950
+Connection ~ 10850 3050
+Wire Wire Line
+	10850 2950 10850 2850
+Wire Wire Line
+	10850 2850 10755 2850
+Connection ~ 10850 2950
+Text Label 5110 3040 2    50   ~ 0
+ULPIO_ID
+Wire Wire Line
+	5010 2940 5260 2940
+Text Notes 4990 2825 0    50   ~ 0
+For A device, USB-ID is grounded,\nFor B device, USB-ID is left floating \n(Page 8/72 of USB3320 datasheet)
+Text Label 8080 2850 0    50   ~ 0
+USB_VBUS
+NoConn ~ 3985 2590
+Wire Wire Line
+	3885 2590 3885 1950
+Wire Wire Line
+	3885 1950 4350 1950
+Text HLabel 4350 1950 2    50   Input ~ 0
+USB_PHY_REFCLK
+$Comp
+L Device:R R?
+U 1 1 6171449A
+P 10850 3600
+AR Path="/5F71E4A6/6171449A" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/6171449A" Ref="R?"  Part="1" 
+AR Path="/6314CDE6/6171449A" Ref="R?"  Part="1" 
+AR Path="/6314DEA9/6171449A" Ref="R75"  Part="1" 
+F 0 "R75" H 10950 3670 50  0000 C CNN
+F 1 "0" H 10925 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10780 3600 50  0001 C CNN
+F 3 "~" H 10850 3600 50  0001 C CNN
+F 4 "CRCW04020000Z0EDHP" V 10850 3600 50  0001 C CNN "PartNumber"
+F 5 "1/5W" H 11005 3535 50  0000 C CNN "Power"
+F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 10850 3600 50  0001 C CNN "URL"
+	1    10850 3600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,1216 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 11 20
+Title "SOM240-1"
+Date "2022-01-04"
+Rev "1.00"
+Comp "ApotheoTech LLC"
+Comment1 "SCH: APT-KRIA-FMC"
+Comment2 "Author: Chance Reimer"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ApotheoTech:ADM6-60-01.5-L-4-2-A-TR J?
+U 1 1 61856CE6
+P 2075 5600
+AR Path="/611C0265/61856CE6" Ref="J?"  Part="1" 
+AR Path="/611C005F/61856CE6" Ref="J17"  Part="1" 
+F 0 "J17" H 2233 8875 50  0000 C CNN
+F 1 "ADM6-60-01.5-L-4-2-A-TR" H 2233 8784 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:ADM6-60-01.5-L-4-2-A-TR" H 2100 8300 50  0001 C CNN
+F 3 "" H 2100 8300 50  0001 C CNN
+	1    2075 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2950 2600 2950
+Connection ~ 2600 2950
+Wire Wire Line
+	2600 3250 2450 3250
+Wire Wire Line
+	2600 3550 2450 3550
+Text Notes 925  975  0    236  ~ 47
+Kria SOM240-1 GTR, HPIO Banks 66, MIO banks, HDIO bank 45
+Wire Wire Line
+	2600 4550 2450 4550
+Wire Wire Line
+	2600 5050 2450 5050
+Wire Wire Line
+	2600 5750 2450 5750
+Wire Wire Line
+	2600 6150 2450 6150
+Connection ~ 2600 6150
+Wire Wire Line
+	2450 6550 2600 6550
+Wire Wire Line
+	2600 6950 2450 6950
+Wire Wire Line
+	2600 6950 2600 7050
+Wire Wire Line
+	2600 7350 2450 7350
+Connection ~ 2600 6950
+Wire Wire Line
+	2600 7750 2450 7750
+Connection ~ 2600 7350
+Wire Wire Line
+	2600 7750 2600 7850
+Wire Wire Line
+	2600 8150 2450 8150
+Connection ~ 2600 7750
+Wire Wire Line
+	2600 8150 2600 8250
+Connection ~ 2600 8150
+$Comp
+L power:GND #PWR?
+U 1 1 61856D2B
+P 2600 8700
+AR Path="/611C0265/61856D2B" Ref="#PWR?"  Part="1" 
+AR Path="/611C005F/61856D2B" Ref="#PWR0235"  Part="1" 
+F 0 "#PWR0235" H 2600 8450 50  0001 C CNN
+F 1 "GND" H 2605 8527 50  0000 C CNN
+F 2 "" H 2600 8700 50  0001 C CNN
+F 3 "" H 2600 8700 50  0001 C CNN
+	1    2600 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2750 2900 2750
+Text HLabel 2900 2750 2    50   Input ~ 0
+HPA06_MIPI_A1_D0_P
+Wire Wire Line
+	2450 2850 2900 2850
+Text HLabel 2900 2850 2    50   Input ~ 0
+HPA06_MIPI_A1_D0_N
+Wire Wire Line
+	2450 3050 2900 3050
+Text HLabel 2900 3050 2    50   Input ~ 0
+HPA_CLK0_P
+Wire Wire Line
+	2450 3150 2900 3150
+Text HLabel 2900 3150 2    50   Input ~ 0
+HPA_CLK0_N
+Text Notes 965  1175 0    118  ~ 0
+Remember Chance, We are the Carrier on this design
+Wire Wire Line
+	2450 3350 2900 3350
+Text HLabel 2900 3350 2    50   Input ~ 0
+HPA12_MIPI_A2_D1_P
+Wire Wire Line
+	2450 3450 2900 3450
+Text HLabel 2900 3450 2    50   Input ~ 0
+HPA12_MIPI_A2_D1_N
+Wire Wire Line
+	2450 3950 2900 3950
+Text HLabel 2900 3950 2    50   Input ~ 0
+HDA09
+Wire Wire Line
+	2450 4050 2900 4050
+Text HLabel 2900 4050 2    50   Input ~ 0
+HDA10
+Wire Wire Line
+	2450 4350 2900 4350
+Text HLabel 2900 4350 2    50   Output ~ 0
+VCCOEN_PS_M2C
+Wire Wire Line
+	2450 4450 2900 4450
+Text HLabel 2900 4450 2    50   Output ~ 0
+VCCOEN_PL_M2C
+Wire Wire Line
+	2450 4650 2900 4650
+Text HLabel 2900 4650 2    50   Input ~ 0
+JTAG_TMS_C2M
+Wire Wire Line
+	2450 4750 2900 4750
+Text HLabel 2900 4750 2    50   Output ~ 0
+JTAG_TDO_M2C
+Wire Wire Line
+	2450 4850 2900 4850
+Text HLabel 2900 4850 2    50   Input ~ 0
+JTAG_TDI_C2M
+Wire Wire Line
+	2450 4950 2900 4950
+Text HLabel 2900 4950 2    50   Input ~ 0
+JTAG_TCK_C2M
+Wire Wire Line
+	2450 5150 2900 5150
+Text HLabel 2900 5150 2    50   Input ~ 0
+MODE0_C2M
+Wire Wire Line
+	2450 5250 2900 5250
+Text HLabel 2900 5250 2    50   Input ~ 0
+MODE1_C2M
+Wire Wire Line
+	2450 5350 2900 5350
+Text HLabel 2900 5350 2    50   Input ~ 0
+MODE2_C2M
+Wire Wire Line
+	2450 5450 2900 5450
+Text HLabel 2900 5450 2    50   Input ~ 0
+MODE3_C2M
+Wire Wire Line
+	2450 5950 2900 5950
+Text HLabel 2900 5950 2    50   Input ~ 0
+MIO42
+Wire Wire Line
+	2450 6050 2900 6050
+Text HLabel 2900 6050 2    50   Output ~ 0
+MIO43_SD_RESET_N
+Wire Wire Line
+	2450 6250 2900 6250
+Text HLabel 2900 6250 2    50   BiDi ~ 0
+MIO61_USB_DATA5
+Wire Wire Line
+	2450 6350 2900 6350
+Text HLabel 2900 6350 2    50   BiDi ~ 0
+MIO62_USB_DATA6
+Wire Wire Line
+	2450 6450 2900 6450
+Text HLabel 2900 6450 2    50   BiDi ~ 0
+MIO63_USB_DATA7
+Wire Wire Line
+	2450 7150 2900 7150
+Text HLabel 2900 7150 2    50   Output ~ 0
+GTR_DP1_M2C_EDP0_TX_P
+Wire Wire Line
+	2450 7550 2900 7550
+Text HLabel 2900 7550 2    50   Input ~ 0
+GTR_REFCLK3_C2M_125MHZ_P
+Wire Wire Line
+	2450 7650 2900 7650
+Text HLabel 2900 7650 2    50   Input ~ 0
+GTR_REFCLK3_C2M_125MHZ_N
+Wire Wire Line
+	2450 7950 2900 7950
+Text HLabel 2900 7950 2    50   Input ~ 0
+GTR_DP0_C2M_P
+Wire Wire Line
+	2450 8050 2900 8050
+Text HLabel 2900 8050 2    50   Input ~ 0
+GTR_DP0_C2M_N
+Wire Wire Line
+	2450 8350 2900 8350
+Wire Wire Line
+	2450 8450 2900 8450
+$Comp
+L ApotheoTech:ADM6-60-01.5-L-4-2-A-TR J?
+U 2 1 61856D80
+P 5000 5500
+AR Path="/611C0265/61856D80" Ref="J?"  Part="2" 
+AR Path="/611C005F/61856D80" Ref="J17"  Part="2" 
+F 0 "J17" H 5233 8675 50  0000 C CNN
+F 1 "ADM6-60-01.5-L-4-2-A-TR" H 5233 8584 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:ADM6-60-01.5-L-4-2-A-TR" H 5025 8200 50  0001 C CNN
+F 3 "" H 5025 8200 50  0001 C CNN
+	2    5000 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 4750
+Connection ~ 5600 5950
+Wire Wire Line
+	5600 6750 5600 7150
+Connection ~ 5600 6750
+Wire Wire Line
+	5600 7150 5600 7250
+Connection ~ 5600 7150
+Wire Wire Line
+	5600 7550 5600 7650
+Connection ~ 5600 7550
+Connection ~ 5600 7950
+Text HLabel 5900 2550 2    50   Input ~ 0
+HPA05_CC_MIPI_A1_CLK_P
+Text HLabel 5900 2650 2    50   Input ~ 0
+HPA05_CC_MIPI_A1_CLK_N
+Text HLabel 5900 2850 2    50   Input ~ 0
+HPA04_MIPI_A0_D3_P
+Text HLabel 5900 2950 2    50   Input ~ 0
+HPA04_MIPI_A0_D3_N
+Text HLabel 5900 3150 2    50   Input ~ 0
+HPA07_MIPI_A1_D1_P
+Text HLabel 5900 3250 2    50   Input ~ 0
+HPA07_MIPI_A1_D1_N
+Text HLabel 5900 3450 2    50   Input ~ 0
+HPA11_MIPI_A2_D0_P
+Text HLabel 5900 3550 2    50   Input ~ 0
+HPA11_MIPI_A2_D0_N
+Text HLabel 5900 4050 2    50   Input ~ 0
+HDA03
+Text HLabel 5900 4150 2    50   Input ~ 0
+HDA04
+Text HLabel 5900 4250 2    50   Input ~ 0
+HDA05
+Text HLabel 5900 4550 2    50   Input ~ 0
+HDA16_CC
+Text HLabel 5900 4650 2    50   Input ~ 0
+HDA17
+Text HLabel 5900 4850 2    50   Output ~ 0
+PS_ERROR_OUT_M2C
+Text HLabel 5900 4950 2    50   Output ~ 0
+PS_ERROR_STATUS_M2C
+Text HLabel 5900 5050 2    50   Input ~ 0
+PWROFF_C2M_N
+Text HLabel 5900 5250 2    50   Output ~ 0
+MIO35_WD_OUT
+Text HLabel 5900 5350 2    50   Output ~ 0
+MIO36_UART1_TXD
+Text HLabel 5900 5450 2    50   Input ~ 0
+MIO37_UART1_RXD
+Text HLabel 5900 5750 2    50   Output ~ 0
+MIO39_SDIO_SEL
+Text HLabel 5900 5850 2    50   Input ~ 0
+MIO40
+Text HLabel 5900 6050 2    50   BiDi ~ 0
+MIO50_SDIO_CMD
+Text HLabel 5900 6150 2    50   Output ~ 0
+MIO51_SDIO_CLK
+Text HLabel 5900 6450 2    50   Output ~ 0
+MIO58_USB_STP
+Text HLabel 5900 6850 2    50   Input ~ 0
+MIO70_UART_RXD
+Text HLabel 5900 6950 2    50   Output ~ 0
+MIO71_UART_TXD
+Text HLabel 5900 7050 2    50   Input ~ 0
+MIO72
+Text HLabel 5900 7350 2    50   Input ~ 0
+GTR_REFCLK1_C2M_USB0_26MHZ_P
+Text HLabel 5900 7450 2    50   Input ~ 0
+GTR_REFCLK1_C2M_USB0_26MHZ_N
+Text HLabel 5900 7750 2    50   Input ~ 0
+GTR_DP2_C2M_USB0_RX_P
+Text HLabel 5900 7850 2    50   Input ~ 0
+GTR_DP2_C2M_USB0_RX_N
+Text HLabel 5900 8150 2    50   Output ~ 0
+GTR_DP0_M2C_EDP1_TX_P
+Text HLabel 5900 8250 2    50   Output ~ 0
+GTR_DP0_M2C_EDP1_TX_N
+Wire Wire Line
+	5450 3050 5600 3050
+Wire Wire Line
+	5450 3350 5600 3350
+Wire Wire Line
+	5450 3650 5600 3650
+Wire Wire Line
+	5450 4350 5600 4350
+Wire Wire Line
+	5450 4750 5600 4750
+Wire Wire Line
+	5450 5550 5600 5550
+Wire Wire Line
+	5450 5950 5600 5950
+Wire Wire Line
+	5450 6350 5600 6350
+Wire Wire Line
+	5450 6750 5600 6750
+Wire Wire Line
+	5450 7150 5600 7150
+Wire Wire Line
+	5450 7550 5600 7550
+Wire Wire Line
+	5450 7950 5600 7950
+Wire Wire Line
+	5450 2550 5900 2550
+Wire Wire Line
+	5450 2650 5900 2650
+Wire Wire Line
+	5450 2850 5900 2850
+Wire Wire Line
+	5450 2950 5900 2950
+Wire Wire Line
+	5450 3150 5900 3150
+Wire Wire Line
+	5450 3250 5900 3250
+Wire Wire Line
+	5450 3450 5900 3450
+Wire Wire Line
+	5450 3550 5900 3550
+Wire Wire Line
+	5450 4050 5900 4050
+Wire Wire Line
+	5450 4150 5900 4150
+Wire Wire Line
+	5450 4250 5900 4250
+Wire Wire Line
+	5450 4550 5900 4550
+Wire Wire Line
+	5450 4650 5900 4650
+Wire Wire Line
+	5450 4850 5900 4850
+Wire Wire Line
+	5450 4950 5900 4950
+Wire Wire Line
+	5450 5050 5900 5050
+Wire Wire Line
+	5450 5250 5900 5250
+Wire Wire Line
+	5450 5350 5900 5350
+Wire Wire Line
+	5450 5450 5900 5450
+Wire Wire Line
+	5450 5750 5900 5750
+Wire Wire Line
+	5450 5850 5900 5850
+Wire Wire Line
+	5450 6050 5900 6050
+Wire Wire Line
+	5450 6150 5900 6150
+Wire Wire Line
+	5450 6450 5900 6450
+Wire Wire Line
+	5450 6850 5900 6850
+Wire Wire Line
+	5450 6950 5900 6950
+Wire Wire Line
+	5450 7050 5900 7050
+Wire Wire Line
+	5450 7350 5900 7350
+Wire Wire Line
+	5450 7450 5900 7450
+Wire Wire Line
+	5450 7750 5900 7750
+Wire Wire Line
+	5450 7850 5900 7850
+Wire Wire Line
+	5450 8150 5900 8150
+Wire Wire Line
+	5450 8250 5900 8250
+$Comp
+L ApotheoTech:ADM6-60-01.5-L-4-2-A-TR J?
+U 3 1 61856E05
+P 8000 5500
+AR Path="/611C0265/61856E05" Ref="J?"  Part="3" 
+AR Path="/611C005F/61856E05" Ref="J17"  Part="3" 
+F 0 "J17" H 8233 8675 50  0000 C CNN
+F 1 "ADM6-60-01.5-L-4-2-A-TR" H 8233 8584 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:ADM6-60-01.5-L-4-2-A-TR" H 8025 8200 50  0001 C CNN
+F 3 "" H 8025 8200 50  0001 C CNN
+	3    8000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ApotheoTech:ADM6-60-01.5-L-4-2-A-TR J?
+U 4 1 61856E9D
+P 11000 5500
+AR Path="/611C0265/61856E9D" Ref="J?"  Part="4" 
+AR Path="/611C005F/61856E9D" Ref="J17"  Part="4" 
+F 0 "J17" H 11233 8675 50  0000 C CNN
+F 1 "ADM6-60-01.5-L-4-2-A-TR" H 11233 8584 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:ADM6-60-01.5-L-4-2-A-TR" H 11025 8200 50  0001 C CNN
+F 3 "" H 11025 8200 50  0001 C CNN
+	4    11000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2750 5600 2750
+Wire Wire Line
+	5600 7950 5600 8050
+$Comp
+L power:GND #PWR?
+U 1 1 61856EA9
+P 5600 8700
+AR Path="/611C0265/61856EA9" Ref="#PWR?"  Part="1" 
+AR Path="/611C005F/61856EA9" Ref="#PWR0237"  Part="1" 
+F 0 "#PWR0237" H 5600 8450 50  0001 C CNN
+F 1 "GND" H 5605 8527 50  0000 C CNN
+F 2 "" H 5600 8700 50  0001 C CNN
+F 3 "" H 5600 8700 50  0001 C CNN
+	1    5600 8700
+	1    0    0    -1  
+$EndComp
+Text Notes 975  1430 0    79   ~ 0
+C2M -> RX for Kria module\nM2C -> TX for Kria module
+Wire Wire Line
+	5450 8450 5900 8450
+Connection ~ 11600 4750
+Connection ~ 11600 5950
+Wire Wire Line
+	11600 6750 11600 7150
+Connection ~ 11600 6750
+Wire Wire Line
+	11600 7150 11600 7250
+Connection ~ 11600 7150
+Wire Wire Line
+	11600 7550 11600 7650
+Connection ~ 11600 7550
+Connection ~ 11600 7950
+Text HLabel 11900 2850 2    50   Input ~ 0
+HPA02_MIPI_A0_D1_P
+Text HLabel 11900 2950 2    50   Input ~ 0
+HPA02_MIPI_A0_D1_N
+Text HLabel 11900 3750 2    50   Input ~ 0
+HPA14_MIPI_A2_D3_P
+Text HLabel 11900 3850 2    50   Input ~ 0
+HPA14_MIPI_A2_D3_N
+Text HLabel 11900 4050 2    50   Input ~ 0
+HDA00_CC
+Text HLabel 11900 4150 2    50   Input ~ 0
+HDA01
+Text HLabel 11900 4250 2    50   Input ~ 0
+HDA02
+Text HLabel 11900 4550 2    50   Input ~ 0
+HDA13
+Text HLabel 11900 4650 2    50   Input ~ 0
+HDA14
+Text HLabel 11900 4850 2    50   Output ~ 0
+PWRGD_FPD_M2C
+Text HLabel 11900 4950 2    50   Output ~ 0
+PWRGD_LPD_M2C
+Text HLabel 11900 5050 2    50   Output ~ 0
+PWRGD_PL_M2C
+Text HLabel 11900 5250 2    50   Input ~ 0
+MIO26
+Text HLabel 11900 5350 2    50   Output ~ 0
+MIO27_DP_AUX_OUT
+Text HLabel 11900 5450 2    50   Input ~ 0
+MIO28_DP_HPD
+Text HLabel 11900 5750 2    50   Input ~ 0
+MIO45_SDIO_DETECT
+Text HLabel 11900 5850 2    50   BiDi ~ 0
+MIO46_SDIO_DAT0
+Text HLabel 11900 6050 2    50   Input ~ 0
+MIO52_USB_CLK
+Text HLabel 11900 6150 2    50   Input ~ 0
+MIO53_USB_DIR
+Text HLabel 11900 6250 2    50   BiDi ~ 0
+MIO54_USB_DATA2
+Text HLabel 11900 6450 2    50   Output ~ 0
+MIO64_SPI0_SCLK
+Text HLabel 11900 6850 2    50   Input ~ 0
+MIO76
+Text HLabel 11900 6950 2    50   Input ~ 0
+MIO77
+Text HLabel 11900 7350 2    50   Input ~ 0
+GTR3_C2M_SATA1_RX_P
+Text HLabel 11900 7450 2    50   Input ~ 0
+GTR3_C2M_SATA1_RX_N
+Text HLabel 11900 7750 2    50   Input ~ 0
+GTR_REFCLK2_C2M_SATA_125MHZ_P_NC
+Text HLabel 11900 7850 2    50   Input ~ 0
+GTR_REFCLK2_C2M_SATA_125MHZ_N_NC
+Text HLabel 11900 8150 2    50   Output ~ 0
+GTR_DP2_M2C_USB0_TX_P
+Text HLabel 11900 8250 2    50   Output ~ 0
+GTR_DP2_M2C_USB0_TX_N
+Wire Wire Line
+	11450 3050 11600 3050
+Wire Wire Line
+	11450 3350 11600 3350
+Wire Wire Line
+	11450 3650 11600 3650
+Wire Wire Line
+	11450 3950 11600 3950
+Wire Wire Line
+	11450 4350 11600 4350
+Wire Wire Line
+	11450 4750 11600 4750
+Wire Wire Line
+	11450 5150 11600 5150
+Wire Wire Line
+	11450 5550 11600 5550
+Wire Wire Line
+	11450 5950 11600 5950
+Wire Wire Line
+	11450 6350 11600 6350
+Wire Wire Line
+	11450 6750 11600 6750
+Wire Wire Line
+	11450 7150 11600 7150
+Wire Wire Line
+	11450 7550 11600 7550
+Wire Wire Line
+	11450 7950 11600 7950
+Wire Wire Line
+	11450 2850 11900 2850
+Wire Wire Line
+	11450 2950 11900 2950
+Wire Wire Line
+	11450 3750 11900 3750
+Wire Wire Line
+	11450 3850 11900 3850
+Wire Wire Line
+	11450 4050 11900 4050
+Wire Wire Line
+	11450 4150 11900 4150
+Wire Wire Line
+	11450 4250 11900 4250
+Wire Wire Line
+	11450 4550 11900 4550
+Wire Wire Line
+	11450 4650 11900 4650
+Wire Wire Line
+	11450 4850 11900 4850
+Wire Wire Line
+	11450 4950 11900 4950
+Wire Wire Line
+	11450 5050 11900 5050
+Wire Wire Line
+	11450 5250 11900 5250
+Wire Wire Line
+	11450 5350 11900 5350
+Wire Wire Line
+	11450 5450 11900 5450
+Wire Wire Line
+	11450 5750 11900 5750
+Wire Wire Line
+	11450 5850 11900 5850
+Wire Wire Line
+	11450 6050 11900 6050
+Wire Wire Line
+	11450 6150 11900 6150
+Wire Wire Line
+	11450 6250 11900 6250
+Wire Wire Line
+	11450 6450 11900 6450
+Wire Wire Line
+	11450 6850 11900 6850
+Wire Wire Line
+	11450 6950 11900 6950
+Wire Wire Line
+	11450 7050 11900 7050
+Wire Wire Line
+	11450 7350 11900 7350
+Wire Wire Line
+	11450 7450 11900 7450
+Wire Wire Line
+	11450 7750 11900 7750
+Wire Wire Line
+	11450 7850 11900 7850
+Wire Wire Line
+	11450 8150 11900 8150
+Wire Wire Line
+	11450 8250 11900 8250
+Wire Wire Line
+	11450 2750 11600 2750
+$Comp
+L power:GND #PWR?
+U 1 1 61856F40
+P 11600 8700
+AR Path="/611C0265/61856F40" Ref="#PWR?"  Part="1" 
+AR Path="/611C005F/61856F40" Ref="#PWR0239"  Part="1" 
+F 0 "#PWR0239" H 11600 8450 50  0001 C CNN
+F 1 "GND" H 11605 8527 50  0000 C CNN
+F 2 "" H 11600 8700 50  0001 C CNN
+F 3 "" H 11600 8700 50  0001 C CNN
+	1    11600 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11450 8450 11900 8450
+Wire Wire Line
+	2450 2650 2600 2650
+Wire Wire Line
+	2600 2650 2600 2950
+Text Notes 970  2055 0    118  ~ 0
+Note, to support MIPI pin standard,\nVCCO must be 1.2V\n(Page 143, UG571)
+Wire Wire Line
+	2600 2950 2600 3250
+Connection ~ 2600 3250
+Wire Wire Line
+	2600 3250 2600 3550
+Connection ~ 2600 3550
+Wire Wire Line
+	2450 3650 2900 3650
+Text HLabel 2900 3650 2    50   Input ~ 0
+HPA13_MIPI_A2_D2_P
+Wire Wire Line
+	2450 3750 2900 3750
+Text HLabel 2900 3750 2    50   Input ~ 0
+HPA13_MIPI_A2_D2_N
+Wire Wire Line
+	2600 3550 2600 3850
+Wire Wire Line
+	2450 3850 2600 3850
+Connection ~ 2600 3850
+Wire Wire Line
+	2600 3850 2600 4250
+Text HLabel 2900 4150 2    50   Input ~ 0
+HDA11
+Wire Wire Line
+	2450 4150 2900 4150
+Wire Wire Line
+	2450 4250 2600 4250
+Connection ~ 2600 4250
+Wire Wire Line
+	2600 4250 2600 4550
+Connection ~ 2600 4550
+Wire Wire Line
+	2600 4550 2600 5050
+Connection ~ 2600 5050
+Wire Wire Line
+	2450 5550 2900 5550
+Wire Wire Line
+	2450 5650 2900 5650
+NoConn ~ 2900 5550
+NoConn ~ 2900 5650
+Text Notes 2945 5645 0    50   ~ 0
+Reserved Pins unconnected
+Wire Wire Line
+	2600 5050 2600 5750
+Connection ~ 2600 5750
+Wire Wire Line
+	2600 5750 2600 6150
+Wire Wire Line
+	2450 5850 2900 5850
+Text HLabel 2900 5850 2    50   Input ~ 0
+MIO41
+Wire Wire Line
+	2600 6150 2600 6550
+Connection ~ 2600 6550
+Wire Wire Line
+	2450 7250 2900 7250
+Text HLabel 2900 7250 2    50   Output ~ 0
+GTR_DP1_M2C_EDP0_TX_N
+Wire Wire Line
+	2450 7050 2600 7050
+Connection ~ 2600 7050
+Wire Wire Line
+	2600 7050 2600 7350
+Wire Wire Line
+	2600 7350 2600 7450
+Wire Wire Line
+	2450 7450 2600 7450
+Connection ~ 2600 7450
+Wire Wire Line
+	2600 7450 2600 7750
+Wire Wire Line
+	2600 6550 2600 6950
+Wire Wire Line
+	2450 6650 2900 6650
+Text HLabel 2900 6650 2    50   Input ~ 0
+MIO73
+Wire Wire Line
+	2450 6750 2900 6750
+Text HLabel 2900 6750 2    50   Output ~ 0
+MIO74_I2C0_SCL
+Wire Wire Line
+	2450 6850 2900 6850
+Text HLabel 2900 6850 2    50   BiDi ~ 0
+MIO75_I2C0_SDA
+Wire Wire Line
+	2450 7850 2600 7850
+Connection ~ 2600 7850
+Wire Wire Line
+	2600 7850 2600 8150
+Text Notes 3295 7105 0    50   ~ 0
+M2C (TX)\nPS-GTR Lane 1 is DP Lane 0
+Text Notes 4110 7635 0    50   ~ 0
+C2M (RX)
+Text Notes 3785 8030 0    50   ~ 0
+C2M (RX)
+Wire Wire Line
+	2450 8250 2600 8250
+Connection ~ 2600 8250
+Wire Wire Line
+	2600 8250 2600 8700
+Text GLabel 2900 8350 2    50   Input ~ 0
+VCC_SOM_5V
+Wire Wire Line
+	8450 2950 8600 2950
+Connection ~ 8600 2950
+Wire Wire Line
+	8600 3250 8450 3250
+Wire Wire Line
+	8600 3550 8450 3550
+Wire Wire Line
+	8600 4550 8450 4550
+Wire Wire Line
+	8600 5750 8450 5750
+Wire Wire Line
+	8600 6150 8450 6150
+Connection ~ 8600 6150
+Wire Wire Line
+	8450 6550 8600 6550
+Wire Wire Line
+	8600 7350 8450 7350
+Wire Wire Line
+	8600 7750 8450 7750
+Connection ~ 8600 7350
+Wire Wire Line
+	8600 7750 8600 7850
+Wire Wire Line
+	8600 8150 8450 8150
+Connection ~ 8600 7750
+Wire Wire Line
+	8600 8150 8600 8250
+Connection ~ 8600 8150
+$Comp
+L power:GND #PWR?
+U 1 1 622B1965
+P 8600 8700
+AR Path="/611C0265/622B1965" Ref="#PWR?"  Part="1" 
+AR Path="/611C005F/622B1965" Ref="#PWR0238"  Part="1" 
+F 0 "#PWR0238" H 8600 8450 50  0001 C CNN
+F 1 "GND" H 8605 8527 50  0000 C CNN
+F 2 "" H 8600 8700 50  0001 C CNN
+F 3 "" H 8600 8700 50  0001 C CNN
+	1    8600 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2750 8900 2750
+Text HLabel 8900 2750 2    50   Input ~ 0
+HPA00_CC_MIPI_A0_CLK_P
+Wire Wire Line
+	8450 2850 8900 2850
+Text HLabel 8900 2850 2    50   Input ~ 0
+HPA00_CC_MIPI_A0_CLK_N
+Wire Wire Line
+	8450 3050 8900 3050
+Text HLabel 8900 3050 2    50   Input ~ 0
+HPA03_MIPI_A0_D2_P
+Wire Wire Line
+	8450 3150 8900 3150
+Text HLabel 8900 3150 2    50   Input ~ 0
+HPA03_MIPI_A0_D2_N
+Wire Wire Line
+	8450 3350 8900 3350
+Text HLabel 8900 3350 2    50   Input ~ 0
+HPA08_MIPI_A1_D2_P
+Wire Wire Line
+	8450 3450 8900 3450
+Text HLabel 8900 3450 2    50   Input ~ 0
+HPA08_MIPI_A1_D2_N
+Wire Wire Line
+	8450 3950 8900 3950
+Text HLabel 8900 3950 2    50   Output ~ 0
+PS_POR_L
+Wire Wire Line
+	8450 4050 8900 4050
+Text HLabel 8900 4050 2    50   Output ~ 0
+PS_SRST_C2M_L
+Wire Wire Line
+	8450 4350 8900 4350
+Text HLabel 8900 4350 2    50   Input ~ 0
+HDA07
+Wire Wire Line
+	8450 4450 8900 4450
+Text HLabel 8900 4450 2    50   Input ~ 0
+HDA08_CC
+Wire Wire Line
+	8450 4650 8900 4650
+Text HLabel 8900 4650 2    50   Input ~ 0
+HDA18
+Wire Wire Line
+	8450 4750 8900 4750
+Text HLabel 8900 4750 2    50   Input ~ 0
+HDA19
+Wire Wire Line
+	8450 5050 8900 5050
+Text HLabel 8900 5050 2    50   Output ~ 0
+MIO24_I2C1_SCK
+Wire Wire Line
+	8450 5150 8900 5150
+Text HLabel 8900 5150 2    50   BiDi ~ 0
+MIO25_I2C1_SDA
+Wire Wire Line
+	8450 5250 8900 5250
+Text HLabel 8900 5250 2    50   Input ~ 0
+MIO12_FWUEN_C2M_N
+Wire Wire Line
+	8450 5450 8900 5450
+Text HLabel 8900 5450 2    50   Output ~ 0
+MIO29_DP_OE
+Wire Wire Line
+	8450 5550 8900 5550
+Text HLabel 8900 5550 2    50   Input ~ 0
+MIO30_DP_AUX_IN
+Wire Wire Line
+	8450 5650 8900 5650
+Text HLabel 8900 5650 2    50   Input ~ 0
+MIO31_SHUTDOWN
+Wire Wire Line
+	8450 5950 8900 5950
+Text HLabel 8900 5950 2    50   BiDi ~ 0
+MIO48_SDIO_DAT2
+Wire Wire Line
+	8450 6050 8900 6050
+Text HLabel 8900 6050 2    50   BiDi ~ 0
+MIO49_SDIO_DAT3
+Wire Wire Line
+	8450 6250 8900 6250
+Text HLabel 8900 6250 2    50   Input ~ 0
+MIO55_USB_NXT
+Wire Wire Line
+	8450 6350 8900 6350
+Text HLabel 8900 6350 2    50   BiDi ~ 0
+MIO56_USB_DATA0
+Wire Wire Line
+	8450 6450 8900 6450
+Text HLabel 8900 6450 2    50   BiDi ~ 0
+MIO57_USB_DATA1
+Wire Wire Line
+	8450 7150 8900 7150
+Text HLabel 8900 7150 2    50   Input ~ 0
+GTR_REFCLK0_C2M_DP_27MHZ_P
+Wire Wire Line
+	8450 7550 8900 7550
+Text HLabel 8900 7550 2    50   Output ~ 0
+GTR3_M2C_SATA1_TX_P
+Wire Wire Line
+	8450 7650 8900 7650
+Text HLabel 8900 7650 2    50   Output ~ 0
+GTR3_M2C_SATA1_TX_N
+Wire Wire Line
+	8450 7950 8900 7950
+Wire Wire Line
+	8450 8050 8900 8050
+Text HLabel 8900 8050 2    50   Input ~ 0
+GTR_DP1_C2M_N
+Wire Wire Line
+	8450 8350 8900 8350
+Wire Wire Line
+	8450 8450 8900 8450
+Wire Wire Line
+	8450 2650 8600 2650
+Wire Wire Line
+	8600 2650 8600 2950
+Wire Wire Line
+	8600 2950 8600 3250
+Connection ~ 8600 3250
+Wire Wire Line
+	8600 3250 8600 3550
+Connection ~ 8600 3550
+Wire Wire Line
+	8450 3650 8900 3650
+Text HLabel 8900 3650 2    50   Input ~ 0
+HPA10_CC_MIPI_A2_CLK_P
+Wire Wire Line
+	8450 3750 8900 3750
+Text HLabel 8900 3750 2    50   Input ~ 0
+HPA10_CC_MIPI_A2_CLK_N
+Wire Wire Line
+	8600 3550 8600 3850
+Wire Wire Line
+	8450 3850 8600 3850
+Connection ~ 8600 3850
+Text HLabel 8900 4250 2    50   Input ~ 0
+HDA06
+Wire Wire Line
+	8450 4250 8900 4250
+Connection ~ 8600 4550
+Connection ~ 8600 5750
+Wire Wire Line
+	8600 5750 8600 6150
+Wire Wire Line
+	8450 5850 8900 5850
+Text HLabel 8900 5850 2    50   BiDi ~ 0
+MIO47_SDIO_DAT1
+Wire Wire Line
+	8600 6150 8600 6550
+Connection ~ 8600 6550
+Wire Wire Line
+	8450 7250 8900 7250
+Text HLabel 8900 7250 2    50   Input ~ 0
+GTR_REFCLK0_C2M_DP_27MHZ_N
+Wire Wire Line
+	8450 7050 8600 7050
+Connection ~ 8600 7050
+Wire Wire Line
+	8600 7050 8600 7350
+Wire Wire Line
+	8600 7350 8600 7450
+Wire Wire Line
+	8450 7450 8600 7450
+Connection ~ 8600 7450
+Wire Wire Line
+	8600 7450 8600 7750
+Wire Wire Line
+	8450 6650 8900 6650
+Text HLabel 8900 6650 2    50   Output ~ 0
+MIO67_SPI0_CS_N
+Wire Wire Line
+	8450 6750 8900 6750
+Text HLabel 8900 6750 2    50   Input ~ 0
+MIO68_SPI0_MISO
+Wire Wire Line
+	8450 6850 8900 6850
+Text HLabel 8900 6850 2    50   Output ~ 0
+MIO69_SPI0_MOSI
+Wire Wire Line
+	8450 7850 8600 7850
+Connection ~ 8600 7850
+Wire Wire Line
+	8600 7850 8600 8150
+Wire Wire Line
+	8450 8250 8600 8250
+Connection ~ 8600 8250
+Wire Wire Line
+	8600 8250 8600 8700
+Wire Wire Line
+	5600 2750 5600 3050
+Connection ~ 5600 3050
+Wire Wire Line
+	5600 3050 5600 3350
+Connection ~ 5600 3350
+Wire Wire Line
+	5600 3350 5600 3650
+Connection ~ 5600 3650
+Wire Wire Line
+	5600 3650 5600 3950
+Wire Wire Line
+	5450 3750 5900 3750
+Text GLabel 5900 3750 2    50   Input ~ 0
+PL_3V3
+Wire Wire Line
+	5450 3850 5900 3850
+Wire Wire Line
+	5450 3950 5600 3950
+Connection ~ 5600 3950
+Wire Wire Line
+	5600 3950 5600 4350
+Connection ~ 5600 4350
+Wire Wire Line
+	5600 4350 5600 4750
+Text HLabel 5900 4450 2    50   Input ~ 0
+HDA15
+Wire Wire Line
+	5450 4450 5900 4450
+Wire Wire Line
+	5600 4750 5600 5150
+Wire Wire Line
+	5450 5150 5600 5150
+Connection ~ 5600 5150
+Wire Wire Line
+	5600 5150 5600 5550
+Connection ~ 5600 5550
+Wire Wire Line
+	5600 5550 5600 5950
+Text HLabel 5900 5650 2    50   Input ~ 0
+MIO38
+Wire Wire Line
+	5450 5650 5900 5650
+Wire Wire Line
+	5600 5950 5600 6350
+Wire Wire Line
+	5450 6250 5900 6250
+NoConn ~ 5900 6250
+Text Notes 5950 6280 0    50   ~ 0
+Reserved
+Connection ~ 5600 6350
+Wire Wire Line
+	5600 6350 5600 6750
+Text HLabel 5900 6550 2    50   BiDi ~ 0
+MIO59_USB_DATA3
+Wire Wire Line
+	5450 6550 5900 6550
+Text HLabel 5900 6650 2    50   BiDi ~ 0
+MIO60_USB_DATA4
+Wire Wire Line
+	5450 6650 5900 6650
+Wire Wire Line
+	5450 7250 5600 7250
+Connection ~ 5600 7250
+Wire Wire Line
+	5600 7250 5600 7550
+Wire Wire Line
+	5450 7650 5600 7650
+Connection ~ 5600 7650
+Wire Wire Line
+	5600 7650 5600 7950
+Wire Wire Line
+	5450 8050 5600 8050
+Connection ~ 5600 8050
+Wire Wire Line
+	5600 8050 5600 8350
+Wire Wire Line
+	5450 8350 5600 8350
+Connection ~ 5600 8350
+Wire Wire Line
+	5600 8350 5600 8700
+Text Notes 6525 8465 0    50   ~ 0
+M2C (TX)\nPS-GTR Lane 0 is DP Lane 1
+Text Notes 7340 7435 0    50   ~ 0
+C2M (RX)
+Text Notes 5870 7700 0    50   ~ 0
+C2M (RX)\nUSB0 RX from USB 3.0 connector
+Text Notes 9855 8030 0    50   ~ 0
+C2M (RX)
+Text Notes 9860 7650 0    50   ~ 0
+M2C (TX)
+Wire Wire Line
+	8600 6550 8600 7050
+Wire Wire Line
+	8450 6950 8900 6950
+NoConn ~ 8900 6950
+Text Notes 8960 6985 0    50   ~ 0
+Reserved
+Text Notes 10425 7230 0    50   ~ 0
+C2M (RX)
+Wire Wire Line
+	8450 5350 8600 5350
+Connection ~ 8600 5350
+Wire Wire Line
+	8600 5350 8600 5750
+Wire Wire Line
+	8600 4550 8600 4950
+Wire Wire Line
+	8450 4950 8600 4950
+Connection ~ 8600 4950
+Wire Wire Line
+	8600 4950 8600 5350
+Wire Wire Line
+	8450 4850 8900 4850
+Text HLabel 8900 4850 2    50   Output ~ 0
+HDA20_FAN
+Wire Wire Line
+	8600 3850 8600 4150
+Wire Wire Line
+	8450 4150 8600 4150
+Connection ~ 8600 4150
+Wire Wire Line
+	8600 4150 8600 4550
+Wire Wire Line
+	8450 2550 8600 2550
+Wire Wire Line
+	8600 2550 8600 2650
+Connection ~ 8600 2650
+Wire Wire Line
+	11450 2550 11900 2550
+Wire Wire Line
+	11450 2650 11900 2650
+Text GLabel 11900 2550 2    50   Input ~ 0
+PL_1V2
+Text GLabel 11900 2650 2    50   Input ~ 0
+PL_1V2
+Wire Wire Line
+	11600 2750 11600 3050
+Connection ~ 11600 3050
+Wire Wire Line
+	11600 3050 11600 3350
+Text HLabel 11900 3150 2    50   Input ~ 0
+HPA01_MIPI_A0_D0_P
+Text HLabel 11900 3250 2    50   Input ~ 0
+HPA01_MIPI_A0_D0_N
+Wire Wire Line
+	11450 3150 11900 3150
+Wire Wire Line
+	11450 3250 11900 3250
+Connection ~ 11600 3350
+Wire Wire Line
+	11600 3350 11600 3650
+Text HLabel 11900 3450 2    50   Input ~ 0
+HPA09_MIPI_A1_D3_P
+Text HLabel 11900 3550 2    50   Input ~ 0
+HPA09_MIPI_A1_D3_N
+Wire Wire Line
+	11450 3450 11900 3450
+Wire Wire Line
+	11450 3550 11900 3550
+Connection ~ 11600 3650
+Wire Wire Line
+	11600 3650 11600 3950
+Connection ~ 11600 3950
+Wire Wire Line
+	11600 3950 11600 4350
+Connection ~ 11600 4350
+Wire Wire Line
+	11600 4350 11600 4750
+Text HLabel 11900 4450 2    50   Input ~ 0
+HDA12
+Wire Wire Line
+	11450 4450 11900 4450
+Wire Wire Line
+	11600 4750 11600 5150
+Connection ~ 11600 5150
+Wire Wire Line
+	11600 5150 11600 5550
+Connection ~ 11600 5550
+Wire Wire Line
+	11600 5550 11600 5950
+Text HLabel 11900 5650 2    50   Output ~ 0
+MIO44_USB_RESET_N
+Wire Wire Line
+	11450 5650 11900 5650
+Wire Wire Line
+	11600 5950 11600 6350
+Connection ~ 11600 6350
+Wire Wire Line
+	11600 6350 11600 6750
+Text HLabel 11900 6550 2    50   Input ~ 0
+MIO65
+Wire Wire Line
+	11450 6550 11900 6550
+Text HLabel 11900 6650 2    50   Input ~ 0
+MIO66
+Wire Wire Line
+	11450 6650 11900 6650
+NoConn ~ 11900 7050
+Text Notes 11970 7095 0    50   ~ 0
+Reserved
+Wire Wire Line
+	11450 7250 11600 7250
+Connection ~ 11600 7250
+Wire Wire Line
+	11600 7250 11600 7550
+Wire Wire Line
+	11450 7650 11600 7650
+Connection ~ 11600 7650
+Wire Wire Line
+	11600 7650 11600 7950
+Wire Wire Line
+	11450 8050 11600 8050
+Wire Wire Line
+	11600 7950 11600 8050
+Connection ~ 11600 8050
+Wire Wire Line
+	11600 8050 11600 8350
+Wire Wire Line
+	11450 8350 11600 8350
+Connection ~ 11600 8350
+Wire Wire Line
+	11600 8350 11600 8700
+Text HLabel 8900 7950 2    50   Input ~ 0
+GTR_DP1_C2M_P
+Text Notes 12980 8295 0    50   ~ 0
+M2C (TX)\nUSB0 3.0 TX to USB connector
+Text GLabel 2900 8450 2    50   Input ~ 0
+VCC_SOM_5V
+Text GLabel 5900 8450 2    50   Input ~ 0
+VCC_SOM_5V
+Text GLabel 8900 8350 2    50   Input ~ 0
+VCC_SOM_5V
+Text GLabel 8900 8450 2    50   Input ~ 0
+VCC_SOM_5V
+Text GLabel 11900 8450 2    50   Input ~ 0
+VCC_SOM_5V
+Text Notes 1020 9690 0    157  ~ 0
+SOM 5V0 Decoupling
+Text Label 2805 2550 2    50   ~ 0
+VCC_BAT
+$Comp
+L Device:R R?
+U 1 1 618C71C8
+P 3200 2550
+AR Path="/5F71E4A6/618C71C8" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/618C71C8" Ref="R?"  Part="1" 
+AR Path="/611C005F/618C71C8" Ref="R177"  Part="1" 
+F 0 "R177" V 3160 2330 50  0000 C CNN
+F 1 "0" V 3170 2690 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3130 2550 50  0001 C CNN
+F 3 "~" H 3200 2550 50  0001 C CNN
+F 4 "CRCW04020000Z0EDHP" V 3200 2550 50  0001 C CNN "PartNumber"
+F 5 "1/5W" V 3290 2550 50  0000 C CNN "Power"
+F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 3200 2550 50  0001 C CNN "URL"
+	1    3200 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 2550 3050 2550
+Wire Wire Line
+	3350 2550 3750 2550
+$Comp
+L power:GND #PWR0236
+U 1 1 6195FB9F
+P 3750 2550
+F 0 "#PWR0236" H 3750 2300 50  0001 C CNN
+F 1 "GND" V 3755 2422 50  0000 R CNN
+F 2 "" H 3750 2550 50  0001 C CNN
+F 3 "" H 3750 2550 50  0001 C CNN
+	1    3750 2550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5900 3850 2    50   Input ~ 0
+PL_3V3
+$EndSCHEMATC
