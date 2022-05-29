@@ -24,10 +24,19 @@ The Aper-Oculus will be released with example designs using the SLVS-EC encrypte
 The current launch date of this project is expected late Summer of 2022. Things left to complete:
 
 * Finish MVP layout for Review
-* Length match appropriate diff pairs, and intra pair lengths
-* Review layout of JTAG and other critical design paths
+* Create Power controller Software for PIC
+* ~~ Length match appropriate diff pairs, and intra pair lengths ~~ <- Finished May 2022
+* ~~ Review layout of JTAG and other critical design paths ~~ <- Finished May 2022
 * Release pinout XDC file with expected signal standards
 * Create modular chassis for mounting to different Lens threads and or Telescope (M42)
+
+## Updates
+
+### 5/28/2022
+
+The board's size was increased by 10mm to simplify layout and add a USB A 3.0 connector to the board. The layer count was also increased from 14 to 16 to accommodate necessary power for the board. 
+Changed power control device from IGLOO Nano to PIC for ability to follow IPMI FMC standard, by reading IPMI EEPROM on FMC and setting VADJ to correct voltage before releasing board reset, and establishing CC_PL_GOOD.
+
 
 ## License
 
