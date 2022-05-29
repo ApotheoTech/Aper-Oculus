@@ -4,6 +4,10 @@ $CMP 502570-0893
 F https://componentsearchengine.com/Datasheets/2/502570-0893.pdf
 $ENDCMP
 #
+$CMP 692122030100
+F https://katalog.we-online.de/em/datasheet/692122030100.pdf
+$ENDCMP
+#
 $CMP 74AVC4T245RSVR-NT
 F http://www.ti.com/lit/gpn/SN74AVC4T245
 $ENDCMP
@@ -41,6 +45,10 @@ $CMP FT4232HL-REEL
 F http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT4232H.pdf
 $ENDCMP
 #
+$CMP GSB4116341HR
+F https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/gsb411634xhr.pdf
+$ENDCMP
+#
 $CMP GSB443133HR
 F https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/GSB443133HR_Dwg.pdf
 $ENDCMP
@@ -59,6 +67,12 @@ K transistor NMOS N-MOS N-MOSFET
 F ~
 $ENDCMP
 #
+$CMP L102021ML04Q
+D Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)
+K audio jack receptacle mono headphones phone TS connector
+F ~
+$ENDCMP
+#
 $CMP LVK25R005FER
 D Resistor 0R005 1% 2W 4 Terminal Ohmite LVK25 Series Metal Alloy Current Sensing Surface Mount Resistor 1% 2W +/-100ppm/C
 F https://datasheet.datasheetarchive.com/originals/distributors/DKDS-17/336209.pdf
@@ -68,12 +82,27 @@ $CMP M24C64-DRDW8TP_K
 F https://www.st.com/en/memories/m24c64-dre.html
 $ENDCMP
 #
+$CMP MC74VHC1GT66
+D Texas Instruments SN74CB3T1G125DBVR, Bus Switch, 1 x 1:1, 2.3  3.6 V, 5-Pin SOT-23
+F http://www.ti.com/lit/gpn/sn74cb3t1g125
+$ENDCMP
+#
 $CMP MIC94325YMT-TR
 F 32264
 $ENDCMP
 #
 $CMP MP5016HGQH-Z
 F https://componentsearchengine.com/Datasheets/1/MP5016HGQH-Z.pdf
+$ENDCMP
+#
+$CMP MS12ANG03
+D Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)
+K audio jack receptacle mono headphones phone TS connector
+F ~
+$ENDCMP
+#
+$CMP MS561101BA03-50
+F http://www.te.com/usa-en/search.html?q=ms5611&source=header
 $ENDCMP
 #
 $CMP NDS331N
@@ -91,6 +120,11 @@ $ENDCMP
 #
 $CMP SN74AVC8T245PWR
 F http://www.ti.com/lit/gpn/sn74avc8t245
+$ENDCMP
+#
+$CMP SN74CB3T1G125DBVR
+D Texas Instruments SN74CB3T1G125DBVR, Bus Switch, 1 x 1:1, 2.3  3.6 V, 5-Pin SOT-23
+F http://www.ti.com/lit/gpn/sn74cb3t1g125
 $ENDCMP
 #
 $CMP SN74LVC1G08DSF2

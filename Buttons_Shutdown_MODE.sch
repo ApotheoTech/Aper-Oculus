@@ -23,7 +23,7 @@ AR Path="/61AA736C/63CEB493" Ref="S?"  Part="1"
 AR Path="/62FC7139/63CEB493" Ref="S2"  Part="1" 
 F 0 "S2" H 1775 1940 50  0000 C CNN
 F 1 "B3U-1000P" H 1775 1849 50  0000 C CNN
-F 2 "B3U-1000P" H 2425 1800 50  0001 L CNN
+F 2 "ApotheoTech_CXP_Lib:B3U-1000P" H 2425 1800 50  0001 L CNN
 F 3 "https://www.omron.com/ecb/products/pdf/en-b3u.pdf" H 2425 1700 50  0001 L CNN
 F 4 "OMRON ELECTRONIC COMPONENTS - B3U-1000P - SWITCH, SPST-NO, 0.05A, 12V, SMD" H 2425 1600 50  0001 L CNN "Description"
 F 5 "653-B3U-1000P" H 2425 1400 50  0001 L CNN "Mouser Part Number"
@@ -89,17 +89,11 @@ Text Notes 680  1270 0    157  ~ 0
 FWUEN BUTTON
 Text HLabel 3050 1700 2    50   Output ~ 0
 MIO12_FWUEN_C2M_N
-Wire Notes Line
-	10505 1000 10505 3505
-Wire Notes Line
-	600  1000 10505 1000
-Wire Notes Line
-	600  3505 10505 3505
 Text Notes 5585 1315 0    157  ~ 0
 MODE SWITCH
 Text Notes 775  3825 0    157  ~ 0
 SHUTDOWN
-Text Notes 7435 1305 0    50   ~ 0
+Text Notes 5640 1545 0    50   ~ 0
 Read Page 30 UG1091, MODE pins are tied to 1.8V on SOM,\nSwitches will leave the pins floating, and ground them when turned "on"
 Text HLabel 6900 2000 0    50   Output ~ 0
 MODE0_C2M
@@ -164,7 +158,6 @@ F 3 "~" H 9250 2600 50  0001 C CNN
 F 4 "ERJ-2RKF4990X" H 9250 2600 50  0001 C CNN "PartNumber"
 F 5 "1%" H 9380 2480 50  0000 C CNN "Tol"
 F 6 "1/10W" H 9250 2600 50  0001 C CNN "Power"
-F 7 "DNP" H 9250 2600 79  0000 C CNB "DNP"
 	1    9250 2600
 	1    0    0    -1  
 $EndComp
@@ -226,14 +219,6 @@ Wire Notes Line
 	5500 1000 5500 6005
 Wire Notes Line
 	600  1000 600  6005
-Wire Wire Line
-	6900 2000 9550 2000
-Wire Wire Line
-	6900 2100 9250 2100
-Wire Wire Line
-	6900 2200 8950 2200
-Wire Wire Line
-	6900 2300 8650 2300
 $Comp
 L Device:R R?
 U 1 1 61BDB4B2
@@ -274,4 +259,45 @@ F 3 "" H 2500 4950 50  0001 C CNN
 	1    2500 4950
 	1    0    0    -1  
 $EndComp
+Text Notes 5715 3395 0    50   ~ 0
+NOTE: PRODUCTION SOMS ARE SHIPPED WITH NO CONTENT ON QSPI\nTHUS BSP MUST BE USED WITH A SINGLE BOOT DEVICE! \n(Source: https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/1641152513/Kria+K26+SOM#SD-Card-Images)\nGo to Petalinux board support Packages Table
+Wire Notes Line
+	600  3000 5500 3000
+Text Notes 5710 3610 0    50   ~ 0
+Note Boot Mode in UG1091 references UG1283, and UG1283 describes how to create boot image for EITHER QSPI or SD CARD.\nMust use Mode pins to select which device to boot from\n
+Text Notes 5675 4100 0    50   ~ 0
+Note Boot Mode from Mode Pins\nWe are Interested in \nboot_mode <= 4'b0, (JTAG)\nboot_mode <= 4'b0010 (QSPI 32bit)\nboot_mode <= 4'b0101(MIO[51:43])\n
+$Comp
+L ApotheoTech:1571983-4 U5
+U 1 1 632384B2
+P 7650 2150
+F 0 "U5" H 7650 2525 50  0000 C CNN
+F 1 "1571983-4" H 7650 2434 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:1571983-4" H 7650 2150 50  0001 C CNN
+F 3 "" H 7650 2150 50  0001 C CNN
+	1    7650 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2000 7250 2000
+Wire Wire Line
+	6900 2100 7250 2100
+Wire Wire Line
+	6900 2200 7250 2200
+Wire Wire Line
+	6900 2300 7250 2300
+Wire Wire Line
+	8050 2300 8650 2300
+Wire Wire Line
+	8050 2200 8950 2200
+Wire Wire Line
+	8050 2100 9250 2100
+Wire Wire Line
+	8050 2000 9550 2000
+Wire Notes Line
+	5500 6000 11150 6000
+Wire Notes Line
+	11150 6000 11150 1000
+Wire Notes Line
+	600  1000 11150 1000
 $EndSCHEMATC

@@ -197,6 +197,7 @@ F 0 "U14" H 6317 5162 60  0000 C CNN
 F 1 "MIC2544-1YM-TR" H 6317 5056 60  0000 C CNN
 F 2 "ApotheoTech_CXP_Lib:MIC2544-1YM-TR" H 6320 5065 60  0001 C CNN
 F 3 "" H 5730 4905 60  0000 C CNN
+F 4 "MIC2544-1YM-TR" H 6330 4755 50  0001 C CNN "PartNumber"
 	1    6330 4755
 	1    0    0    -1  
 $EndComp
@@ -225,8 +226,6 @@ F 3 "" H 5610 5040 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6870 4605 6960 4605
-Wire Wire Line
-	4560 3040 5110 3040
 $Comp
 L Device:R R?
 U 1 1 61337316
@@ -500,52 +499,6 @@ Wire Wire Line
 	9605 3050 9105 3050
 Wire Wire Line
 	9605 2950 9105 2950
-$Comp
-L ApotheoTech:TPD4E05U06DQAR D6
-U 1 1 614269D4
-P 2800 6500
-F 0 "D6" H 3400 6765 50  0000 C CNN
-F 1 "TPD4E05U06DQAR" H 3400 6674 50  0000 C CNN
-F 2 "ApotheoTech_CXP_Lib:TPD4E05U06DQAR" H 3850 6600 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/tpd4e05u06" H 3850 6500 50  0001 L CNN
-F 4 "4-Channel Ultra-Low-Capacitance IEC ESD Protection Diode" H 3850 6400 50  0001 L CNN "Description"
-F 5 "595-TPD4E05U06DQAR" H 3850 6200 50  0001 L CNN "Mouser Part Number"
-F 6 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPD4E05U06DQAR?qs=%2FCrDlo5IrVPi4woOvWz0qA%3D%3D" H 3850 6100 50  0001 L CNN "Mouser Price/Stock"
-F 7 "Texas Instruments" H 3850 6000 50  0001 L CNN "Manufacturer_Name"
-F 8 "TPD4E05U06DQAR" H 3850 5900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2800 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 6700 2700 6700
-Wire Wire Line
-	2700 6700 2700 7000
-$Comp
-L power:GND #PWR081
-U 1 1 61430D5E
-P 2700 7000
-F 0 "#PWR081" H 2700 6750 50  0001 C CNN
-F 1 "GND" H 2705 6827 50  0000 C CNN
-F 2 "" H 2700 7000 50  0001 C CNN
-F 3 "" H 2700 7000 50  0001 C CNN
-	1    2700 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 6700 4100 6700
-Wire Wire Line
-	4100 6700 4100 7000
-$Comp
-L power:GND #PWR082
-U 1 1 61431E57
-P 4100 7000
-F 0 "#PWR082" H 4100 6750 50  0001 C CNN
-F 1 "GND" H 4105 6827 50  0000 C CNN
-F 2 "" H 4100 7000 50  0001 C CNN
-F 3 "" H 4100 7000 50  0001 C CNN
-	1    4100 7000
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6960 2850 6960 3140
 Wire Wire Line
@@ -554,23 +507,23 @@ Connection ~ 7200 2850
 Wire Wire Line
 	7750 2850 9605 2850
 Wire Wire Line
-	9605 3550 9500 3550
+	9605 3450 9500 3450
 Wire Wire Line
-	9500 3550 9500 3950
+	9500 3450 9500 3850
 $Comp
 L power:GND #PWR095
 U 1 1 614F41D0
-P 9500 3950
-F 0 "#PWR095" H 9500 3700 50  0001 C CNN
-F 1 "GND" H 9505 3777 50  0000 C CNN
-F 2 "" H 9500 3950 50  0001 C CNN
-F 3 "" H 9500 3950 50  0001 C CNN
-	1    9500 3950
+P 9500 3850
+F 0 "#PWR095" H 9500 3600 50  0001 C CNN
+F 1 "GND" H 9505 3677 50  0000 C CNN
+F 2 "" H 9500 3850 50  0001 C CNN
+F 3 "" H 9500 3850 50  0001 C CNN
+	1    9500 3850
 	1    0    0    -1  
 $EndComp
-Text Label 8755 3350 0    50   ~ 0
+Text Label 8755 3550 0    50   ~ 0
 GT2_TX_C_N
-Text Label 8755 3450 0    50   ~ 0
+Text Label 8755 3650 0    50   ~ 0
 GT2_TX_C_P
 Text Label 10265 6000 2    50   ~ 0
 GT2_TX_C_N
@@ -588,53 +541,29 @@ Text HLabel 9015 5800 0    50   Input ~ 0
 GTR_DP2_M2C_USB0_TX_P
 Text HLabel 9015 6000 0    50   Input ~ 0
 GTR_DP2_M2C_USB0_TX_N
-Text Label 1950 6900 0    50   ~ 0
+Text Label 1950 6500 0    50   ~ 0
 GT2_TX_C_N
-Text Label 1950 6800 0    50   ~ 0
+Text Label 1950 6600 0    50   ~ 0
 GT2_TX_C_P
-Text HLabel 1950 6500 0    50   Output ~ 0
+Text HLabel 1950 6800 0    50   Output ~ 0
 GTR_DP2_C2M_USB0_RX_P
-Text HLabel 1950 6600 0    50   Output ~ 0
+Text HLabel 1950 6700 0    50   Output ~ 0
 GTR_DP2_C2M_USB0_RX_N
-Wire Wire Line
-	1950 6800 2800 6800
-Wire Wire Line
-	1950 6900 2800 6900
-Text Label 4850 6900 2    50   ~ 0
-GT2_TX_C_N
-Text Label 4850 6800 2    50   ~ 0
-GT2_TX_C_P
-Wire Wire Line
-	4850 6800 4000 6800
-Wire Wire Line
-	4850 6900 4000 6900
-Wire Wire Line
-	2800 6500 1950 6500
-Wire Wire Line
-	2800 6600 1950 6600
-Text Label 4850 6600 2    50   ~ 0
+Text Label 8755 3250 0    50   ~ 0
 GT2_USB0_RX_N
-Text Label 4850 6500 2    50   ~ 0
+Text Label 8755 3350 0    50   ~ 0
 GT2_USB0_RX_P
 Wire Wire Line
-	4850 6500 4000 6500
+	8755 3350 9605 3350
 Wire Wire Line
-	4850 6600 4000 6600
-Text Label 8755 3650 0    50   ~ 0
-GT2_USB0_RX_N
-Text Label 8755 3750 0    50   ~ 0
-GT2_USB0_RX_P
-Wire Wire Line
-	8755 3750 9605 3750
+	8755 3250 9605 3250
 Wire Wire Line
 	8755 3650 9605 3650
 Wire Wire Line
-	8755 3450 9605 3450
-Wire Wire Line
-	8755 3350 9605 3350
-Text Label 2700 6500 2    50   ~ 0
+	8755 3550 9605 3550
+Text Label 2700 6800 2    50   ~ 0
 GT2_USB0_RX_P
-Text Label 2700 6600 2    50   ~ 0
+Text Label 2700 6700 2    50   ~ 0
 GT2_USB0_RX_N
 $Comp
 L Device:CP C?
@@ -648,7 +577,8 @@ F 2 "Capacitor_SMD:C_0805_2012Metric" H 6488 2750 50  0001 C CNN
 F 3 "~" H 6450 2900 50  0001 C CNN
 F 4 "+-10%" H 6450 2900 50  0001 C CNN "Tolerance"
 F 5 "6.3V" H 6160 2965 50  0000 L CNN "Voltage"
-F 6 "" H 6450 2900 50  0001 C CNN "PartNumber"
+F 6 "EEF-CX0J121R " H 6450 2900 50  0001 C CNN "PartNumber"
+F 7 "https://www.mouser.com/ProductDetail/Panasonic/EEF-CX0J121R?qs=d1CqaRUMZD%252BG16epTLfVdA%3D%3D" H 6450 2900 50  0001 C CNN "URL"
 	1    6450 2900
 	-1   0    0    1   
 $EndComp
@@ -670,23 +600,6 @@ F 3 "" H 6450 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6450 2750 6450 2700
-$Comp
-L ApotheoTech:TPD2EUSB30DRTR D8
-U 1 1 619EDE93
-P 6050 6550
-F 0 "D8" H 6050 6825 50  0000 C CNN
-F 1 "TPD2EUSB30DRTR" H 6050 6734 50  0000 C CNN
-F 2 "ApotheoTech_CXP_Lib:TPD2EUSB30DRTR" H 6910 6670 50  0001 L CNN
-F 3 "" H 6250 6590 50  0001 L CNN
-F 4 "Texas Instruments TPD2EUSB30DRTR Dual Bi-Directional TVS Diode Array, 45W peak, 3-Pin SOT" H 6900 6450 50  0001 L CNN "Description"
-F 5 "0.5" H 6900 6350 50  0001 L CNN "Height"
-F 6 "595-TPD2EUSB30DRTR" H 6900 6250 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPD2EUSB30DRTR?qs=%2Fqzd9s%252BcLd6bPJi5HXCDvw%3D%3D" H 6900 6150 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 6900 6050 50  0001 L CNN "Manufacturer_Name"
-F 9 "TPD2EUSB30DRTR" H 6900 5950 50  0001 L CNN "Manufacturer_Part_Number"
-	1    6050 6550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6450 6550 6550 6550
 Wire Wire Line
@@ -889,16 +802,16 @@ $EndComp
 $Comp
 L power:GND #PWR096
 U 1 1 61CD2AA5
-P 10850 3800
-F 0 "#PWR096" H 10850 3550 50  0001 C CNN
-F 1 "GND" H 10855 3627 50  0000 C CNN
-F 2 "" H 10850 3800 50  0001 C CNN
-F 3 "" H 10850 3800 50  0001 C CNN
-	1    10850 3800
+P 10600 3800
+F 0 "#PWR096" H 10600 3550 50  0001 C CNN
+F 1 "GND" H 10605 3627 50  0000 C CNN
+F 2 "" H 10600 3800 50  0001 C CNN
+F 3 "" H 10600 3800 50  0001 C CNN
+	1    10600 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10850 3750 10850 3800
+	10600 3750 10600 3800
 Text HLabel 1810 1340 0    50   Input ~ 0
 USB_RESET_N
 $Comp
@@ -976,66 +889,19 @@ Wire Wire Line
 	5650 6500 5100 6500
 Text Label 5100 6500 0    50   ~ 0
 ULPI0_D_P
-$Comp
-L ApotheoTech:GSB443133HR J5
-U 1 1 6162B195
-P 10055 3350
-F 0 "J5" H 9930 4090 50  0000 C CNN
-F 1 "GSB443133HR" H 9930 3999 50  0000 C CNN
-F 2 "ApotheoTech_CXP_Lib:GSB443133HR" H 11180 4025 50  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/GSB443133HR_Dwg.pdf" H 11180 4025 50  0001 L CNN
-F 4 "USB Connectors USB3.1 MICRO B R/A SMT 30ug" H 11180 3925 50  0001 L CNN "Description"
-F 5 "2.8" H 11180 3825 50  0001 L CNN "Height"
-F 6 "523-GSB443133HR" H 11180 3725 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Amphenol-Commercial-Products/GSB443133HR?qs=ToP8pWlZ0bPCSAKltjJIBg%3D%3D" H 11180 3625 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Amphenol" H 11180 3525 50  0001 L CNN "Manufacturer_Name"
-F 9 "GSB443133HR" H 11180 3425 50  0001 L CNN "Manufacturer_Part_Number"
-	1    10055 3350
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9605 3150 9105 3150
-Text Label 9105 3150 0    50   ~ 0
-ULPIO_ID
-Wire Wire Line
-	9605 3250 8100 3250
-Wire Wire Line
-	8100 3250 8100 3275
 Wire Wire Line
 	7750 3275 8100 3275
 Wire Wire Line
-	10850 3350 10755 3350
+	10600 2950 10505 2950
 Wire Wire Line
-	10850 3350 10850 3450
+	10600 2950 10600 2850
 Wire Wire Line
-	10850 3350 10850 3250
-Wire Wire Line
-	10850 3250 10755 3250
-Connection ~ 10850 3350
-Wire Wire Line
-	10850 3250 10850 3150
-Wire Wire Line
-	10850 3150 10755 3150
-Connection ~ 10850 3250
-Wire Wire Line
-	10850 3150 10850 3050
-Wire Wire Line
-	10850 3050 10755 3050
-Connection ~ 10850 3150
-Wire Wire Line
-	10850 3050 10850 2950
-Wire Wire Line
-	10850 2950 10755 2950
-Connection ~ 10850 3050
-Wire Wire Line
-	10850 2950 10850 2850
-Wire Wire Line
-	10850 2850 10755 2850
-Connection ~ 10850 2950
+	10600 2850 10505 2850
+Connection ~ 10600 2950
 Text Label 5110 3040 2    50   ~ 0
 ULPIO_ID
 Wire Wire Line
-	5010 2940 5260 2940
+	5010 2940 5160 2940
 Text Notes 4990 2825 0    50   ~ 0
 For A device, USB-ID is grounded,\nFor B device, USB-ID is left floating \n(Page 8/72 of USB3320 datasheet)
 Text Label 8080 2850 0    50   ~ 0
@@ -1050,19 +916,161 @@ USB_PHY_REFCLK
 $Comp
 L Device:R R?
 U 1 1 6171449A
-P 10850 3600
+P 10600 3600
 AR Path="/5F71E4A6/6171449A" Ref="R?"  Part="1" 
 AR Path="/5F71E87D/6171449A" Ref="R?"  Part="1" 
 AR Path="/6314CDE6/6171449A" Ref="R?"  Part="1" 
 AR Path="/6314DEA9/6171449A" Ref="R75"  Part="1" 
-F 0 "R75" H 10950 3670 50  0000 C CNN
-F 1 "0" H 10925 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10780 3600 50  0001 C CNN
-F 3 "~" H 10850 3600 50  0001 C CNN
-F 4 "CRCW04020000Z0EDHP" V 10850 3600 50  0001 C CNN "PartNumber"
-F 5 "1/5W" H 11005 3535 50  0000 C CNN "Power"
-F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 10850 3600 50  0001 C CNN "URL"
-	1    10850 3600
+F 0 "R75" H 10700 3670 50  0000 C CNN
+F 1 "0" H 10675 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10530 3600 50  0001 C CNN
+F 3 "~" H 10600 3600 50  0001 C CNN
+F 4 "CRCW04020000Z0EDHP" V 10600 3600 50  0001 C CNN "PartNumber"
+F 5 "1/5W" H 10755 3535 50  0000 C CNN "Power"
+F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 10600 3600 50  0001 C CNN "URL"
+	1    10600 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 505  4960 0    50   ~ 0
+Package delay skews and CLK should be between +- 100PS (page 196/347) UG583
+Wire Wire Line
+	5160 3040 5160 2940
+Wire Wire Line
+	4560 3040 5160 3040
+Connection ~ 5160 2940
+Wire Wire Line
+	5160 2940 5260 2940
+Wire Wire Line
+	9605 3150 8100 3150
+Wire Wire Line
+	8100 3150 8100 3275
+$Comp
+L ApotheoTech:692122030100 J5
+U 1 1 628D622D
+P 10055 3350
+F 0 "J5" H 10055 4090 50  0000 C CNN
+F 1 "692122030100" H 10055 3999 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:692122030100" H 10955 3750 50  0001 L CNN
+F 3 "https://katalog.we-online.de/em/datasheet/692122030100.pdf" H 10955 3650 50  0001 L CNN
+F 4 "Wurth Elektronik WR-COM Series, Right Angle Through Hole, Version 3.0 Type A USB Connector, Receptacle" H 10955 3550 50  0001 L CNN "Description"
+F 5 "7.55" H 10980 3450 50  0001 L CNN "Height"
+F 6 "710-692122030100" H 10955 3350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/692122030100?qs=e5m3IbTHPW%252BwkSEzX%252BzXuw%3D%3D" H 10955 3250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 10955 3150 50  0001 L CNN "Manufacturer_Name"
+F 9 "692122030100" H 10955 3050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10055 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 2950 10600 3450
+$Comp
+L Device:D_TVS D2
+U 1 1 6299054C
+P 2950 7000
+F 0 "D2" V 2928 7080 50  0000 L CNN
+F 1 "PESD3V3Y1BSFYL" V 2995 7080 20  0000 L CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 2950 7000 50  0001 C CNN
+F 3 "~" H 2950 7000 50  0001 C CNN
+F 4 "PESD3V3Y1BSFYL" V 2950 7000 50  0001 C CNN "PartNumber"
+F 5 "https://www.mouser.com/ProductDetail/Nexperia/PESD3V3Y1BSFYL?qs=MLItCLRbWswJ%2F2jJIhlIxQ%3D%3D" V 2950 7000 50  0001 C CNN "URL"
+	1    2950 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D3
+U 1 1 629C20A9
+P 3350 7000
+F 0 "D3" V 3328 7080 50  0000 L CNN
+F 1 "PESD3V3Y1BSFYL" V 3395 7080 20  0000 L CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 3350 7000 50  0001 C CNN
+F 3 "~" H 3350 7000 50  0001 C CNN
+F 4 "PESD3V3Y1BSFYL" V 3350 7000 50  0001 C CNN "PartNumber"
+F 5 "https://www.mouser.com/ProductDetail/Nexperia/PESD3V3Y1BSFYL?qs=MLItCLRbWswJ%2F2jJIhlIxQ%3D%3D" V 3350 7000 50  0001 C CNN "URL"
+	1    3350 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D4
+U 1 1 629C7581
+P 3750 7000
+F 0 "D4" V 3728 7080 50  0000 L CNN
+F 1 "PESD3V3Y1BSFYL" V 3795 7080 20  0000 L CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 3750 7000 50  0001 C CNN
+F 3 "~" H 3750 7000 50  0001 C CNN
+F 4 "PESD3V3Y1BSFYL" V 3750 7000 50  0001 C CNN "PartNumber"
+F 5 "https://www.mouser.com/ProductDetail/Nexperia/PESD3V3Y1BSFYL?qs=MLItCLRbWswJ%2F2jJIhlIxQ%3D%3D" V 3750 7000 50  0001 C CNN "URL"
+	1    3750 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D6
+U 1 1 629D0D7C
+P 4200 7000
+F 0 "D6" V 4178 7080 50  0000 L CNN
+F 1 "PESD3V3Y1BSFYL" V 4245 7080 20  0000 L CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 4200 7000 50  0001 C CNN
+F 3 "~" H 4200 7000 50  0001 C CNN
+F 4 "PESD3V3Y1BSFYL" V 4200 7000 50  0001 C CNN "PartNumber"
+F 5 "https://www.mouser.com/ProductDetail/Nexperia/PESD3V3Y1BSFYL?qs=MLItCLRbWswJ%2F2jJIhlIxQ%3D%3D" V 4200 7000 50  0001 C CNN "URL"
+	1    4200 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 6800 2950 6850
+Wire Wire Line
+	1950 6800 2950 6800
+Wire Wire Line
+	3350 6700 3350 6850
+Wire Wire Line
+	1950 6700 3350 6700
+Wire Wire Line
+	3750 6600 3750 6850
+Wire Wire Line
+	1950 6600 3750 6600
+Wire Wire Line
+	4200 6500 4200 6850
+Wire Wire Line
+	1950 6500 4200 6500
+Wire Wire Line
+	2950 7150 2950 7200
+Wire Wire Line
+	2950 7200 3350 7200
+Wire Wire Line
+	3350 7200 3350 7150
+Wire Wire Line
+	3350 7200 3750 7200
+Wire Wire Line
+	3750 7200 3750 7150
+Connection ~ 3350 7200
+Wire Wire Line
+	3750 7200 4200 7200
+Wire Wire Line
+	4200 7200 4200 7150
+Connection ~ 3750 7200
+Wire Wire Line
+	4200 7200 4200 7250
+Connection ~ 4200 7200
+$Comp
+L power:GND #PWR035
+U 1 1 629FDFC8
+P 4200 7250
+F 0 "#PWR035" H 4200 7000 50  0001 C CNN
+F 1 "GND" H 4205 7077 50  0000 C CNN
+F 2 "" H 4200 7250 50  0001 C CNN
+F 3 "" H 4200 7250 50  0001 C CNN
+	1    4200 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ApotheoTech:RCLAMP0582BQTCT D8
+U 1 1 62A0B444
+P 6050 6550
+F 0 "D8" H 6050 6825 50  0000 C CNN
+F 1 "RCLAMP0582BQTCT" H 6050 6734 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:RCLAMP0582BQTCT" H 6910 6670 50  0001 L CNN
+F 3 "" H 6250 6590 50  0001 L CNN
+F 4 "RCLAMP0582BQTCT" H 6900 6250 50  0001 L CNN "PartNumber"
+	1    6050 6550
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

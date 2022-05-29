@@ -447,4 +447,6 @@ Text GLabel 6200 4000 0    50   Input ~ 0
 CAM1_SCL
 Text GLabel 6200 4100 0    50   BiDi ~ 0
 CAM1_SDA
+Text Notes 4930 1555 0    118  ~ 0
+Mipi PCB guidelines on Page 203/347 of UG 583
 $EndSCHEMATC

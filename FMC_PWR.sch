@@ -706,14 +706,11 @@ Wire Wire Line
 	4200 4300 4200 4400
 Wire Wire Line
 	4200 4400 4500 4400
-Connection ~ 4500 4100
 Wire Wire Line
 	5350 4000 5450 4000
 Wire Wire Line
 	5450 4050 5450 4000
 Connection ~ 5450 4000
-Wire Wire Line
-	4500 4400 5900 4400
 Connection ~ 4500 4400
 Wire Wire Line
 	5450 4350 5450 4450
@@ -747,22 +744,22 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 63BE0921
-P 6050 4400
+P 6900 4400
 AR Path="/6314CDE6/63BE0921" Ref="R?"  Part="1" 
 AR Path="/62011758/63BE0921" Ref="R18"  Part="1" 
-F 0 "R18" V 6085 4555 50  0000 L CNN
-F 1 "1.69k" V 6095 4065 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5980 4400 50  0001 C CNN
-F 3 "~" H 6050 4400 50  0001 C CNN
-F 4 "ERJ-2RKF1691X " H 6050 4400 50  0001 C CNN "PartNumber"
-F 5 "1%" H 6050 4400 50  0001 C CNN "Tol"
-F 6 "1/10W" H 6050 4400 50  0001 C CNN "Power"
-	1    6050 4400
+F 0 "R18" V 6935 4555 50  0000 L CNN
+F 1 "1.69k" V 6945 4065 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6830 4400 50  0001 C CNN
+F 3 "~" H 6900 4400 50  0001 C CNN
+F 4 "ERJ-2RKF1691X " H 6900 4400 50  0001 C CNN "PartNumber"
+F 5 "1%" H 6900 4400 50  0001 C CNN "Tol"
+F 6 "1/10W" H 6900 4400 50  0001 C CNN "Power"
+	1    6900 4400
 	0    -1   -1   0   
 $EndComp
 Text Label 10000 4400 2    50   ~ 0
 VADJ_FMC_FET_SWITCH
-Text Label 10000 4100 2    50   ~ 0
+Text Label 9800 4100 2    50   ~ 0
 VADJ_FMC_BUS
 Text Notes 8795 4555 0    50   ~ 0
 Connect Across Pins of Output Inductor
@@ -1363,8 +1360,6 @@ F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/
 $EndComp
 Wire Wire Line
 	2400 4250 2400 4200
-Text GLabel 2200 4200 0    50   Output ~ 0
-UTIL_3V3
 Text HLabel 2200 3900 0    50   Output ~ 0
 VADJ_ALERT
 Wire Wire Line
@@ -1522,10 +1517,6 @@ Wire Wire Line
 	650  7150 650  6950
 Connection ~ 950  7150
 Wire Wire Line
-	6200 4400 10000 4400
-Wire Wire Line
-	4500 4100 10000 4100
-Wire Wire Line
 	4900 3900 9500 3900
 Wire Wire Line
 	5450 4000 10000 4000
@@ -1550,8 +1541,6 @@ F 5 "CRCW04024K70FKED" H 2450 3750 50  0001 C CNN "PartNumber"
 	1    2450 3750
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2200 3750 0    50   Output ~ 0
-UTIL_3V3
 Wire Wire Line
 	2200 3900 2800 3900
 Wire Wire Line
@@ -1870,8 +1859,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 2000 8450 2000
 Connection ~ 8200 2000
-Text GLabel 8450 2000 2    50   Output ~ 0
-UTIL_3V3
 $Comp
 L Device:R R?
 U 1 1 648346AC
@@ -1959,8 +1946,6 @@ Wire Wire Line
 Connection ~ 6500 2750
 Wire Wire Line
 	6500 2750 6400 2750
-Text GLabel 6250 2100 0    50   Output ~ 0
-UTIL_3V3
 Wire Wire Line
 	6500 2100 6250 2100
 Connection ~ 6500 2100
@@ -2578,7 +2563,7 @@ F 4 "C1005X5R1E105K050BE" H 12400 4150 50  0001 C CNN "PartNumber"
 F 5 "+-10%" H 12400 4150 50  0001 C CNN "Tolerance"
 F 6 "25V" H 12215 4230 50  0000 C CNN "Voltage"
 F 7 "X5R" H 12400 4150 50  0001 C CNN "Temp_Val"
-F 8 "https://www.digikey.com/en/products/detail/tdk-corporation/C1005X5R1E105K050BE/7907739" V 12400 4150 50  0001 C CNN "URL"
+F 8 "https://www.digikey.com/en/products/detail/C1005X5R1E105K050BE/445-175215-1-ND/7907779?itemSeq=374777296" V 12400 4150 50  0001 C CNN "URL"
 	1    12400 4150
 	-1   0    0    1   
 $EndComp
@@ -2600,7 +2585,7 @@ F 4 "C1005X5R1E105K050BE" H 12850 4150 50  0001 C CNN "PartNumber"
 F 5 "+-10%" H 12850 4150 50  0001 C CNN "Tolerance"
 F 6 "25V" H 12665 4230 50  0000 C CNN "Voltage"
 F 7 "X5R" H 12850 4150 50  0001 C CNN "Temp_Val"
-F 8 "https://www.digikey.com/en/products/detail/tdk-corporation/C1005X5R1E105K050BE/7907739" V 12850 4150 50  0001 C CNN "URL"
+F 8 "https://www.digikey.com/en/products/detail/C1005X5R1E105K050BE/445-175215-1-ND/7907779?itemSeq=374777296" V 12850 4150 50  0001 C CNN "URL"
 	1    12850 4150
 	-1   0    0    1   
 $EndComp
@@ -2804,5 +2789,50 @@ FMC_12V
 Text Label 4850 4100 0    50   ~ 0
 DCR_N
 Text Label 4850 4400 0    50   ~ 0
+DCR_P
+Text GLabel 6250 2100 0    50   Output ~ 0
+FMC_3V3
+Text GLabel 8450 2000 2    50   Output ~ 0
+FMC_3V3
+Text GLabel 2200 3750 0    50   Output ~ 0
+FMC_3V3
+Text GLabel 2200 4200 0    50   Output ~ 0
+FMC_3V3
+$Comp
+L Device:Net-Tie_2 NT3
+U 1 1 624F6881
+P 6200 4400
+F 0 "NT3" H 6200 4450 50  0000 C CNN
+F 1 "Net-Tie_2" H 6200 4490 50  0001 C CNN
+F 2 "ApotheoTech_CXP_Lib:Short_0201" H 6200 4400 50  0001 C CNN
+F 3 "~" H 6200 4400 50  0001 C CNN
+	1    6200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4400 6100 4400
+Wire Wire Line
+	6300 4400 6750 4400
+Wire Wire Line
+	7050 4400 10000 4400
+$Comp
+L Device:Net-Tie_2 NT2
+U 1 1 62597436
+P 6200 4100
+F 0 "NT2" H 6200 4045 50  0000 C CNN
+F 1 "Net-Tie_2" H 6200 4190 50  0001 C CNN
+F 2 "ApotheoTech_CXP_Lib:Short_0201" H 6200 4100 50  0001 C CNN
+F 3 "~" H 6200 4100 50  0001 C CNN
+	1    6200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4100 6100 4100
+Connection ~ 4500 4100
+Wire Wire Line
+	6300 4100 10000 4100
+Text Label 6375 4100 0    50   ~ 0
+DCR_N
+Text Label 6350 4400 0    50   ~ 0
 DCR_P
 $EndSCHEMATC

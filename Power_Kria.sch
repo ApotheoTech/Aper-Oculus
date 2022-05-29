@@ -282,56 +282,40 @@ Text Notes 595  995  0    236  ~ 47
 Kria System Power
 Text Notes 11155 1840 0    157  ~ 0
 12V Fan Header Kria Heatsink
-$Comp
-L ApotheoTech:PJ-202B J10
-U 1 1 613EC912
-P 1850 2975
-F 0 "J10" H 1845 3315 50  0000 C CNN
-F 1 "PJ-202BH" H 1845 3224 50  0000 C CNN
-F 2 "ApotheoTech_CXP_Lib:CUI_PJ-202B" H 1425 2500 50  0001 L BNN
-F 3 "" H 1850 2975 50  0001 L BNN
-F 4 "1.02" H 1850 2975 50  0001 L BNN "PART_REV"
-F 5 "CUI INC" H 1400 2575 50  0001 L BNN "MANUFACTURER"
-F 6 "Manufacturer recommendations" H 1450 2400 50  0001 L BNN "STANDARD"
-	1    1850 2975
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 2975 2100 2975
-Text HLabel 2550 3500 2    50   Output ~ 0
+Text HLabel 2675 3620 2    50   Output ~ 0
 PWROFF_C2M_N
 $Comp
 L Device:C C?
 U 1 1 61423D32
-P 2100 3725
+P 2225 3845
 AR Path="/5F71E87D/61423D32" Ref="C?"  Part="1" 
 AR Path="/5F71E4A6/61423D32" Ref="C?"  Part="1" 
 AR Path="/6314CDE6/61423D32" Ref="C?"  Part="1" 
 AR Path="/6314F719/61423D32" Ref="C?"  Part="1" 
 AR Path="/6374AD8D/61423D32" Ref="C124"  Part="1" 
-F 0 "C124" H 1940 3665 50  0000 C CNN
-F 1 "0.1uF" H 1880 3730 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 2138 3575 50  0001 C CNN
-F 3 "~" H 2100 3725 50  0001 C CNN
-F 4 "TMK105BJ104KVHF" H 2100 3725 50  0001 C CNN "PartNumber"
-F 5 "+-10%" H 2100 3725 50  0001 C CNN "Tolerance"
-F 6 "25V" H 1915 3805 50  0000 C CNN "Voltage"
-F 7 "X5R" H 2100 3725 50  0001 C CNN "Temp_Val"
-F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 2100 3725 50  0001 C CNN "URL"
-	1    2100 3725
+F 0 "C124" H 2065 3785 50  0000 C CNN
+F 1 "0.1uF" H 2005 3850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2263 3695 50  0001 C CNN
+F 3 "~" H 2225 3845 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 2225 3845 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 2225 3845 50  0001 C CNN "Tolerance"
+F 6 "25V" H 2040 3925 50  0000 C CNN "Voltage"
+F 7 "X5R" H 2225 3845 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 2225 3845 50  0001 C CNN "URL"
+	1    2225 3845
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2100 3875 2100 3925
+	2225 3995 2225 4045
 $Comp
 L power:GND #PWR0149
 U 1 1 61424E56
-P 2100 3925
-F 0 "#PWR0149" H 2100 3675 50  0001 C CNN
-F 1 "GND" H 2105 3752 50  0000 C CNN
-F 2 "" H 2100 3925 50  0001 C CNN
-F 3 "" H 2100 3925 50  0001 C CNN
-	1    2100 3925
+P 2225 4045
+F 0 "#PWR0149" H 2225 3795 50  0001 C CNN
+F 1 "GND" H 2230 3872 50  0000 C CNN
+F 2 "" H 2225 4045 50  0001 C CNN
+F 3 "" H 2225 4045 50  0001 C CNN
+	1    2225 4045
 	1    0    0    -1  
 $EndComp
 Text Label 2095 2875 0    50   ~ 0
@@ -430,7 +414,7 @@ U 1 1 61577F0C
 P 7375 3125
 F 0 "IC14" H 7437 3615 50  0000 C CNN
 F 1 "MP5016HGQH-Z" H 7437 3524 50  0000 C CNN
-F 2 "MP5016HGQHZ" H 8725 3225 50  0001 L CNN
+F 2 "ApotheoTech_CXP_Lib:MP5016HGQHZ" H 8725 3225 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/MP5016HGQH-Z.pdf" H 8725 3125 50  0001 L CNN
 F 4 "Hot Swap Voltage Controllers 2.7 - 22V, 0.7 - 5A, Current Limit Switch with Over-Voltage Clamp and Reverse Blocking" H 8725 3025 50  0001 L CNN "Description"
 F 5 "0.9" H 8725 2925 50  0001 L CNN "Height"
@@ -441,8 +425,6 @@ F 9 "MP5016HGQH-Z" H 8725 2525 50  0001 L CNN "Manufacturer_Part_Number"
 	1    7375 3125
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5280 2875 5450 2875
 Wire Wire Line
 	6800 2975 6650 2975
 Wire Wire Line
@@ -473,42 +455,28 @@ Text Notes 6585 2640 0    50   ~ 0
 Ripped from Kria Carrier Board,\nCurrent Limit 5A\nVoltage Limit 13.2V
 Wire Wire Line
 	6800 3425 6700 3425
-Text Notes 4000 4240 0    50   ~ 0
-12V in via CXP or Plug\nMust check via CXP how to properly power board via CXP\nQuestion: should place Diode on PG-202B to 12V In net?
 $Comp
 L Device:R R?
 U 1 1 615B4E5D
-P 6000 3075
+P 6050 3050
 AR Path="/5F71E87D/615B4E5D" Ref="R?"  Part="1" 
 AR Path="/6314F1AA/615B4E5D" Ref="R?"  Part="1" 
 AR Path="/6314F719/615B4E5D" Ref="R?"  Part="1" 
 AR Path="/6374AD8D/615B4E5D" Ref="R114"  Part="1" 
-F 0 "R114" V 6040 3230 50  0000 L CNN
-F 1 "300k" V 6040 2760 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5930 3075 50  0001 C CNN
-F 3 "~" H 6000 3075 50  0001 C CNN
-F 4 "1%" V 5940 2835 50  0000 L CNN "Tolerance"
-F 5 "1/10W" H 6000 3075 50  0001 C CNN "Power"
-F 6 "ERJ-2RKF3003X" H 6000 3075 50  0001 C CNN "PartNumber"
-F 7 "https://www.digikey.com/en/products/detail/ERJ-2RKF3003X/P300KLCT-ND/1746669?itemSeq=376404154" H 6000 3075 50  0001 C CNN "URL"
-	1    6000 3075
-	0    -1   -1   0   
+F 0 "R114" H 6135 3045 50  0000 L CNN
+F 1 "300k" H 6130 2980 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5980 3050 50  0001 C CNN
+F 3 "~" H 6050 3050 50  0001 C CNN
+F 4 "1%" H 6135 3110 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 6050 3050 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF3003X" H 6050 3050 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/ERJ-2RKF3003X/P300KLCT-ND/1746669?itemSeq=376404154" H 6050 3050 50  0001 C CNN "URL"
+F 8 "DNP" H 6050 3050 79  0000 C CIB "DNP"
+	1    6050 3050
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5950 3325 6350 3325
-Wire Wire Line
-	6150 3075 6300 3075
-Wire Wire Line
-	6300 3075 6300 3225
-Wire Wire Line
-	6300 3225 6800 3225
-Wire Wire Line
-	5850 3075 5650 3075
-Wire Wire Line
-	5650 3075 5650 2875
-Connection ~ 5650 2875
-Wire Wire Line
-	5650 2875 6650 2875
 $Comp
 L Device:C C?
 U 1 1 615C676E
@@ -1624,20 +1592,6 @@ Connection ~ 7850 6000
 Wire Wire Line
 	7850 6000 8000 6000
 $Comp
-L power:PWR_FLAG #FLG019
-U 1 1 61DD9B3A
-P 5450 2875
-F 0 "#FLG019" H 5450 2950 50  0001 C CNN
-F 1 "PWR_FLAG" H 5450 3048 50  0000 C CNN
-F 2 "" H 5450 2875 50  0001 C CNN
-F 3 "~" H 5450 2875 50  0001 C CNN
-	1    5450 2875
-	1    0    0    -1  
-$EndComp
-Connection ~ 5450 2875
-Wire Wire Line
-	5450 2875 5650 2875
-$Comp
 L power:PWR_FLAG #FLG015
 U 1 1 61DDB0E2
 P 2800 2875
@@ -1648,8 +1602,6 @@ F 3 "~" H 2800 2875 50  0001 C CNN
 	1    2800 2875
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 2875 4230 2875
 $Comp
 L ApotheoTech:MPM3810AGQB-Z U?
 U 1 1 615C05A0
@@ -1927,38 +1879,15 @@ F 6 "1/16W" H 5700 8800 50  0001 C CNN "Power"
 	1    5700 8800
 	1    0    0    -1  
 $EndComp
-$Comp
-L ApotheoTech:SD2114S040S8R0 D?
-U 1 1 617EBEB5
-P 3650 2875
-AR Path="/5F71E87D/617EBEB5" Ref="D?"  Part="1" 
-AR Path="/6374AD8D/617EBEB5" Ref="D9"  Part="1" 
-F 0 "D9" H 3950 2608 50  0000 C CNN
-F 1 "SD2114S040S8R0" H 3950 2699 50  0000 C CNN
-F 2 "ApotheoTech_CXP_Lib:SD2114S040S8RO" H 4100 2875 50  0001 L CNN
-F 3 "http://datasheets.avx.com/schottky.pdf" H 4100 2775 50  0001 L CNN
-F 4 "Schottky Barrier Rectifier Diode" H 4100 2675 50  0001 L CNN "Description"
-F 5 "1.2" H 4100 2575 50  0001 L CNN "Height"
-F 6 "581-SD2114S040S8R0" H 4100 2475 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/AVX/SD2114S040S8R0?qs=jCA%252BPfw4LHZSB6eM%2Fh4uoQ%3D%3D" H 4100 2375 50  0001 L CNN "Mouser Price/Stock"
-F 8 "AVX" H 4100 2275 50  0001 L CNN "Manufacturer_Name"
-F 9 "SD2114S040S8R0" H 4100 2175 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3650 2875
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3500 3075 3500 3375
 Wire Wire Line
 	3500 3375 3600 3375
 Wire Wire Line
-	2050 3075 3500 3075
+	2050 3175 3500 3175
 Wire Wire Line
 	2050 2875 2800 2875
 Connection ~ 2800 2875
-Wire Wire Line
-	2800 2875 3050 2875
-Text Notes 1155 4235 0    50   ~ 0
-Plug detect will force board to an off state if no plug\nis currently in the 12V In jack.\nThis means we cannot have this tied here without a switch
+Text Notes 1080 4450 0    50   ~ 0
+Plug detect will force board to an off state if no plug\nis currently in the 12V In jack.\nThis means we cannot have this tied here without a switch if we want to power via CoaXPress
 Text Notes 1780 7920 0    50   ~ 0
 Pull up resistor with turn on MOSFET\n(pulls up PWROFF_C2M_N to high, to start SOM)
 $Comp
@@ -1987,9 +1916,9 @@ Max current Draw for SOM (all are max current into SOM)\n5V@4A for SOM (20W)\nHP
 Text Notes 1125 2490 0    50   ~ 0
 PJ-202BH is rated for 5A so total of 60W to board
 Wire Wire Line
-	2100 3500 2100 3575
+	2225 3620 2225 3695
 Wire Wire Line
-	2100 3500 2550 3500
+	2225 3620 2675 3620
 Text Notes 6955 4085 0    50   ~ 0
 Voltage limit (13.7V)\nCurrent Limit (5A)\n\nThus max power to board is 68.5W, nominal is 12V@5A (60W)
 $Comp
@@ -2276,364 +2205,26 @@ Wire Wire Line
 	4200 7400 4200 7300
 Wire Wire Line
 	4650 9700 4650 10100
-Text Notes 1055 11340 0    157  ~ 0
-IGLOO 1V5 for Core Operation (RESET)
-$Comp
-L ApotheoTech:MP8904 U?
-U 1 1 61E65E47
-P 3295 12175
-AR Path="/6314F719/61E65E47" Ref="U?"  Part="1" 
-AR Path="/616D0FBF/61E65E47" Ref="U?"  Part="1" 
-AR Path="/616D3766/61E65E47" Ref="U?"  Part="1" 
-AR Path="/61AA736C/61E65E47" Ref="U?"  Part="1" 
-AR Path="/6374AD8D/61E65E47" Ref="U17"  Part="1" 
-F 0 "U17" H 3295 12565 50  0000 C CNN
-F 1 "MP8904" H 3295 12474 50  0000 C CNN
-F 2 "ApotheoTech_CXP_Lib:MP8904DD" H 3295 12175 50  0001 C CNN
-F 3 "" H 3295 12175 50  0001 C CNN
-	1    3295 12175
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61E65E4D
-P 3245 12900
-AR Path="/6314F719/61E65E4D" Ref="#PWR?"  Part="1" 
-AR Path="/616D0FBF/61E65E4D" Ref="#PWR?"  Part="1" 
-AR Path="/616D3766/61E65E4D" Ref="#PWR?"  Part="1" 
-AR Path="/61AA736C/61E65E4D" Ref="#PWR?"  Part="1" 
-AR Path="/6374AD8D/61E65E4D" Ref="#PWR0153"  Part="1" 
-F 0 "#PWR0153" H 3245 12650 50  0001 C CNN
-F 1 "GND" H 3250 12727 50  0000 C CNN
-F 2 "" H 3245 12900 50  0001 C CNN
-F 3 "" H 3245 12900 50  0001 C CNN
-	1    3245 12900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3345 12800 3345 12850
-Wire Wire Line
-	3345 12850 3245 12850
-Wire Wire Line
-	3245 12850 3245 12800
-Wire Wire Line
-	3245 12900 3245 12850
-Connection ~ 3245 12850
-$Comp
-L Device:C C?
-U 1 1 61E65E5D
-P 4895 12250
-AR Path="/5F71E87D/61E65E5D" Ref="C?"  Part="1" 
-AR Path="/5F71E4A6/61E65E5D" Ref="C?"  Part="1" 
-AR Path="/6314CDE6/61E65E5D" Ref="C?"  Part="1" 
-AR Path="/6314DEA9/61E65E5D" Ref="C?"  Part="1" 
-AR Path="/6314F1AA/61E65E5D" Ref="C?"  Part="1" 
-AR Path="/6314F719/61E65E5D" Ref="C?"  Part="1" 
-AR Path="/616D0FBF/61E65E5D" Ref="C?"  Part="1" 
-AR Path="/616D3766/61E65E5D" Ref="C?"  Part="1" 
-AR Path="/61AA736C/61E65E5D" Ref="C?"  Part="1" 
-AR Path="/6374AD8D/61E65E5D" Ref="C130"  Part="1" 
-F 0 "C130" H 4735 12190 50  0000 C CNN
-F 1 "10uF" H 4675 12255 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4933 12100 50  0001 C CNN
-F 3 "~" H 4895 12250 50  0001 C CNN
-F 4 "CL05A106MP5NUNC" H 4895 12250 50  0001 C CNN "PartNumber"
-F 5 "+-20%" H 4895 12250 50  0001 C CNN "Tolerance"
-F 6 "10V" H 4710 12330 50  0000 C CNN "Voltage"
-F 7 "X5R" H 4895 12250 50  0001 C CNN "Temp_Val"
-F 8 "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL05A106MP5NUNC?qs=X6jEic%2FHinA5hRYAnV6SHQ%3D%3D" V 4895 12250 50  0001 C CNN "URL"
-	1    4895 12250
-	-1   0    0    1   
-$EndComp
-Text GLabel 4995 12000 2    50   Output ~ 0
-IGLOO_1V5
-$Comp
-L Device:R R?
-U 1 1 61E65E68
-P 4295 12650
-AR Path="/5F71E87D/61E65E68" Ref="R?"  Part="1" 
-AR Path="/6314F1AA/61E65E68" Ref="R?"  Part="1" 
-AR Path="/6314F719/61E65E68" Ref="R?"  Part="1" 
-AR Path="/616D0FBF/61E65E68" Ref="R?"  Part="1" 
-AR Path="/616D3766/61E65E68" Ref="R?"  Part="1" 
-AR Path="/61AA736C/61E65E68" Ref="R?"  Part="1" 
-AR Path="/6374AD8D/61E65E68" Ref="R110"  Part="1" 
-F 0 "R110" H 4365 12741 50  0000 L CNN
-F 1 "10K" H 4365 12650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4225 12650 50  0001 C CNN
-F 3 "~" H 4295 12650 50  0001 C CNN
-F 4 "1%" H 4365 12559 50  0000 L CNN "Tolerance"
-F 5 "1/10W" H 4295 12650 50  0001 C CNN "Power"
-F 6 "ERJ-2RKF1002X" H 4295 12650 50  0001 C CNN "PartNumber"
-F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 4295 12650 50  0001 C CNN "URL"
-	1    4295 12650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3695 12425 3795 12425
-Wire Wire Line
-	4295 12425 4295 12350
-Wire Wire Line
-	4295 12425 4295 12500
-Connection ~ 4295 12425
-Wire Wire Line
-	4295 12800 4295 12900
-$Comp
-L power:GND #PWR?
-U 1 1 61E65E73
-P 4295 12900
-AR Path="/6314F719/61E65E73" Ref="#PWR?"  Part="1" 
-AR Path="/616D0FBF/61E65E73" Ref="#PWR?"  Part="1" 
-AR Path="/616D3766/61E65E73" Ref="#PWR?"  Part="1" 
-AR Path="/61AA736C/61E65E73" Ref="#PWR?"  Part="1" 
-AR Path="/6374AD8D/61E65E73" Ref="#PWR0154"  Part="1" 
-F 0 "#PWR0154" H 4295 12650 50  0001 C CNN
-F 1 "GND" H 4300 12727 50  0000 C CNN
-F 2 "" H 4295 12900 50  0001 C CNN
-F 3 "" H 4295 12900 50  0001 C CNN
-	1    4295 12900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 61E65E79
-P 4580 12000
-AR Path="/6314F719/61E65E79" Ref="#FLG?"  Part="1" 
-AR Path="/616D0FBF/61E65E79" Ref="#FLG?"  Part="1" 
-AR Path="/616D3766/61E65E79" Ref="#FLG?"  Part="1" 
-AR Path="/61AA736C/61E65E79" Ref="#FLG?"  Part="1" 
-AR Path="/6374AD8D/61E65E79" Ref="#FLG018"  Part="1" 
-F 0 "#FLG018" H 4580 12075 50  0001 C CNN
-F 1 "PWR_FLAG" H 4580 12173 50  0000 C CNN
-F 2 "" H 4580 12000 50  0001 C CNN
-F 3 "~" H 4580 12000 50  0001 C CNN
-	1    4580 12000
-	1    0    0    -1  
-$EndComp
-Connection ~ 4580 12000
-Wire Wire Line
-	4580 12000 4895 12000
-Wire Wire Line
-	4895 12100 4895 12000
-Wire Wire Line
-	4895 12000 4995 12000
-Connection ~ 4895 12000
-Wire Wire Line
-	4895 12400 4895 12500
-$Comp
-L power:GND #PWR?
-U 1 1 61E65E85
-P 4895 12500
-AR Path="/6314F719/61E65E85" Ref="#PWR?"  Part="1" 
-AR Path="/616D0FBF/61E65E85" Ref="#PWR?"  Part="1" 
-AR Path="/616D3766/61E65E85" Ref="#PWR?"  Part="1" 
-AR Path="/61AA736C/61E65E85" Ref="#PWR?"  Part="1" 
-AR Path="/6374AD8D/61E65E85" Ref="#PWR0157"  Part="1" 
-F 0 "#PWR0157" H 4895 12250 50  0001 C CNN
-F 1 "GND" H 4900 12327 50  0000 C CNN
-F 2 "" H 4895 12500 50  0001 C CNN
-F 3 "" H 4895 12500 50  0001 C CNN
-	1    4895 12500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4295 12050 4295 12000
-Connection ~ 4295 12000
-Wire Wire Line
-	4295 12000 4580 12000
-$Comp
-L Device:C C?
-U 1 1 61E65E93
-P 3795 12200
-AR Path="/5F71E87D/61E65E93" Ref="C?"  Part="1" 
-AR Path="/5F71E4A6/61E65E93" Ref="C?"  Part="1" 
-AR Path="/6314CDE6/61E65E93" Ref="C?"  Part="1" 
-AR Path="/6314DEA9/61E65E93" Ref="C?"  Part="1" 
-AR Path="/6314F1AA/61E65E93" Ref="C?"  Part="1" 
-AR Path="/6314F719/61E65E93" Ref="C?"  Part="1" 
-AR Path="/616D0FBF/61E65E93" Ref="C?"  Part="1" 
-AR Path="/616D3766/61E65E93" Ref="C?"  Part="1" 
-AR Path="/61AA736C/61E65E93" Ref="C?"  Part="1" 
-AR Path="/6374AD8D/61E65E93" Ref="C128"  Part="1" 
-F 0 "C128" H 3635 12140 50  0000 C CNN
-F 1 "10000pF" H 3520 12210 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3833 12050 50  0001 C CNN
-F 3 "~" H 3795 12200 50  0001 C CNN
-F 4 "CGA2B3X7R1H103K050BB" H 3795 12200 50  0001 C CNN "PartNumber"
-F 5 "+-10%" H 3795 12200 50  0001 C CNN "Tolerance"
-F 6 "50V" H 3610 12280 50  0000 C CNN "Voltage"
-F 7 "X7R" H 3795 12200 50  0001 C CNN "Temp_Val"
-F 8 "https://www.digikey.com/en/products/detail/tdk-corporation/CGA2B3X7R1H103K050BB/2672786" V 3795 12200 50  0001 C CNN "URL"
-	1    3795 12200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3695 12000 3795 12000
-Wire Wire Line
-	3795 12050 3795 12000
-Connection ~ 3795 12000
-Wire Wire Line
-	3795 12000 4295 12000
-Wire Wire Line
-	3795 12350 3795 12425
-Connection ~ 3795 12425
-Wire Wire Line
-	3795 12425 4295 12425
-Wire Wire Line
-	2000 12395 2000 12495
-$Comp
-L power:GND #PWR?
-U 1 1 61E65EA1
-P 2000 12495
-AR Path="/6314F719/61E65EA1" Ref="#PWR?"  Part="1" 
-AR Path="/616D0FBF/61E65EA1" Ref="#PWR?"  Part="1" 
-AR Path="/616D3766/61E65EA1" Ref="#PWR?"  Part="1" 
-AR Path="/61AA736C/61E65EA1" Ref="#PWR?"  Part="1" 
-AR Path="/6374AD8D/61E65EA1" Ref="#PWR0148"  Part="1" 
-F 0 "#PWR0148" H 2000 12245 50  0001 C CNN
-F 1 "GND" H 2005 12322 50  0000 C CNN
-F 2 "" H 2000 12495 50  0001 C CNN
-F 3 "" H 2000 12495 50  0001 C CNN
-	1    2000 12495
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2895 12125 2645 12125
-$Comp
-L power:+5V #PWR0147
-U 1 1 61E65EA8
-P 2000 11905
-AR Path="/6374AD8D/61E65EA8" Ref="#PWR0147"  Part="1" 
-AR Path="/616D0FBF/61E65EA8" Ref="#PWR?"  Part="1" 
-AR Path="/616D3766/61E65EA8" Ref="#PWR?"  Part="1" 
-AR Path="/61AA736C/61E65EA8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0147" H 2000 11755 50  0001 C CNN
-F 1 "+5V" H 2015 12078 50  0000 C CNN
-F 2 "" H 2000 11905 50  0001 C CNN
-F 3 "" H 2000 11905 50  0001 C CNN
-	1    2000 11905
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2645 12125 2645 12000
-Connection ~ 2645 12000
-Wire Wire Line
-	2645 12000 2895 12000
-$Comp
-L Device:R R?
-U 1 1 61E65EB5
-P 2445 12250
-AR Path="/5F71E87D/61E65EB5" Ref="R?"  Part="1" 
-AR Path="/6314F1AA/61E65EB5" Ref="R?"  Part="1" 
-AR Path="/6314F719/61E65EB5" Ref="R?"  Part="1" 
-AR Path="/61AA736C/61E65EB5" Ref="R?"  Part="1" 
-AR Path="/6374AD8D/61E65EB5" Ref="R105"  Part="1" 
-F 0 "R105" H 2515 12341 50  0000 L CNN
-F 1 "10K" H 2515 12250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2375 12250 50  0001 C CNN
-F 3 "~" H 2445 12250 50  0001 C CNN
-F 4 "1%" H 2515 12159 50  0000 L CNN "Tolerance"
-F 5 "1/10W" H 2445 12250 50  0001 C CNN "Power"
-F 6 "ERJ-2RKF1002X" H 2445 12250 50  0001 C CNN "PartNumber"
-F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 2445 12250 50  0001 C CNN "URL"
-F 8 "DNP" H 2445 12250 79  0000 C CNB "DNP"
-	1    2445 12250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2895 12500 2445 12500
-Wire Wire Line
-	2445 12500 2445 12400
-Wire Wire Line
-	2445 12100 2445 12000
-Wire Wire Line
-	2445 12000 2645 12000
-$Comp
-L Device:R R?
-U 1 1 61E65EC5
-P 4295 12200
-AR Path="/5F71E87D/61E65EC5" Ref="R?"  Part="1" 
-AR Path="/6374AD8D/61E65EC5" Ref="R109"  Part="1" 
-AR Path="/61AA736C/61E65EC5" Ref="R?"  Part="1" 
-F 0 "R109" H 4365 12291 50  0000 L CNN
-F 1 "20K" H 4365 12200 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4225 12200 50  0001 C CNN
-F 3 "~" H 4295 12200 50  0001 C CNN
-F 4 "1%" H 4365 12109 50  0000 L CNN "Tolerance"
-F 5 "1/10W" H 4295 12200 50  0001 C CNN "Power"
-F 6 "ERJ-2RKF2002X" H 4295 12200 50  0001 C CNN "PartNumber"
-F 7 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-2RKF2002X/P20-0KLCT-ND/194250" H 4295 12200 50  0001 C CNN "URL"
-F 8 "RK73H1ERTTP2002F" H 4295 12200 50  0001 C CNN "Alt"
-	1    4295 12200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 11905 2000 12000
-Wire Wire Line
-	2445 12000 2000 12000
-Connection ~ 2445 12000
-Connection ~ 2000 12000
-Wire Wire Line
-	2000 12000 2000 12095
-$Comp
-L Device:C C?
-U 1 1 61E65ED5
-P 2000 12245
-AR Path="/5F71E87D/61E65ED5" Ref="C?"  Part="1" 
-AR Path="/5F71E4A6/61E65ED5" Ref="C?"  Part="1" 
-AR Path="/6314CDE6/61E65ED5" Ref="C?"  Part="1" 
-AR Path="/6314DEA9/61E65ED5" Ref="C?"  Part="1" 
-AR Path="/6314F1AA/61E65ED5" Ref="C?"  Part="1" 
-AR Path="/6314F719/61E65ED5" Ref="C?"  Part="1" 
-AR Path="/616D0FBF/61E65ED5" Ref="C?"  Part="1" 
-AR Path="/616D3766/61E65ED5" Ref="C?"  Part="1" 
-AR Path="/61AA736C/61E65ED5" Ref="C?"  Part="1" 
-AR Path="/6374AD8D/61E65ED5" Ref="C122"  Part="1" 
-F 0 "C122" H 1840 12185 50  0000 C CNN
-F 1 "10uF" H 1780 12250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 2038 12095 50  0001 C CNN
-F 3 "~" H 2000 12245 50  0001 C CNN
-F 4 "CL05A106MP5NUNC" H 2000 12245 50  0001 C CNN "PartNumber"
-F 5 "+-20%" H 2000 12245 50  0001 C CNN "Tolerance"
-F 6 "10V" H 1815 12325 50  0000 C CNN "Voltage"
-F 7 "X5R" H 2000 12245 50  0001 C CNN "Temp_Val"
-F 8 "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL05A106MP5NUNC?qs=X6jEic%2FHinA5hRYAnV6SHQ%3D%3D" V 2000 12245 50  0001 C CNN "URL"
-	1    2000 12245
-	-1   0    0    1   
-$EndComp
-Text HLabel 2445 12600 3    50   Output ~ 0
-PWROFF_C2M_N
-Wire Wire Line
-	2445 12500 2445 12600
-Connection ~ 2445 12500
-Wire Notes Line
-	1000 13500 11000 13500
-Wire Notes Line
-	1000 1500 1000 13500
-Wire Notes Line
-	11000 1500 11000 13500
 $Comp
 L Device:R R?
 U 1 1 61A10DB5
-P 2100 3300
+P 2225 3420
 AR Path="/5F71E4A6/61A10DB5" Ref="R?"  Part="1" 
 AR Path="/5F71E87D/61A10DB5" Ref="R?"  Part="1" 
 AR Path="/6374AD8D/61A10DB5" Ref="R8"  Part="1" 
-F 0 "R8" V 2060 3080 50  0000 C CNN
-F 1 "0" V 2070 3440 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2030 3300 50  0001 C CNN
-F 3 "~" H 2100 3300 50  0001 C CNN
-F 4 "CRCW04020000Z0EDHP" V 2100 3300 50  0001 C CNN "PartNumber"
-F 5 "1/5W" V 2190 3300 50  0000 C CNN "Power"
-F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 2100 3300 50  0001 C CNN "URL"
-	1    2100 3300
+F 0 "R8" V 2185 3200 50  0000 C CNN
+F 1 "0" V 2195 3560 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2155 3420 50  0001 C CNN
+F 3 "~" H 2225 3420 50  0001 C CNN
+F 4 "CRCW04020000Z0EDHP" V 2225 3420 50  0001 C CNN "PartNumber"
+F 5 "1/5W" V 2315 3420 50  0000 C CNN "Power"
+F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 2225 3420 50  0001 C CNN "URL"
+	1    2225 3420
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 2975 2100 3150
-Wire Wire Line
-	2100 3450 2100 3500
-Connection ~ 2100 3500
+	2225 3570 2225 3620
+Connection ~ 2225 3620
 Text GLabel 12950 6525 0    50   Input ~ 0
 I2C_SCL_PS_SIDE
 Text GLabel 12950 6625 0    50   BiDi ~ 0
@@ -2641,7 +2232,103 @@ I2C_SDA_PS_SIDE
 Wire Wire Line
 	4230 2875 4830 2875
 Text Notes 7510 9375 0    50   ~ 0
-Supply\nINA226 - 330uA typical supply\nSI5332 - 70mA (page 22/76)\nSI570 - 108mA (page 4/37)\nSI570 - 108mA (page 4/37)\nIGLOO Nano VCC0/1 - 5uA (page 24/136)\n\nTotal powered devices - 286mA\n\n\n\n
+Supply\nINA226 - 330uA typical supply\nSI5332 - 70mA (page 22/76)\nSI570 - 108mA (page 4/37)\nSI570 - 108mA (page 4/37)\nPIC  - 350mA (max) page 738 of datasheet\n\nTotal powered devices - 636.33mA (max)\n\n\n\n
 Text Notes 5250 1950 0    50   ~ 0
 Note to self -> Make sure power supply is good for all parts\n(Ensure max power to device is at least 1.2 max draw)
+Wire Notes Line
+	1000 1500 1000 11000
+Wire Notes Line
+	11000 1500 11000 11000
+$Comp
+L ApotheoTech:PJ-063BH J2
+U 1 1 6305E956
+P 1850 2975
+F 0 "J2" H 1817 3315 50  0000 C CNN
+F 1 "PJ-063BH" H 1817 3224 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:CUI_PJ-063BH" H 1850 2975 50  0001 L BNN
+F 3 "" H 1850 2975 50  0001 L BNN
+F 4 "Manufacturer recommendations" H 1850 2975 50  0001 L BNN "STANDARD"
+F 5 "CUI INC" H 1850 2975 50  0001 L BNN "MANUFACTURER"
+F 6 "1.02" H 1850 2975 50  0001 L BNN "PARTREV"
+	1    1850 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3175 3500 3375
+Wire Wire Line
+	2225 3270 2225 3075
+Wire Wire Line
+	2225 3075 2050 3075
+Wire Wire Line
+	2800 2875 4230 2875
+Wire Wire Line
+	4850 3850 5650 3850
+Wire Wire Line
+	4850 4000 5300 4000
+Text Label 6300 3225 0    50   ~ 0
+MP5016_EN
+Text Label 5300 4000 2    50   ~ 0
+MP5016_EN
+Wire Wire Line
+	4855 4150 5250 4150
+$Comp
+L power:GND #PWR0246
+U 1 1 629A0230
+P 5250 4150
+F 0 "#PWR0246" H 5250 3900 50  0001 C CNN
+F 1 "GND" H 5255 3977 50  0000 C CNN
+F 2 "" H 5250 4150 50  0001 C CNN
+F 3 "" H 5250 4150 50  0001 C CNN
+	1    5250 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5280 2875 5650 2875
+Wire Wire Line
+	5650 3000 5650 2875
+Connection ~ 5650 2875
+Wire Wire Line
+	5650 2875 6050 2875
+Wire Wire Line
+	5650 3300 5650 3850
+$Comp
+L ApotheoTech:MS12ANG03 J10
+U 1 1 63760635
+P 4650 4050
+F 0 "J10" H 4684 4475 50  0000 C CNN
+F 1 "MS12ANG03" H 4684 4384 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:MS12ANG03" H 4650 4250 50  0001 C CNN
+F 3 "~" H 4650 4250 50  0001 C CNN
+F 4 "MS12ANG03" H 4684 4383 50  0001 C CNN "PartNumber"
+	1    4650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6378859D
+P 5650 3150
+AR Path="/5F71E87D/6378859D" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/6378859D" Ref="R?"  Part="1" 
+AR Path="/6314F719/6378859D" Ref="R?"  Part="1" 
+AR Path="/6374AD8D/6378859D" Ref="R37"  Part="1" 
+F 0 "R37" H 5395 3135 50  0000 L CNN
+F 1 "300k" H 5405 3070 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5580 3150 50  0001 C CNN
+F 3 "~" H 5650 3150 50  0001 C CNN
+F 4 "1%" H 5480 3200 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 5650 3150 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF3003X" H 5650 3150 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/ERJ-2RKF3003X/P300KLCT-ND/1746669?itemSeq=376404154" H 5650 3150 50  0001 C CNN "URL"
+	1    5650 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 3225 6050 3200
+Wire Wire Line
+	6050 3225 6800 3225
+Wire Wire Line
+	6050 2900 6050 2875
+Connection ~ 6050 2875
+Wire Wire Line
+	6050 2875 6650 2875
 $EndSCHEMATC

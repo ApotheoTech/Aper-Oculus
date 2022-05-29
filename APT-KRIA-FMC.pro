@@ -1,4 +1,4 @@
-update=2/13/2022 11:01:14 PM
+update=5/19/2022 4:01:49 PM
 version=1
 last_client=kicad
 [general]
@@ -26,13 +26,13 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=14
+CopperLayerCount=16
 BoardThickness=1.6
 AllowMicroVias=1
 AllowBlindVias=1
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.08255
+MinTrackWidth=0.08127999999999999
 MinViaDiameter=0.25
 MinViaDrill=0.127
 MinMicroViaDiameter=0.2
@@ -73,7 +73,7 @@ ViaDrill7=0.4
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
-dPairWidth2=0.08255
+dPairWidth2=0.08128
 dPairGap2=0.1143
 dPairViaGap2=0
 dPairWidth3=0.09906
@@ -139,12 +139,12 @@ Name=PWR_08.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In8.Cu]
-Name=GND_09.Cu
+Name=PWR_09.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In9.Cu]
-Name=SIG_10.Cu
-Type=0
+Name=PWR_10.Cu
+Type=1
 Enabled=1
 [pcbnew/Layer.In10.Cu]
 Name=GND_11.Cu
@@ -159,13 +159,13 @@ Name=GND_13.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In13.Cu]
-Name=In13.Cu
+Name=SIG_14.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In14.Cu]
-Name=In14.Cu
-Type=0
-Enabled=0
+Name=GND_15.Cu
+Type=1
+Enabled=1
 [pcbnew/Layer.In15.Cu]
 Name=In15.Cu
 Type=0
@@ -231,7 +231,7 @@ Name=In30.Cu
 Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
-Name=BOT_14.Cu
+Name=BOT_16.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.B.Adhes]
@@ -287,12 +287,12 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=ZDIFF=100
 Clearance=0.1
-TrackWidth=0.10795
+TrackWidth=0.10668
 ViaDiameter=0.4
 ViaDrill=0.2
 uViaDiameter=0.3
 uViaDrill=0.1
-dPairWidth=0.10795
+dPairWidth=0.10668
 dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]

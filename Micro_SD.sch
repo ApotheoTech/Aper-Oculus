@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 20
+Sheet 4 20
 Title "SD 3.0 Card"
 Date "2022-01-04"
 Rev "1.00"
@@ -784,4 +784,6 @@ Wire Wire Line
 	9030 1865 9030 2115
 Wire Wire Line
 	9030 2515 9030 2815
+Text Notes 1755 5335 0    50   ~ 0
+Refer to page 195/347 UG583\n30 Ohm Reistor should be placed near the Zynq MPSOC MIO pins\n
 $EndSCHEMATC

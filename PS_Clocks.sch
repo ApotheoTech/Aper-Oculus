@@ -706,7 +706,7 @@ F 3 "" H 13100 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 10665 1885 0    157  ~ 0
-User Clk for Kria (80MHz to 800MHz)
+User Clk for Kria 200MHz for MIPI DPHY
 Text HLabel 13600 3375 2    50   Output ~ 0
 USER_SI570_HPA_CLK0_N
 Text HLabel 13600 3250 2    50   Output ~ 0
@@ -928,13 +928,13 @@ Wire Wire Line
 	4700 3625 4700 3900
 Wire Wire Line
 	4700 3900 5300 3900
-Text Label 1825 9155 0    50   ~ 0
-USER_SI570_SCL
-Text Label 1825 9055 0    50   ~ 0
-USER_SI570_SDA
-Text Label 1825 9255 0    50   ~ 0
-CLK_GEN_SDA
 Text Label 1825 9355 0    50   ~ 0
+USER_SI570_SCL
+Text Label 1825 9255 0    50   ~ 0
+USER_SI570_SDA
+Text Label 1825 9055 0    50   ~ 0
+CLK_GEN_SDA
+Text Label 1825 9155 0    50   ~ 0
 CLK_GEN_SCLK
 Wire Wire Line
 	3050 8525 3050 8605
