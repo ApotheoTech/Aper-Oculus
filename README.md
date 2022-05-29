@@ -25,8 +25,8 @@ The current launch date of this project is expected late Summer of 2022. Things 
 
 * Finish MVP layout for Review
 * Create Power controller Software for PIC
-* ~~ Length match appropriate diff pairs, and intra pair lengths ~~ <- Finished May 2022
-* ~~ Review layout of JTAG and other critical design paths ~~ <- Finished May 2022
+* ~~Length match appropriate diff pairs, and intra pair lengths~~ <- Finished May 2022
+* ~~Review layout of JTAG and other critical design paths~~ <- Finished May 2022
 * Release pinout XDC file with expected signal standards
 * Create modular chassis for mounting to different Lens threads and or Telescope (M42)
 
