@@ -19,9 +19,9 @@ The Aper-Oculus will be released with example designs using the SLVS-EC encrypte
 
 * FRAMOS SLVS-EC FSM to CoaXPress FMC Board  (expected by March 2023)
 
-* ~~ ApotheoTech's CoaXPress FMC board to Basler Boost. Streaming video via PS side Displayport @3840x2160, 30fps (PS-DP is bottleneck). ~~ (Working on ZCU104, will port to Aper-Oculus when boards arrive)
+* ~~ApotheoTech's CoaXPress FMC board to Basler Boost. Streaming video via PS side Displayport @3840x2160, 30fps (PS-DP is bottleneck).~~ (Working on ZCU104, will port to Aper-Oculus when boards arrive)
 
-* ~~ ApotheoTech's CoaXPress FMC board in loopback mode from TX to RX ~~ (Working on ZCU104, will port to Aper-Oculus when boards arrive)
+* ~~ApotheoTech's CoaXPress FMC board in loopback mode from TX to RX~~ (Working on ZCU104, will port to Aper-Oculus when boards arrive)
 
 ## Projected Use Cases
 
@@ -42,7 +42,7 @@ Things left to complete:
 * Create modular chassis for mounting to different Lens threads and or Telescope (M42)
 * ~~Length match appropriate diff pairs, and intra pair lengths~~ <- Finished May 2022
 * ~~Review layout of JTAG and other critical design paths~~ <- Finished May 2022
-* ~~ Finish MVP layout for Review ~~
+* ~~Finish MVP layout for Review~~
 
 ## Updates
 
