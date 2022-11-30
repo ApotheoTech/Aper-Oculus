@@ -24,6 +24,10 @@ $CMP AGLN010V5-UCG36
 F https://www.microsemi.com/document-portal/doc_download/130695-igloo-nano-low-power-flash-fpgas-datasheet
 $ENDCMP
 #
+$CMP AP2151AW-7
+F https://www.arrow.com/en/products/ap2151aw-7/diodes-incorporated
+$ENDCMP
+#
 $CMP BM20B_0.8_-34DS-0.4V_51_
 F https://datasheet.lcsc.com/szlcsc/1909091109_Hirose-HRS-BM20B-0-8-34DS-0-4V-51_C424541.pdf
 $ENDCMP

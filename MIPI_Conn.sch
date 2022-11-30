@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 20
+Sheet 20 20
 Title "MIPI DSI and CSI-2 Connectors"
 Date "2022-01-04"
 Rev "1.00"
@@ -129,8 +129,8 @@ Text HLabel 2200 3500 0    50   Output ~ 0
 HPA04_MIPI_A0_D3_P
 Text HLabel 2200 3400 0    50   Output ~ 0
 HPA04_MIPI_A0_D3_N
-Text HLabel 2200 3800 0    50   Input ~ 0
-CAM0_GPIO_1
+Text HLabel 2200 3800 0    39   Input ~ 0
+HDA01_CAM0_GPIO_1
 Wire Wire Line
 	2250 3800 2200 3800
 Wire Wire Line
@@ -304,8 +304,8 @@ Wire Wire Line
 	5400 3700 5450 3700
 Text HLabel 5400 3700 0    50   Input ~ 0
 CAM1_RESET_N
-Text HLabel 6200 3800 0    50   Input ~ 0
-CAM1_GPIO_1
+Text HLabel 6200 3800 0    39   Input ~ 0
+HDC13_CAM1_GPIO_1
 Wire Wire Line
 	6250 3800 6200 3800
 Wire Wire Line
@@ -328,21 +328,21 @@ F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/54
 	0    1    1    0   
 $EndComp
 Text HLabel 6200 3500 0    50   Output ~ 0
-HPB09_MIPI_B1_D3_P
+HPA09_MIPI_A1_D3_P
 Text HLabel 6200 3400 0    50   Output ~ 0
-HPB09_MIPI_B1_D3_N
+HPA09_MIPI_A1_D3_N
 Text HLabel 6200 3200 0    50   Output ~ 0
-HPB08_MIPI_B1_D2_P
+HPA08_MIPI_A1_D2_P
 Text HLabel 6200 3100 0    50   Output ~ 0
-HPB08_MIPI_B1_D2_N
+HPA08_MIPI_A1_D2_N
 Text HLabel 6200 2300 0    50   Output ~ 0
-HPB06_MIPI_B1_D0_P
+HPA06_MIPI_A1_D0_P
 Text HLabel 6200 2200 0    50   Output ~ 0
-HPB06_MIPI_B1_D0_N
+HPA06_MIPI_A1_D0_N
 Text HLabel 6200 2800 0    50   Output ~ 0
-HPB05_CC_MIPI_B1_CLK_N
+HPA05_CC_MIPI_A1_CLK_N
 Text HLabel 6200 2900 0    50   Output ~ 0
-HPB05_CC_MIPI_B1_CLK_P
+HPA05_CC_MIPI_A1_CLK_P
 Text Label 6200 4100 0    50   ~ 0
 CAM1_SDA
 Text Label 6200 4000 0    50   ~ 0
@@ -366,9 +366,9 @@ Wire Wire Line
 Wire Wire Line
 	6700 2800 6200 2800
 Text HLabel 6200 2600 0    50   Output ~ 0
-HPB07_MIPI_B1_D1_P
+HPA07_MIPI_A1_D1_P
 Text HLabel 6200 2500 0    50   Output ~ 0
-HPB07_MIPI_B1_D1_N
+HPA07_MIPI_A1_D1_N
 Wire Wire Line
 	6700 2600 6200 2600
 Wire Wire Line
@@ -449,4 +449,6 @@ Text GLabel 6200 4100 0    50   BiDi ~ 0
 CAM1_SDA
 Text Notes 4930 1555 0    118  ~ 0
 Mipi PCB guidelines on Page 203/347 of UG 583
+Text Notes 4885 945  0    50   ~ 0
+Referenced from https://www.arducam.com/raspberry-pi-camera-pinout/\nAnd from CM4IOV5 schematic for MIPI connectors
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 17 20
+Sheet 16 20
 Title "FMC Power (VADJ, 3.3V, and 12V filt)"
 Date "2022-01-04"
 Rev "1.00"
@@ -904,8 +904,6 @@ F 3 "" H 7150 5000 50  0001 C CNN
 	1    7150 5000
 	1    0    0    -1  
 $EndComp
-Text GLabel 6400 4550 0    50   Output ~ 0
-12V_IN
 Wire Wire Line
 	6400 4550 6500 4550
 Connection ~ 6500 4550
@@ -986,7 +984,7 @@ $EndComp
 Wire Wire Line
 	4900 6000 4900 5950
 Text HLabel 2200 5250 0    50   Input ~ 0
-VCCOEN_PL_M2C
+VADJ_EN
 $Comp
 L Device:C C?
 U 1 1 63CD5630
@@ -998,13 +996,13 @@ AR Path="/637471EA/63CD5630" Ref="C?"  Part="1"
 AR Path="/61AA736C/63CD5630" Ref="C?"  Part="1" 
 AR Path="/62011758/63CD5630" Ref="C8"  Part="1" 
 F 0 "C8" H 4140 5310 50  0000 C CNN
-F 1 "2200pF" H 4055 5380 50  0000 C CNN
+F 1 "0.22uF" H 4055 5380 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4338 5200 50  0001 C CNN
 F 3 "~" H 4300 5350 50  0001 C CNN
-F 4 "GRM155R71H222JA01J " H 4300 5350 50  0001 C CNN "PartNumber"
-F 5 "+-5%" H 4300 5350 50  0001 C CNN "Tolerance"
-F 6 "50V" H 4115 5450 50  0000 C CNN "Voltage"
-F 7 "X7R" H 4300 5350 50  0001 C CNN "Temp_Val"
+F 4 "C1005X5R1E224K050BC " H 4300 5350 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 4300 5350 50  0001 C CNN "Tolerance"
+F 6 "25V" H 4115 5450 50  0000 C CNN "Voltage"
+F 7 "X5R" H 4300 5350 50  0001 C CNN "Temp_Val"
 	1    4300 5350
 	-1   0    0    1   
 $EndComp
@@ -1129,7 +1127,7 @@ AR Path="/6374AD8D/63E106B2" Ref="L?"  Part="1"
 AR Path="/62011758/63E106B2" Ref="L2"  Part="1" 
 F 0 "L2" V 7175 5435 50  0000 C CNN
 F 1 "470nH" V 7160 5785 50  0000 C CNN
-F 2 "Inductor_SMD:L_Wuerth_HCI-5040" H 7100 5600 50  0001 C CNN
+F 2 "ApotheoTech_CXP_Lib:744316047" H 7100 5600 50  0001 C CNN
 F 3 "~" H 7100 5600 50  0001 C CNN
 F 4 "744316047 " V 7100 5600 50  0001 C CNN "PartNumber"
 	1    7100 5600
@@ -1326,7 +1324,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 4100 2200 4100
 Wire Wire Line
-	2900 5250 2200 5250
+	2900 5250 2300 5250
 Text HLabel 2200 4600 0    50   Output ~ 0
 VADJ_FMC_PG
 Wire Wire Line
@@ -1361,7 +1359,7 @@ $EndComp
 Wire Wire Line
 	2400 4250 2400 4200
 Text HLabel 2200 3900 0    50   Output ~ 0
-VADJ_ALERT
+HDC20_VADJ_ALERT
 Wire Wire Line
 	2900 6950 2800 6950
 Wire Wire Line
@@ -1917,7 +1915,7 @@ Wire Wire Line
 	6650 2900 6650 2950
 Connection ~ 6650 2900
 Text HLabel 6400 2750 0    50   Output ~ 0
-INA226_ALERT
+HDC19_INA226_ALERT
 $Comp
 L Device:R R?
 U 1 1 649814A1
@@ -2835,4 +2833,41 @@ Text Label 6375 4100 0    50   ~ 0
 DCR_N
 Text Label 6350 4400 0    50   ~ 0
 DCR_P
+Text GLabel 6400 4550 0    50   Input ~ 0
+FMC_12V
+Text Notes 3855 1695 0    50   ~ 0
+Page 73/95 ZCU106 Schematic for Reference
+Text Notes 690  4480 0    50   ~ 0
+Note, 4V maximum for this pin,\nVCCOEN is 5V. Use a PIC signal for EN
+$Comp
+L Device:R R?
+U 1 1 631E9944
+P 2300 5050
+AR Path="/5F71E87D/631E9944" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/631E9944" Ref="R?"  Part="1" 
+AR Path="/6314F719/631E9944" Ref="R?"  Part="1" 
+AR Path="/6314DEA9/631E9944" Ref="R?"  Part="1" 
+AR Path="/62011758/631E9944" Ref="R50"  Part="1" 
+F 0 "R50" H 2370 5141 50  0000 L CNN
+F 1 "10K" H 2370 5050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 5050 50  0001 C CNN
+F 3 "~" H 2300 5050 50  0001 C CNN
+F 4 "1%" H 2370 4959 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 2300 5050 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 2300 5050 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 2300 5050 50  0001 C CNN "URL"
+	1    2300 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5200 2300 5250
+Connection ~ 2300 5250
+Wire Wire Line
+	2300 5250 2200 5250
+Text GLabel 2150 4800 0    50   Input ~ 0
+UTIL_3V3
+Wire Wire Line
+	2150 4800 2300 4800
+Wire Wire Line
+	2300 4800 2300 4900
 $EndSCHEMATC

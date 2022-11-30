@@ -155,21 +155,6 @@ Connection ~ 11135 2540
 Wire Wire Line
 	11565 2540 11735 2540
 Connection ~ 11565 2540
-$Comp
-L Device:D D5
-U 1 1 61322FAF
-P 11885 2540
-F 0 "D5" H 11885 2756 50  0000 C CNN
-F 1 "1N4148WS" H 11885 2665 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323F" H 11885 2540 50  0001 C CNN
-F 3 "~" H 11885 2540 50  0001 C CNN
-	1    11885 2540
-	1    0    0    -1  
-$EndComp
-Text Label 12435 2540 2    50   ~ 0
-DP_PWR
-Wire Wire Line
-	12035 2540 12435 2540
 Wire Wire Line
 	7295 3840 7295 2290
 Wire Wire Line
@@ -284,24 +269,8 @@ Wire Wire Line
 	7775 4410 7775 4040
 Wire Wire Line
 	7775 4040 8125 4040
-$Comp
-L Device:L L7
-U 1 1 61384C77
-P 8975 1940
-F 0 "L7" V 8794 1940 50  0000 C CNN
-F 1 "BLM18SG121TN1D" V 8885 1940 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8975 1940 50  0001 C CNN
-F 3 "~" H 8975 1940 50  0001 C CNN
-F 4 "BLM18SG121TN1D" V 8975 1940 50  0001 C CNN "PartNumber"
-	1    8975 1940
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8825 1940 8525 1940
-Text Label 9595 1940 2    50   ~ 0
+Text Label 11500 2540 2    50   ~ 0
 DP_PWR
-Wire Wire Line
-	9125 1940 9595 1940
 $Comp
 L power:PWR_FLAG #FLG09
 U 1 1 6059DFFD
@@ -1039,25 +1008,6 @@ F 8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL05A47
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 61CB7D3B
-P 11565 2790
-AR Path="/5F71E87D/61CB7D3B" Ref="C?"  Part="1" 
-AR Path="/5F71E4A6/61CB7D3B" Ref="C?"  Part="1" 
-AR Path="/6314CDE6/61CB7D3B" Ref="C64"  Part="1" 
-F 0 "C64" H 11725 2860 50  0000 C CNN
-F 1 "4.7uF" H 11785 2780 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 11603 2640 50  0001 C CNN
-F 3 "~" H 11565 2790 50  0001 C CNN
-F 4 "CL05A475KP5NRNC " H 11565 2790 50  0001 C CNN "PartNumber"
-F 5 "+-10%" H 11565 2790 50  0001 C CNN "Tolerance"
-F 6 "10V" H 11765 2700 50  0000 C CNN "Voltage"
-F 7 "X5R" H 11565 2790 50  0001 C CNN "Temp_Coeff"
-F 8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL05A475KP5NRNC/1276-1480-1-ND/3889566" H 11565 2790 50  0001 C CNN "URL"
-	1    11565 2790
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 615B7710
 P 10125 4015
@@ -1107,7 +1057,7 @@ Wire Wire Line
 	9750 3440 10325 3440
 Wire Wire Line
 	9750 3340 10325 3340
-Text GLabel 8525 1940 0    50   Input ~ 0
+Text GLabel 9300 1300 0    50   Input ~ 0
 PS_3V3
 Text GLabel 10515 6740 1    50   Input ~ 0
 PS_3V3
@@ -1280,6 +1230,210 @@ Text GLabel 7295 1880 1    50   Input ~ 0
 PS_3V3
 Wire Wire Line
 	6640 9070 7650 9070
-Text Label 9905 2540 0    50   ~ 0
-DP_PWR_PRT
+$Comp
+L ApotheoTech:AP2151AW-7 IC23
+U 1 1 62C03069
+P 10320 1735
+F 0 "IC23" H 10820 2000 50  0000 C CNN
+F 1 "AP2151AW-7" H 10820 1909 50  0000 C CNN
+F 2 "ApotheoTech_CXP_Lib:AP2151AW-7" H 11170 1835 50  0001 L CNN
+F 3 "https://www.arrow.com/en/products/ap2151aw-7/diodes-incorporated" H 11170 1735 50  0001 L CNN
+F 4 "Power Switch ICs - Power Distribution 0.5A Sgl-Ch Switch 0.8A 95mOhm 0.6ms" H 11170 1635 50  0001 L CNN "Description"
+F 5 "1.4" H 11170 1535 50  0001 L CNN "Height"
+F 6 "621-AP2151AW-7" H 11170 1435 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP2151AW-7?qs=AsTZqt%2FmeqmklFHvCxCp4w%3D%3D" H 11170 1335 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Diodes Inc." H 11170 1235 50  0001 L CNN "Manufacturer_Name"
+F 9 "AP2151AW-7" H 11170 1135 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10320 1735
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10320 1835 9800 1835
+$Comp
+L Device:C C?
+U 1 1 62C5776E
+P 10450 1300
+AR Path="/5F71E87D/62C5776E" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/62C5776E" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/62C5776E" Ref="C50"  Part="1" 
+F 0 "C50" V 10500 1440 50  0000 C CNN
+F 1 "0.1uF" V 10490 1140 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10488 1150 50  0001 C CNN
+F 3 "~" H 10450 1300 50  0001 C CNN
+F 4 "TMK105BJ104KVHF" H 10450 1300 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 10450 1300 50  0001 C CNN "Tolerance"
+F 6 "25V" V 10400 1160 50  0000 C CNN "Voltage"
+F 7 "X5R" H 10450 1300 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 10450 1300 50  0001 C CNN "URL"
+	1    10450 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62C73743
+P 9800 1550
+AR Path="/5F71E87D/62C73743" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/62C73743" Ref="R?"  Part="1" 
+AR Path="/6314CDE6/62C73743" Ref="R41"  Part="1" 
+F 0 "R41" H 9870 1641 50  0000 L CNN
+F 1 "10K" H 9870 1550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9730 1550 50  0001 C CNN
+F 3 "~" H 9800 1550 50  0001 C CNN
+F 4 "1%" H 9870 1459 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 9800 1550 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 9800 1550 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 9800 1550 50  0001 C CNN "URL"
+	1    9800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62C7BE1D
+P 9450 1550
+AR Path="/5F71E87D/62C7BE1D" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/62C7BE1D" Ref="R?"  Part="1" 
+AR Path="/6314CDE6/62C7BE1D" Ref="R40"  Part="1" 
+F 0 "R40" H 9520 1641 50  0000 L CNN
+F 1 "10K" H 9520 1550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9380 1550 50  0001 C CNN
+F 3 "~" H 9450 1550 50  0001 C CNN
+F 4 "1%" H 9520 1459 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 9450 1550 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 9450 1550 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 9450 1550 50  0001 C CNN "URL"
+	1    9450 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1300 9450 1300
+Wire Wire Line
+	9450 1300 9450 1400
+Wire Wire Line
+	9450 1300 9800 1300
+Wire Wire Line
+	9800 1300 9800 1400
+Connection ~ 9450 1300
+Wire Wire Line
+	10300 1300 10150 1300
+Connection ~ 9800 1300
+Wire Wire Line
+	10320 1735 10150 1735
+Wire Wire Line
+	10150 1735 10150 1300
+Connection ~ 10150 1300
+Wire Wire Line
+	10150 1300 9800 1300
+Wire Wire Line
+	9800 1700 9800 1835
+Connection ~ 9800 1835
+Wire Wire Line
+	9050 1835 9800 1835
+Wire Wire Line
+	9450 1700 9450 1935
+Wire Wire Line
+	9450 1935 10320 1935
+Wire Wire Line
+	9450 1935 9050 1935
+Connection ~ 9450 1935
+Text HLabel 8660 1835 0    50   Input Italic 0
+HDA02_DP_PWR_EN
+Text HLabel 8660 1935 0    50   Output Italic 0
+HDA12_DP_PWR_FAULT
+Wire Wire Line
+	11325 1880 11400 1880
+Wire Wire Line
+	11400 1880 11400 2000
+Wire Wire Line
+	11735 1780 11735 2540
+Wire Wire Line
+	11325 1780 11735 1780
+$Comp
+L power:GND #PWR039
+U 1 1 62CFDB5D
+P 11400 2000
+F 0 "#PWR039" H 11400 1750 50  0001 C CNN
+F 1 "GND" H 11405 1827 50  0000 C CNN
+F 2 "" H 11400 2000 50  0001 C CNN
+F 3 "" H 11400 2000 50  0001 C CNN
+	1    11400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 62CFE935
+P 10650 1300
+F 0 "#PWR038" H 10650 1050 50  0001 C CNN
+F 1 "GND" V 10655 1172 50  0000 R CNN
+F 2 "" H 10650 1300 50  0001 C CNN
+F 3 "" H 10650 1300 50  0001 C CNN
+	1    10650 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10650 1300 10600 1300
+$Comp
+L Device:C C?
+U 1 1 62D0EEF2
+P 11565 2790
+AR Path="/5F71E87D/62D0EEF2" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/62D0EEF2" Ref="C?"  Part="1" 
+AR Path="/62C99A69/62D0EEF2" Ref="C?"  Part="1" 
+AR Path="/6374AD8D/62D0EEF2" Ref="C?"  Part="1" 
+AR Path="/616D0FBF/62D0EEF2" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/62D0EEF2" Ref="C51"  Part="1" 
+F 0 "C51" H 11415 2715 50  0000 C CNN
+F 1 "47uF" H 11365 2780 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 11603 2640 50  0001 C CNN
+F 3 "~" H 11565 2790 50  0001 C CNN
+F 4 "GRM21BR61A476ME15L" H 11565 2790 50  0001 C CNN "PartNumber"
+F 5 "+-20%" H 11565 2790 50  0001 C CNN "Tolerance"
+F 6 "10V" H 11385 2850 50  0000 C CNN "Voltage"
+F 7 "X5R" H 11565 2790 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61A476ME15L/4905529" V 11565 2790 50  0001 C CNN "URL"
+F 9 "N/A" V 11565 2790 50  0001 C CNN "Alt"
+	1    11565 2790
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62D3963A
+P 8900 1835
+AR Path="/5F71E4A6/62D3963A" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/62D3963A" Ref="R?"  Part="1" 
+AR Path="/6314CDE6/62D3963A" Ref="R38"  Part="1" 
+F 0 "R38" V 8985 1955 50  0000 C CNN
+F 1 "0" V 8935 1690 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8830 1835 50  0001 C CNN
+F 3 "~" H 8900 1835 50  0001 C CNN
+F 4 "CRCW04020000Z0EDHP" V 8900 1835 50  0001 C CNN "PartNumber"
+F 5 "1/5W" V 8940 1525 50  0000 C CNN "Power"
+F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 8900 1835 50  0001 C CNN "URL"
+	1    8900 1835
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62D431D2
+P 8900 1935
+AR Path="/5F71E4A6/62D431D2" Ref="R?"  Part="1" 
+AR Path="/5F71E87D/62D431D2" Ref="R?"  Part="1" 
+AR Path="/6314CDE6/62D431D2" Ref="R39"  Part="1" 
+F 0 "R39" V 8810 1995 50  0000 C CNN
+F 1 "0" V 8940 1785 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8830 1935 50  0001 C CNN
+F 3 "~" H 8900 1935 50  0001 C CNN
+F 4 "CRCW04020000Z0EDHP" V 8900 1935 50  0001 C CNN "PartNumber"
+F 5 "1/5W" V 8855 1625 50  0000 C CNN "Power"
+F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 8900 1935 50  0001 C CNN "URL"
+	1    8900 1935
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 1835 8660 1835
+Wire Wire Line
+	8750 1935 8660 1935
+Text Label 9850 1835 0    50   ~ 0
+DP_PWR_EN
+Text Label 9850 1935 0    50   ~ 0
+DP_PWR_FAULT
 $EndSCHEMATC

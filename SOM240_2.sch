@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 20 20
+Sheet 19 20
 Title "SOM240_2 Kria Connector (GTH and Banks 65, 64, and 43)"
 Date "2022-01-04"
 Rev "1.00"
@@ -144,109 +144,109 @@ $EndComp
 Wire Wire Line
 	2450 2250 2900 2250
 Text HLabel 2900 2250 2    50   Output ~ 0
-GTH_DP3_M2C_SDI_TX_P
+GTH_DP3_M2C_TX_DP2_C2M_P
 Wire Wire Line
 	2450 2350 2900 2350
 Text HLabel 2900 2350 2    50   Output ~ 0
-GTH_DP3_M2C_SDI_TX_N
+GTH_DP3_M2C_TX_DP2_C2M_N
 Wire Wire Line
 	2450 2650 2900 2650
 Text HLabel 2900 2650 2    50   Input ~ 0
-GTH_REFCLK1_C2M_P
+GTH_REFCLK1_C2M_GBTCLK0_M2C_P
 Wire Wire Line
 	2450 2750 2900 2750
 Text HLabel 2900 2750 2    50   Input ~ 0
-GTH_REFCLK1_C2M_N
+GTH_REFCLK1_C2M_GBTCLK0_M2C_N
 Text Notes 990  1230 0    118  ~ 0
 Remember Chance, We are the Carrier on this design
 Wire Wire Line
 	2450 3050 2900 3050
 Text HLabel 2900 3050 2    50   Input ~ 0
-HPB15_CC_P
+HPB15_CC_LA01_CC_P
 Wire Wire Line
 	2450 3150 2900 3150
 Text HLabel 2900 3150 2    50   Input ~ 0
-HPB15_CC_N
+HPB15_CC_LA01_CC_N
 Wire Wire Line
 	2450 3350 2900 3350
 Text HLabel 2900 3350 2    50   Input ~ 0
-HPB08_MIPI_B1_D2_P
+HPB08_LA04_P
 Wire Wire Line
 	2450 3450 2900 3450
 Text HLabel 2900 3450 2    50   Input ~ 0
-HPB08_MIPI_B1_D2_N
+HPB08_LA04_N
 Wire Wire Line
 	2450 3650 2900 3650
 Text HLabel 2900 3650 2    50   Input ~ 0
-HPB12_P
+HPB12_LA09_P
 Wire Wire Line
 	2450 3750 2900 3750
 Text HLabel 2900 3750 2    50   Input ~ 0
-HPB12_N
+HPB12_LA09_N
 Wire Wire Line
 	2450 3950 2900 3950
 Text HLabel 2900 3950 2    50   Input ~ 0
-HPB06_MIPI_B1_D0_P
+HPB06_LA13_P
 Wire Wire Line
 	2450 4050 2900 4050
 Text HLabel 2900 4050 2    50   Input ~ 0
-HPB06_MIPI_B1_D0_N
+HPB06_LA13_N
 Wire Wire Line
 	2450 4250 2900 4250
 Text HLabel 2900 4250 2    50   Input ~ 0
-HPB16_P
+HPB16_LA16_P
 Wire Wire Line
 	2450 4350 2900 4350
 Text HLabel 2900 4350 2    50   Input ~ 0
-HPB16_N
+HPB16_LA16_N
 Wire Wire Line
 	2450 4550 2900 4550
 Text HLabel 2900 4550 2    50   Input ~ 0
-HPB19_P
+HPB19_LA19_P
 Wire Wire Line
 	2450 4650 2900 4650
 Text HLabel 2900 4650 2    50   Input ~ 0
-HPB19_N
+HPB19_LA19_N
 Wire Wire Line
 	2450 4850 2900 4850
 Text HLabel 2900 4850 2    50   Input ~ 0
-HPC08_P
+HPC08_LA18_CC_P
 Wire Wire Line
 	2450 4950 2900 4950
 Text HLabel 2900 4950 2    50   Input ~ 0
-HPC08_N
+HPC08_LA18_CC_N
 Wire Wire Line
 	2450 5150 2900 5150
 Text HLabel 2900 5150 2    50   Input ~ 0
-HPC19_P
+HPC19_LA22_P
 Wire Wire Line
 	2450 5250 2900 5250
 Text HLabel 2900 5250 2    50   Input ~ 0
-HPC19_N
+HPC19_LA22_N
 Wire Wire Line
 	2450 5450 2900 5450
 Text HLabel 2900 5450 2    50   Input ~ 0
-HPC14_P
+HPC14_LA26_P
 Wire Wire Line
 	2450 5550 2900 5550
 Text HLabel 2900 5550 2    50   Input ~ 0
-HPC14_N
+HPC14_LA26_N
 Wire Wire Line
 	2450 5750 2900 5750
 Text HLabel 2900 5750 2    50   Input ~ 0
-HPC15_CC_P
+HPC15_CC_LA25_P
 Wire Wire Line
 	2450 5850 2900 5850
 Text HLabel 2900 5850 2    50   Input ~ 0
-HPC15_CC_N
+HPC15_CC_LA25_N
 Wire Wire Line
 	2450 6050 2900 6050
 Text HLabel 2900 6050 2    50   Input ~ 0
-HPC03_P
+HPC03_LA31_P
 Wire Wire Line
 	2450 6150 2900 6150
 Text HLabel 2900 6150 2    50   Input ~ 0
-HPC03_N
+HPC03_LA31_N
 Wire Wire Line
 	2450 6350 2900 6350
 Text GLabel 2900 6350 2    50   Input ~ 0
@@ -254,11 +254,11 @@ VADJ_FMC
 Wire Wire Line
 	2450 6550 2900 6550
 Text HLabel 2900 6550 2    50   Input ~ 0
-HDB18
+HDB18_LA30_P
 Wire Wire Line
 	2450 6650 2900 6650
 Text HLabel 2900 6650 2    50   Input ~ 0
-HDB19
+HDB19_LA30_N
 Wire Wire Line
 	2450 6750 2900 6750
 Text HLabel 2900 6750 2    50   Input ~ 0
@@ -266,11 +266,11 @@ HDB20
 Wire Wire Line
 	2450 6950 2900 6950
 Text HLabel 2900 6950 2    50   Input ~ 0
-HDB21
+HDB21_LA33_P
 Wire Wire Line
 	2450 7050 2900 7050
 Text HLabel 2900 7050 2    50   Input ~ 0
-HDB22
+HDB22_LA33_N
 Wire Wire Line
 	2450 7150 2900 7150
 Text HLabel 2900 7150 2    50   Input ~ 0
@@ -278,15 +278,15 @@ HDB23
 Wire Wire Line
 	2450 7350 2900 7350
 Text HLabel 2900 7350 2    50   Input ~ 0
-HDC18
+HDC18_PRSNT_M2C_B
 Wire Wire Line
 	2450 7450 2900 7450
 Text HLabel 2900 7450 2    50   Input ~ 0
-HDC19
+HDC19_INA226_ALERT
 Wire Wire Line
 	2450 7550 2900 7550
 Text HLabel 2900 7550 2    50   Input ~ 0
-HDC20
+HDC20_VADJ_ALERT
 Wire Wire Line
 	2450 7750 2900 7750
 Text HLabel 2900 7750 2    50   Input ~ 0
@@ -298,7 +298,7 @@ HDC22
 Wire Wire Line
 	2450 7950 2900 7950
 Text HLabel 2900 7950 2    50   Input ~ 0
-HDC23
+HDC23_MODE_MS5611
 $Comp
 L ApotheoTech:ADM6-60-01.5-L-4-2-A-TR J3
 U 2 1 612729B2
@@ -357,58 +357,58 @@ Wire Wire Line
 	5600 7050 5600 7450
 Connection ~ 5600 7050
 Connection ~ 5600 7450
-Text HLabel 5900 2050 2    50   Output ~ 0
-GTH_DP2_M2C_CXP_DEV_TX_P
-Text HLabel 5900 2150 2    50   Output ~ 0
-GTH_DP2_M2C_CXP_DEV_TX_N
-Text HLabel 5900 2450 2    50   Input ~ 0
-GTH_DP2_C2M_CXP_HOST_RX_P
-Text HLabel 5900 2550 2    50   Input ~ 0
-GTH_DP2_C2M_CXP_HOST_RX_N
+Text HLabel 5900 2450 2    50   Output ~ 0
+GTH_DP2_M2C_TX_DP0_C2M_P
+Text HLabel 5900 2550 2    50   Output ~ 0
+GTH_DP2_M2C_TX_DP0_C2M_N
+Text HLabel 5900 2050 2    50   Input ~ 0
+GTH_DP2_C2M_RX_DP0_M2C_P
+Text HLabel 5900 2150 2    50   Input ~ 0
+GTH_DP2_C2M_RX_DP0_M2C_N
 Text HLabel 5900 2850 2    50   Input ~ 0
-GTH_DP0_C2M_SLVS_EC_RX_P
+GTH_DP0_C2M_RX_DP1_M2C_P
 Text HLabel 5900 2950 2    50   Input ~ 0
-GTH_DP0_C2M_SLVS_EC_RX_N
+GTH_DP0_C2M_RX_DP1_M2C_N
 Text HLabel 5900 3150 2    50   Input ~ 0
-HPB10_CC_P
+HPB10_CC_LA02_P
 Text HLabel 5900 3250 2    50   Input ~ 0
-HPB10_CC_N
+HPB10_CC_LA02_N
 Text HLabel 5900 3450 2    50   Input ~ 0
-HPB07_MIPI_B1_D1_P
+HPB07_LA03_P
 Text HLabel 5900 3550 2    50   Input ~ 0
-HPB07_MIPI_B1_D1_N
+HPB07_LA03_N
 Text HLabel 5900 3750 2    50   Input ~ 0
-HPB05_CC_MIPI_B1_CLK_P
+HPB05_CC_LA10_P
 Text HLabel 5900 3850 2    50   Input ~ 0
-HPB05_CC_MIPI_B1_CLK_N
+HPB05_CC_LA10_N
 Text HLabel 5900 4050 2    50   Input ~ 0
-HPB11_P
+HPB11_LA14_P
 Text HLabel 5900 4150 2    50   Input ~ 0
-HPB11_N
+HPB11_LA14_N
 Text HLabel 5900 4350 2    50   Input ~ 0
-HPB03_MIPI_B0_D2_P
+HPB03_LA20_P
 Text HLabel 5900 4450 2    50   Input ~ 0
-HPB03_MIPI_B0_D2_N
-Text HLabel 5900 4650 2    50   Input ~ 0
-HPC06_P_MCLK_0_SLVS
+HPB03_LA20_N
+Text HLabel 8900 4850 2    50   Input ~ 0
+HPC10_CC_P_MCLK_0_SLVS
 Text HLabel 5900 4750 2    50   Input ~ 0
 HPC06_N_SLVS_EC_RST_0
 Text HLabel 5900 4950 2    50   Input ~ 0
-HPC13_P
+HPC13_LA23_P
 Text HLabel 5900 5050 2    50   Input ~ 0
-HPC13_N
+HPC13_LA23_N
 Text HLabel 5900 5250 2    50   Input ~ 0
-HPC16_P
+HPC16_LA21_P
 Text HLabel 5900 5350 2    50   Input ~ 0
-HPC16_N
+HPC16_LA21_N
 Text HLabel 5900 5550 2    50   Input ~ 0
-HPC07_P
+HPC07_LA27_P
 Text HLabel 5900 5650 2    50   Input ~ 0
-HPC07_N
+HPC07_LA27_N
 Text HLabel 5900 5850 2    50   Input ~ 0
-HPC18_P
+HPC18_LA29_P
 Text HLabel 5900 5950 2    50   Input ~ 0
-HPC18_N
+HPC18_LA29_N
 Text GLabel 5900 6150 2    50   Input ~ 0
 VADJ_FMC
 Text HLabel 5900 6350 2    50   Input ~ 0
@@ -418,17 +418,17 @@ HDB13
 Text HLabel 5900 6550 2    50   Input ~ 0
 HDB14
 Text HLabel 5900 6750 2    50   Input ~ 0
-HDB15
+HDB15_LA32_P
 Text HLabel 5900 6850 2    50   Input ~ 0
-HDB16_CC
+HDB16_CC_LA32_N
 Text HLabel 5900 6950 2    50   Input ~ 0
 HDB17
 Text HLabel 5900 7150 2    50   Input ~ 0
 HDC12
-Text HLabel 5900 7250 2    50   Input ~ 0
-HDC13
-Text HLabel 5900 7350 2    50   Input ~ 0
-HDC14
+Text HLabel 5900 7250 2    50   Output ~ 0
+HDC13_CAM1_GPIO_1
+Text HLabel 5900 7350 2    50   Output ~ 0
+HDC14_CAM0_RESET_N
 Text HLabel 5900 7550 2    50   Input ~ 0
 HDC15
 Text HLabel 5900 7650 2    50   Input ~ 0
@@ -470,13 +470,13 @@ Wire Wire Line
 Wire Wire Line
 	5450 7450 5600 7450
 Wire Wire Line
-	5450 2050 5900 2050
-Wire Wire Line
-	5450 2150 5900 2150
-Wire Wire Line
 	5450 2450 5900 2450
 Wire Wire Line
 	5450 2550 5900 2550
+Wire Wire Line
+	5450 2050 5900 2050
+Wire Wire Line
+	5450 2150 5900 2150
 Wire Wire Line
 	5450 2850 5900 2850
 Wire Wire Line
@@ -676,11 +676,11 @@ $EndComp
 Wire Wire Line
 	8450 2650 8900 2650
 Text HLabel 8900 2650 2    50   Output ~ 0
-GTH_DP1_M2C_P
+GTH_DP1_M2C_TX_DP3_C2M_P
 Wire Wire Line
 	8450 2750 8900 2750
 Text HLabel 8900 2750 2    50   Output ~ 0
-GTH_DP1_M2C_N
+GTH_DP1_M2C_TX_DP3_C2M_N
 Wire Wire Line
 	8450 2250 8900 2250
 Text HLabel 8900 2250 2    50   Input ~ 0
@@ -692,43 +692,43 @@ GTH_REFCLK0_C2M_N
 Wire Wire Line
 	8450 3050 8900 3050
 Text HLabel 8900 3050 2    50   Input ~ 0
-HPB09_MIPI_B1_D3_P
+HPB09_LA00_CC_P
 Wire Wire Line
 	8450 3150 8900 3150
 Text HLabel 8900 3150 2    50   Input ~ 0
-HPB09_MIPI_B1_D3_N
+HPB09_LA00_CC_N
 Wire Wire Line
 	8450 3350 8900 3350
 Text HLabel 8900 3350 2    50   Input ~ 0
-HPB14_P
+HPB14_LA05_P
 Wire Wire Line
 	8450 3450 8900 3450
 Text HLabel 8900 3450 2    50   Input ~ 0
-HPB14_N
+HPB14_LA05_N
 Wire Wire Line
 	8450 3650 8900 3650
 Text HLabel 8900 3650 2    50   Input ~ 0
-HPB02_MIPI_B0_D1_P
+HPB02_LA07_P
 Wire Wire Line
 	8450 3750 8900 3750
 Text HLabel 8900 3750 2    50   Input ~ 0
-HPB02_MIPI_B0_D1_N
+HPB02_LA07_N
 Wire Wire Line
 	8450 3950 8900 3950
 Text HLabel 8900 3950 2    50   Input ~ 0
-HPB13_P
+HPB13_LA11_P
 Wire Wire Line
 	8450 4050 8900 4050
 Text HLabel 8900 4050 2    50   Input ~ 0
-HPB13_N
+HPB13_LA11_N
 Wire Wire Line
 	8450 4250 8900 4250
 Text HLabel 8900 4250 2    50   Input ~ 0
-HPB18_P
+HPB18_LA15_P
 Wire Wire Line
 	8450 4350 8900 4350
 Text HLabel 8900 4350 2    50   Input ~ 0
-HPB18_N
+HPB18_LA15_N
 Wire Wire Line
 	8450 4550 8900 4550
 Text HLabel 8900 4550 2    50   Input ~ 0
@@ -739,8 +739,8 @@ Text HLabel 8900 4650 2    50   Input ~ 0
 HPC17_N_GPIO14_SLAMODE2
 Wire Wire Line
 	8450 4850 8900 4850
-Text HLabel 8900 4850 2    50   Input ~ 0
-HPC10_CC_P_GPIO16_SLAMODE1
+Text HLabel 5900 4650 2    50   Input ~ 0
+HPC06_P_GPIO16_SLAMODE1
 Wire Wire Line
 	8450 4950 8900 4950
 Text HLabel 8900 4950 2    50   Input ~ 0
@@ -764,19 +764,19 @@ HPC12_N_I2C_SLVS_EC_SDA
 Wire Wire Line
 	8450 5750 8900 5750
 Text HLabel 8900 5750 2    50   Input ~ 0
-HPC05_CC_P
+HPC05_CC_LA24_P
 Wire Wire Line
 	8450 5850 8900 5850
 Text HLabel 8900 5850 2    50   Input ~ 0
-HPC05_CC_N
+HPC05_CC_LA24_N
 Wire Wire Line
 	11450 3750 11900 3750
 Text HLabel 11900 3750 2    50   Input ~ 0
-HPB_CLK0_P
+HPB_CLK0_CLK1_M2C_P
 Wire Wire Line
 	11450 3850 11900 3850
 Text HLabel 11900 3850 2    50   Input ~ 0
-HPB_CLK0_N
+HPB_CLK0_CLK1_M2C_N
 Wire Wire Line
 	8450 6350 8900 6350
 Text GLabel 8900 6350 2    50   Input ~ 0
@@ -807,28 +807,28 @@ Text HLabel 8900 7150 2    50   Input ~ 0
 HDB11
 Wire Wire Line
 	8450 7350 8900 7350
-Text HLabel 8900 7350 2    50   Input ~ 0
-HDC06
+Text HLabel 8900 7350 2    50   Output ~ 0
+HDC06_CAM1_RESET_N
 Wire Wire Line
 	8450 7450 8900 7450
-Text HLabel 8900 7450 2    50   Input ~ 0
-HDC07
+Text HLabel 8900 7450 2    50   Output ~ 0
+HDC07_SCLK_ICM_42688
 Wire Wire Line
 	8450 7550 8900 7550
-Text HLabel 8900 7550 2    50   Input ~ 0
-HDC08_CC
+Text HLabel 8900 7550 2    50   Output ~ 0
+HDC08_CS_ICM_42688
 Wire Wire Line
 	8450 7750 8900 7750
-Text HLabel 8900 7750 2    50   Input ~ 0
-HDC09_ALERT_PAC1720
+Text HLabel 8900 7750 2    50   Output ~ 0
+HDC09_FAN_PWM
 Wire Wire Line
 	8450 7850 8900 7850
 Text HLabel 8900 7850 2    50   Input ~ 0
-HDC10_SDA_PAC1720
+HDC10_SDO_MS5611
 Wire Wire Line
 	8450 7950 8900 7950
-Text HLabel 8900 7950 2    50   Input ~ 0
-HDC11_SCL_PAC1720
+Text HLabel 8900 7950 2    50   Output ~ 0
+HDC11_CS_MS5611
 $Comp
 L ApotheoTech:ADM6-60-01.5-L-4-2-A-TR J3
 U 4 1 61349953
@@ -866,15 +866,15 @@ Text Notes 1000 1485 0    79   ~ 0
 C2M -> RX for Kria module\nM2C -> TX for Kria module
 Wire Wire Line
 	5600 3050 5600 3350
-Text Notes 7185 2185 0    50   ~ 0
+Text Notes 7145 2530 0    50   ~ 0
 M2C (TX)
-Text Notes 7165 2550 0    50   ~ 0
+Text Notes 7155 2145 0    50   ~ 0
 C2M (RX)
 Text Notes 7195 2945 0    50   ~ 0
 C2M (RX)
-Text Notes 3785 2740 0    50   ~ 0
+Text Notes 4330 2745 0    50   ~ 0
 C2M (RX)
-Text Notes 3915 2350 0    50   ~ 0
+Text Notes 4140 2340 0    50   ~ 0
 M2C (TX)
 Text GLabel 5900 7850 2    50   Input ~ 0
 VADJ_FMC
@@ -884,7 +884,7 @@ Text GLabel 5900 7950 2    50   Input ~ 0
 VADJ_FMC
 Wire Wire Line
 	5450 7950 5900 7950
-Text Notes 9595 2745 0    50   ~ 0
+Text Notes 10120 2735 0    50   ~ 0
 M2C (TX)
 Wire Wire Line
 	11600 2650 11600 2750
@@ -934,27 +934,27 @@ Wire Wire Line
 Connection ~ 11600 7050
 Connection ~ 11600 7450
 Text HLabel 11900 2050 2    50   Input ~ 0
-GTH_DP1_C2M_SLVS_EC_RX_P
+GTH_DP1_C2M_SLVS_EC_RX_LANE1_P
 Text HLabel 11900 2150 2    50   Input ~ 0
-GTH_DP1_C2M_SLVS_EC_RX_N
+GTH_DP1_C2M_SLVS_EC_RX_LANE1_N
 Text HLabel 11900 2450 2    50   Input ~ 0
-GTH_DP3_C2M_SDI_RX_P
+GTH_DP3_C2M_SLVS_EC_RX_LANE0_P
 Text HLabel 11900 2550 2    50   Input ~ 0
-GTH_DP3_C2M_SDI_RX_N
+GTH_DP3_C2M_SLVS_EC_RX_LANE0_N
 Text HLabel 11900 3250 2    50   Input ~ 0
-HPB01_MIPI_B0_D0_N
+HPB01_LA06_N
 Text HLabel 8900 6050 2    50   Input ~ 0
-HPC_CLK0_P
+HPC_CLK0_CLK0_M2C_P
 Text HLabel 8900 6150 2    50   Input ~ 0
-HPC_CLK0_N
+HPC_CLK0_CLK0_M2C_N
 Text HLabel 11900 4050 2    50   Input ~ 0
-HPB04_MIPI_B0_D3_P
+HPB04_LA12_P
 Text HLabel 11900 4150 2    50   Input ~ 0
-HPB04_MIPI_B0_D3_N
+HPB04_LA12_N
 Text HLabel 11900 4350 2    50   Input ~ 0
-HPB17_P
+HPB17_LA17_CC_P
 Text HLabel 11900 4450 2    50   Input ~ 0
-HPB17_N
+HPB17_LA17_CC_N
 Text HLabel 11900 4650 2    50   Input ~ 0
 HPC09_P_I2C_SCL_SLVS
 Text HLabel 11900 4750 2    50   Input ~ 0
@@ -972,9 +972,9 @@ HPC02_P_XHS
 Text HLabel 11900 5650 2    50   Input ~ 0
 HPC02_N_XVS
 Text HLabel 11900 5850 2    50   Input ~ 0
-HPC04_P
+HPC04_LA28_P
 Text HLabel 11900 5950 2    50   Input ~ 0
-HPC04_N
+HPC04_LA28_N
 Text GLabel 11900 6150 2    50   Input ~ 0
 VADJ_FMC
 Text HLabel 11900 6350 2    50   Input ~ 0
@@ -984,23 +984,23 @@ HDB01
 Text HLabel 11900 6550 2    50   Input ~ 0
 HDB02
 Text HLabel 11900 6750 2    50   Input ~ 0
-HDB03_CAM0_RESET_N
+HDB03
 Text HLabel 11900 6850 2    50   Input ~ 0
-HDB04_CAM0_RESET_N
+HDB04
 Text HLabel 11900 6950 2    50   Input ~ 0
 HDB05
 Text HLabel 11900 7150 2    50   Input ~ 0
-HDC00_CC
+HDC00_CC_INT_ICM_42688
 Text HLabel 11900 7250 2    50   Input ~ 0
-HDC01
-Text HLabel 11900 7350 2    50   Input ~ 0
-HDC02
-Text HLabel 11900 7550 2    50   Input ~ 0
-HDC03
+HDC01_SDO_ICM_42688
+Text HLabel 11900 7350 2    50   Output ~ 0
+HDC02_SDI_ICM_42688
+Text HLabel 11900 7550 2    50   Output ~ 0
+HDC03_CLK_ICM_42688
 Text HLabel 11900 7650 2    50   Input ~ 0
-HDC04_24V_BOOST_EN_CXP
-Text HLabel 11900 7750 2    50   Input ~ 0
-HDC05_24V_DC_EN_R
+HDC04_SDA_SDI_MS5611
+Text HLabel 11900 7750 2    50   Output ~ 0
+HDC05_SCL_MS5611
 Wire Wire Line
 	11450 2650 11600 2650
 Wire Wire Line
@@ -1137,26 +1137,26 @@ F 3 "" H 11600 8200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11600 3050 11600 3350
-Text Notes 13130 2150 0    50   ~ 0
+Text Notes 13500 2140 0    50   ~ 0
 C2M (RX)
-Text Notes 12920 2520 0    50   ~ 0
+Text Notes 13510 2545 0    50   ~ 0
 C2M (RX)
-Text Notes 12795 2965 0    50   ~ 0
+Text Notes 13185 2965 0    50   ~ 0
 M2C (TX)
 Wire Wire Line
 	11450 7850 11900 7850
 Wire Wire Line
 	11450 7950 11900 7950
 Text HLabel 11900 3150 2    50   Input ~ 0
-HPB01_MIPI_B0_D0_P
+HPB01_LA06_P
 Text HLabel 11900 3550 2    50   Input ~ 0
-HPB00_CC_MIPI_B0_CLK_N
+HPB00_CC_LA08_N
 Text HLabel 11900 3450 2    50   Input ~ 0
-HPB00_CC_MIPI_B0_CLK_P
+HPB00_CC_LA08_P
 Text HLabel 11900 2950 2    50   Output ~ 0
-GTH_DP0_M2C_N
+GTH_DP0_M2C_TX_DP1_C2M_N
 Text HLabel 11900 2850 2    50   Output ~ 0
-GTH_DP0_M2C_P
+GTH_DP0_M2C_TX_DP1_C2M_P
 Text Notes 3315 6375 0    50   ~ 0
 A44, VCCO_HPB, VADJ_FMC
 Text Notes 6705 6220 0    50   ~ 0

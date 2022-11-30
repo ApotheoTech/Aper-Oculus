@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 20
+Sheet 11 20
 Title "PS Power for Kria SOM"
 Date "2022-01-04"
 Rev "1.00"

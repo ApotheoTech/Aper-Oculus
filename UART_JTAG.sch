@@ -385,7 +385,7 @@ F 3 "" H 19365 8635 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	19365 8635 19365 8585
-Text Label 18600 10175 0    50   ~ 0
+Text Label 18465 8335 0    50   ~ 0
 FTDI_TDO
 Text Label 18465 8235 0    50   ~ 0
 FTDI_TMS
@@ -439,27 +439,10 @@ Wire Wire Line
 	20500 7655 20400 7655
 Text GLabel 20400 7655 0    39   Input ~ 0
 PS_1V8
-Wire Wire Line
-	20550 8585 20445 8585
-$Comp
-L power:GND #PWR0141
-U 1 1 612EEBAD
-P 20550 8635
-F 0 "#PWR0141" H 20550 8385 50  0001 C CNN
-F 1 "GND" H 20555 8462 50  0000 C CNN
-F 2 "" H 20550 8635 50  0001 C CNN
-F 3 "" H 20550 8635 50  0001 C CNN
-	1    20550 8635
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	20550 8635 20550 8585
-Wire Wire Line
-	20445 8485 20550 8485
-Text HLabel 21165 8235 2    50   Output ~ 0
+Text HLabel 21170 8235 2    50   Output ~ 0
 FPGA_JTAG_TMS_C2M_1V8
-Text HLabel 21425 10175 2    50   Input ~ 0
-JTAG_TDO_M2C_1V8
+Text HLabel 21170 8335 2    50   Input ~ 0
+FMC_JTAG_TDO_1V8
 Connection ~ 19415 7485
 Text GLabel 10800 6000 1    50   Input ~ 0
 USB_JTAG_VCORE
@@ -555,13 +538,13 @@ AR Path="/5F71E87D/612FB997" Ref="R?"  Part="1"
 AR Path="/6314F1AA/612FB997" Ref="R?"  Part="1" 
 AR Path="/6314F719/612FB997" Ref="R95"  Part="1" 
 F 0 "R95" V 10090 8455 50  0000 L CNN
-F 1 "10K" V 10090 8020 50  0000 L CNN
+F 1 "1K" V 10090 8020 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9980 8300 50  0001 C CNN
 F 3 "~" H 10050 8300 50  0001 C CNN
 F 4 "1%" V 9990 8060 50  0000 L CNN "Tolerance"
 F 5 "1/10W" H 10050 8300 50  0001 C CNN "Power"
-F 6 "ERJ-2RKF1002X" H 10050 8300 50  0001 C CNN "PartNumber"
-F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 10050 8300 50  0001 C CNN "URL"
+F 6 "ERJ-2RKF1001X‎" H 10050 8300 50  0001 C CNN "PartNumber"
+F 7 "" H 10050 8300 50  0001 C CNN "URL"
 	1    10050 8300
 	0    -1   -1   0   
 $EndComp
@@ -703,13 +686,13 @@ AR Path="/5F71E87D/61534AB9" Ref="R?"  Part="1"
 AR Path="/6314F1AA/61534AB9" Ref="R?"  Part="1" 
 AR Path="/6314F719/61534AB9" Ref="R96"  Part="1" 
 F 0 "R96" V 10105 9755 50  0000 L CNN
-F 1 "10K" V 10105 9320 50  0000 L CNN
+F 1 "12K" V 10105 9320 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9995 9600 50  0001 C CNN
 F 3 "~" H 10065 9600 50  0001 C CNN
 F 4 "1%" V 10005 9360 50  0000 L CNN "Tolerance"
 F 5 "1/10W" H 10065 9600 50  0001 C CNN "Power"
-F 6 "ERJ-2RKF1002X" H 10065 9600 50  0001 C CNN "PartNumber"
-F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 10065 9600 50  0001 C CNN "URL"
+F 6 "ERJ-2RKF1202X" H 10065 9600 50  0001 C CNN "PartNumber"
+F 7 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-2RKF1202X?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7xAHSQTN4zHeY%3D" H 10065 9600 50  0001 C CNN "URL"
 	1    10065 9600
 	0    -1   -1   0   
 $EndComp
@@ -1147,16 +1130,7 @@ Wire Wire Line
 	20505 5440 20905 5440
 Wire Wire Line
 	20905 5440 20905 5490
-Wire Wire Line
-	20505 5440 20505 5610
-Wire Wire Line
-	20505 5610 20405 5610
-Text GLabel 20405 5610 0    39   Input ~ 0
-PS_1V8
 Connection ~ 19420 5440
-Connection ~ 20505 5610
-Wire Wire Line
-	20505 5610 20505 5990
 Wire Wire Line
 	19475 6290 18470 6290
 Wire Wire Line
@@ -1333,8 +1307,6 @@ F 9 "74AVC4T245RSVR-NT" H 21175 10325 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	19470 8335 18770 8335
-Wire Wire Line
 	19300 10500 18600 10500
 Wire Wire Line
 	19200 11300 19300 11300
@@ -1421,7 +1393,7 @@ Text GLabel 20655 9500 0    39   Input ~ 0
 PS_1V8
 Text GLabel 19345 9500 2    39   Input ~ 0
 USB_PWRD_VCCIO_3V3
-Text Label 18770 8335 0    50   ~ 0
+Text Label 18295 10175 0    50   ~ 0
 FTDI_TCK
 NoConn ~ 19300 11150
 Wire Wire Line
@@ -1436,8 +1408,6 @@ Text Label 18600 10500 0    50   ~ 0
 FTDI_TDI
 Text GLabel 20850 10375 2    39   Input ~ 0
 USB_PWRD_VCCIO_3V3
-Wire Wire Line
-	20445 8335 21145 8335
 Wire Wire Line
 	20700 10500 21400 10500
 Wire Wire Line
@@ -1459,7 +1429,7 @@ Connection ~ 20750 10050
 Connection ~ 20750 9500
 Wire Wire Line
 	20750 9500 21155 9500
-Text HLabel 21145 8335 2    50   Output ~ 0
+Text HLabel 21425 10175 2    50   Output ~ 0
 FPGA_JTAG_TCK_C2M_1V8
 Text HLabel 21400 10500 2    50   Output ~ 0
 FPGA_JTAG_TDI_C2M_1V8
@@ -1727,11 +1697,11 @@ FPGA_JTAG_TMS_C2M_1V8
 Text Label 13650 13800 0    50   ~ 0
 FPGA_JTAG_TCK_C2M_1V8
 Text Label 13650 13900 0    50   ~ 0
-FPGA_JTAG_TDO_M2C_1V8
+FMC_JTAG_TDO_1V8
 Text Label 13650 14000 0    50   ~ 0
 FPGA_JTAG_TDI_C2M_1V8
 Wire Wire Line
-	20700 10175 21425 10175
+	20445 8335 21170 8335
 Wire Wire Line
 	20445 8235 21170 8235
 Wire Wire Line
@@ -2266,14 +2236,14 @@ AR Path="/6314DEA9/61F259B1" Ref="C?"  Part="1"
 AR Path="/6314F1AA/61F259B1" Ref="C?"  Part="1" 
 AR Path="/6314F719/61F259B1" Ref="C110"  Part="1" 
 F 0 "C110" H 9140 2690 50  0000 C CNN
-F 1 "10000pF" H 9025 2760 50  0000 C CNN
+F 1 "1000pF" H 9025 2760 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 9338 2600 50  0001 C CNN
 F 3 "~" H 9300 2750 50  0001 C CNN
-F 4 "CGA2B3X7R1H103K050BB" H 9300 2750 50  0001 C CNN "PartNumber"
+F 4 "C1005X7R1H102K050BA" H 9300 2750 50  0001 C CNN "PartNumber"
 F 5 "+-10%" H 9300 2750 50  0001 C CNN "Tolerance"
 F 6 "50V" H 9115 2830 50  0000 C CNN "Voltage"
 F 7 "X7R" H 9300 2750 50  0001 C CNN "Temp_Val"
-F 8 "https://www.digikey.com/en/products/detail/tdk-corporation/CGA2B3X7R1H103K050BB/2672786" V 9300 2750 50  0001 C CNN "URL"
+F 8 "https://www.mouser.com/ProductDetail/TDK/C1005X7R1H102K050BA?qs=NRhsANhppD%2FTffVqKUQysw%3D%3D" V 9300 2750 50  0001 C CNN "URL"
 	1    9300 2750
 	-1   0    0    1   
 $EndComp
@@ -2905,12 +2875,52 @@ Wire Wire Line
 	13650 14000 14800 14000
 Text Label 20570 8235 0    25   ~ 0
 FPGA_JTAG_TMS_C2M_1V8
-Text Label 20595 8335 0    25   ~ 0
+Text Label 20850 10175 0    25   ~ 0
 FPGA_JTAG_TCK_C2M_1V8
-Text Label 20825 10175 0    25   ~ 0
-FPGA_JTAG_TDO_M2C_1V8
 Text Label 20850 10500 0    25   ~ 0
 FPGA_JTAG_TDI_C2M_1V8
+Text Label 20570 8335 0    25   ~ 0
+FMC_JTAG_TDO_1V8
 Wire Wire Line
-	19300 10175 18600 10175
+	18295 10175 19300 10175
+Wire Wire Line
+	20700 10175 21425 10175
+Text Notes 19385 7365 0    50   ~ 0
+TMS, is Output,\nWant to pull high reference VCCA,\nSo we go from A to B
+Text Notes 20870 8820 0    50   ~ 0
+TDO is input, we want to pull low,\nso it goes from B to A
+Wire Wire Line
+	20445 8485 20550 8485
+Wire Wire Line
+	20445 8585 20550 8585
+Wire Wire Line
+	20550 8585 20550 8700
+$Comp
+L power:GND #PWR?
+U 1 1 635E6DE7
+P 20550 8700
+AR Path="/6314CDE6/635E6DE7" Ref="#PWR?"  Part="1" 
+AR Path="/6314F719/635E6DE7" Ref="#PWR0141"  Part="1" 
+F 0 "#PWR0141" H 20550 8450 50  0001 C CNN
+F 1 "GND" H 20555 8527 50  0000 C CNN
+F 2 "" H 20550 8700 50  0001 C CNN
+F 3 "" H 20550 8700 50  0001 C CNN
+	1    20550 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18465 8335 19470 8335
+Text Notes 19250 12015 0    50   ~ 0
+JTAG_VCCO_ON is input, want to sample\nPS_1V8, so DIR2 should be LOW
+Text Notes 19410 9400 0    50   ~ 0
+TCK and TDI are OUTPUTS\nWant to go from A to B, so pull to VCCA\nDIR1 == VCCIO3V3
+Wire Wire Line
+	20505 5440 20505 5650
+Text GLabel 20400 5650 0    39   Input ~ 0
+USB_PWRD_VCCIO_3V3
+Wire Wire Line
+	20400 5650 20505 5650
+Connection ~ 20505 5650
+Wire Wire Line
+	20505 5650 20505 5990
 $EndSCHEMATC

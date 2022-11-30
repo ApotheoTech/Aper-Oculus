@@ -79,7 +79,7 @@ Wire Wire Line
 	12655 3275 12305 3275
 Connection ~ 12655 3275
 Text HLabel 12305 3275 0    50   Input ~ 0
-HDA20_FAN
+HDC09_FAN_PWM
 Wire Wire Line
 	13455 2475 13455 2325
 Wire Wire Line
@@ -196,7 +196,7 @@ AR Path="/6314DEA9/61C5F957" Ref="C?"  Part="1"
 AR Path="/62C99A69/61C5F957" Ref="C?"  Part="1" 
 AR Path="/6374AD8D/61C5F957" Ref="C151"  Part="1" 
 F 0 "C151" H 15545 2565 50  0000 C CNN
-F 1 "0.1uF" H 15485 2630 50  0000 C CNN
+F 1 "DNP" H 15485 2630 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 15743 2475 50  0001 C CNN
 F 3 "~" H 15705 2625 50  0001 C CNN
 F 4 "TMK105BJ104KVHF" H 15705 2625 50  0001 C CNN "PartNumber"
@@ -204,7 +204,8 @@ F 5 "+-10%" H 15705 2625 50  0001 C CNN "Tolerance"
 F 6 "25V" H 15520 2705 50  0000 C CNN "Voltage"
 F 7 "X5R" H 15705 2625 50  0001 C CNN "Temp_Val"
 F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 15705 2625 50  0001 C CNN "URL"
-F 9 "DNP" H 15705 2625 79  0000 C CNB "DNP"
+F 9 "DNP" H 15710 2735 79  0000 C CNB "DNP"
+F 10 "0.1uF" H 15705 2625 50  0001 C CNN "DNP_Val"
 	1    15705 2625
 	-1   0    0    1   
 $EndComp
@@ -219,7 +220,7 @@ AR Path="/6314DEA9/61C64F04" Ref="C?"  Part="1"
 AR Path="/62C99A69/61C64F04" Ref="C?"  Part="1" 
 AR Path="/6374AD8D/61C64F04" Ref="C152"  Part="1" 
 F 0 "C152" H 16045 2565 50  0000 C CNN
-F 1 "0.1uF" H 15985 2630 50  0000 C CNN
+F 1 "DNP" H 15985 2630 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 16243 2475 50  0001 C CNN
 F 3 "~" H 16205 2625 50  0001 C CNN
 F 4 "TMK105BJ104KVHF" H 16205 2625 50  0001 C CNN "PartNumber"
@@ -227,7 +228,8 @@ F 5 "+-10%" H 16205 2625 50  0001 C CNN "Tolerance"
 F 6 "25V" H 16020 2705 50  0000 C CNN "Voltage"
 F 7 "X5R" H 16205 2625 50  0001 C CNN "Temp_Val"
 F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 16205 2625 50  0001 C CNN "URL"
-F 9 "DNP" H 16205 2625 79  0000 C CNB "DNP"
+F 9 "DNP" H 16200 2750 79  0000 C CNB "DNP"
+F 10 "0.1uF" H 16205 2625 50  0001 C CNN "DNP_Val"
 	1    16205 2625
 	-1   0    0    1   
 $EndComp
@@ -464,7 +466,7 @@ AR Path="/6314F1AA/615B4E5D" Ref="R?"  Part="1"
 AR Path="/6314F719/615B4E5D" Ref="R?"  Part="1" 
 AR Path="/6374AD8D/615B4E5D" Ref="R114"  Part="1" 
 F 0 "R114" H 6135 3045 50  0000 L CNN
-F 1 "300k" H 6130 2980 50  0000 L CNN
+F 1 "DNP" H 6130 2980 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 5980 3050 50  0001 C CNN
 F 3 "~" H 6050 3050 50  0001 C CNN
 F 4 "1%" H 6135 3110 50  0000 L CNN "Tolerance"
@@ -472,6 +474,7 @@ F 5 "1/10W" H 6050 3050 50  0001 C CNN "Power"
 F 6 "ERJ-2RKF3003X" H 6050 3050 50  0001 C CNN "PartNumber"
 F 7 "https://www.digikey.com/en/products/detail/ERJ-2RKF3003X/P300KLCT-ND/1746669?itemSeq=376404154" H 6050 3050 50  0001 C CNN "URL"
 F 8 "DNP" H 6050 3050 79  0000 C CIB "DNP"
+F 9 "300k" H 6050 3050 50  0001 C CNN "DNP_Val"
 	1    6050 3050
 	1    0    0    -1  
 $EndComp
@@ -580,7 +583,7 @@ AR Path="/6314DEA9/616137F5" Ref="C?"  Part="1"
 AR Path="/62C99A69/616137F5" Ref="C?"  Part="1" 
 AR Path="/6374AD8D/616137F5" Ref="C143"  Part="1" 
 F 0 "C143" H 9440 3565 50  0000 C CNN
-F 1 "0.1uF" H 9380 3630 50  0000 C CNN
+F 1 "DNP" H 9380 3630 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 9638 3475 50  0001 C CNN
 F 3 "~" H 9600 3625 50  0001 C CNN
 F 4 "TMK105BJ104KVHF" H 9600 3625 50  0001 C CNN "PartNumber"
@@ -588,7 +591,8 @@ F 5 "+-10%" H 9600 3625 50  0001 C CNN "Tolerance"
 F 6 "25V" H 9415 3705 50  0000 C CNN "Voltage"
 F 7 "X5R" H 9600 3625 50  0001 C CNN "Temp_Val"
 F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 9600 3625 50  0001 C CNN "URL"
-F 9 "DNP" H 9600 3625 79  0000 C CNB "DNP"
+F 9 "DNP" H 9595 3770 79  0000 C CNB "DNP"
+F 10 "0.1uF" H 9600 3625 50  0001 C CNN "DNP_VAL"
 	1    9600 3625
 	-1   0    0    1   
 $EndComp
@@ -606,14 +610,14 @@ AR Path="/5F71E87D/6162F215" Ref="R?"  Part="1"
 AR Path="/6314F1AA/6162F215" Ref="R?"  Part="1" 
 AR Path="/6314F719/6162F215" Ref="R?"  Part="1" 
 AR Path="/6374AD8D/6162F215" Ref="R119"  Part="1" 
-F 0 "R119" H 8885 3575 50  0000 L CNN
-F 1 "422" H 8800 3640 50  0000 L CNN
+F 0 "R119" H 8755 3565 50  0000 L CNN
+F 1 "0" H 8800 3640 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8980 3625 50  0001 C CNN
 F 3 "~" H 9050 3625 50  0001 C CNN
 F 4 "1%" H 8875 3705 50  0000 L CNN "Tolerance"
-F 5 "1/10W" H 9050 3625 50  0001 C CNN "Power"
-F 6 "ERJ-2RKF4220X" H 9050 3625 50  0001 C CNN "PartNumber"
-F 7 "https://www.digikey.com/en/products/detail/ERJ-2RKF4220X/P422LCT-ND/194400?itemSeq=376477738" H 9050 3625 50  0001 C CNN "URL"
+F 5 "1/5W" H 9050 3625 50  0001 C CNN "Power"
+F 6 "CRCW04020000Z0EDHP" H 9050 3625 50  0001 C CNN "PartNumber"
+F 7 "" H 9050 3625 50  0001 C CNN "URL"
 	1    9050 3625
 	-1   0    0    1   
 $EndComp
@@ -642,7 +646,7 @@ AR Path="/6314DEA9/6164E358" Ref="C?"  Part="1"
 AR Path="/62C99A69/6164E358" Ref="C?"  Part="1" 
 AR Path="/6374AD8D/6164E358" Ref="C140"  Part="1" 
 F 0 "C140" H 8490 3565 50  0000 C CNN
-F 1 "0.1uF" H 8430 3630 50  0000 C CNN
+F 1 "DNP" H 8430 3630 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 8688 3475 50  0001 C CNN
 F 3 "~" H 8650 3625 50  0001 C CNN
 F 4 "TMK105BJ104KVHF" H 8650 3625 50  0001 C CNN "PartNumber"
@@ -650,7 +654,8 @@ F 5 "+-10%" H 8650 3625 50  0001 C CNN "Tolerance"
 F 6 "25V" H 8465 3705 50  0000 C CNN "Voltage"
 F 7 "X5R" H 8650 3625 50  0001 C CNN "Temp_Val"
 F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 8650 3625 50  0001 C CNN "URL"
-F 9 "DNP" H 8650 3625 79  0000 C CNB "DNP"
+F 9 "DNP" H 8650 3755 79  0000 C CNB "DNP"
+F 10 "0.1uF" H 8650 3625 50  0001 C CNN "DNP_Val"
 	1    8650 3625
 	-1   0    0    1   
 $EndComp
@@ -1909,10 +1914,10 @@ F 9 "NDS331N" H 14655 2225 50  0001 L CNN "Manufacturer_Part_Number"
 $EndComp
 Wire Wire Line
 	13455 2875 14205 2875
-Text Notes 7175 5755 0    50   ~ 0
+Text Notes 6855 5715 0    50   ~ 0
 12A for all board (gives us 60W)
-Text Notes 6695 5560 0    50   ~ 0
-Max current Draw for SOM (all are max current into SOM)\n5V@4A for SOM (20W)\nHPA, HPB 1.2V@1A (2.4W)\nHDA, HDB 3.3V@1A (6.6W)\nHPC, HDC 1.8V@1A (3.6W)\nIAS0 1.8V@0.2A, 1.2V@0.2A, 2.75V@0.2A (1.15W)\nSLVS-EC FRAMOS 3.8V@0.6A, 1.8V@0.6A (3.36W)\nMIPI Cameras (per 1 3.3V@0.5A) 1.65W (x4) (6.6W)\nDP power ?\n\nTotal (without DP)\n43.71W for all peripherals on at same time, with max power draw (Probably not ever going to happen)
+Text Notes 6845 5605 0    50   ~ 0
+Max current Draw for SOM (all are max current into SOM)\n5V@4A for SOM (20W)\nHPA           1.2V@1A (1.2W)\nHDA, HDC 3.3V@1A (6.6W)\nHPC, HPB, HDB VADJ@1A (worst case 6W)\nSLVS-EC FRAMOS 3.8V@0.6A, 1.8V@0.6A (3.36W)\nMIPI Cameras (per 1 3.3V@0.5A) 1.65W (x2) (3.3W)\nDP power (3.3V@0.5A) 1.65W\nFMC 3V3 PWR (3.3V@3.1A) 10.23W\nFMC VADJ PWR(VADJ@4A) (worst case 8W)\n\nTotal \n60W for all peripherals on at same time, with max power draw (Probably not ever going to happen)
 Text Notes 1125 2490 0    50   ~ 0
 PJ-202BH is rated for 5A so total of 60W to board
 Wire Wire Line
@@ -1920,7 +1925,7 @@ Wire Wire Line
 Wire Wire Line
 	2225 3620 2675 3620
 Text Notes 6955 4085 0    50   ~ 0
-Voltage limit (13.7V)\nCurrent Limit (5A)\n\nThus max power to board is 68.5W, nominal is 12V@5A (60W)
+Voltage limit (13.7V)\nCurrent Limit (8A)\n\nThus max power to board before shutdown is 96W
 $Comp
 L power:PWR_FLAG #FLG020
 U 1 1 61A15CFD
@@ -1964,7 +1969,7 @@ Connection ~ 3350 6400
 Wire Wire Line
 	3350 6400 3200 6400
 Text HLabel 15150 6400 2    50   Output ~ 0
-ALERT_INA260
+HDA19_ALERT_INA260
 $Comp
 L Device:R R?
 U 1 1 61EFE001

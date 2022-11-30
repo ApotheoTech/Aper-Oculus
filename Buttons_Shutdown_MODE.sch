@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 15 20
+Sheet 14 20
 Title "Buttons, Mode pins, Shutdown"
 Date "2022-01-04"
 Rev "1.00"

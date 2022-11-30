@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 11 20
+Sheet 10 20
 Title "SOM240-1"
 Date "2022-01-04"
 Rev "1.00"
@@ -98,11 +98,11 @@ Remember Chance, We are the Carrier on this design
 Wire Wire Line
 	2450 3350 2900 3350
 Text HLabel 2900 3350 2    50   Input ~ 0
-HPA12_MIPI_A2_D1_P
+HPA12_P
 Wire Wire Line
 	2450 3450 2900 3450
 Text HLabel 2900 3450 2    50   Input ~ 0
-HPA12_MIPI_A2_D1_N
+HPA12_N
 Wire Wire Line
 	2450 3950 2900 3950
 Text HLabel 2900 3950 2    50   Input ~ 0
@@ -122,19 +122,19 @@ VCCOEN_PL_M2C
 Wire Wire Line
 	2450 4650 2900 4650
 Text HLabel 2900 4650 2    50   Input ~ 0
-JTAG_TMS_C2M
+FPGA_JTAG_TMS_C2M_1V8
 Wire Wire Line
 	2450 4750 2900 4750
 Text HLabel 2900 4750 2    50   Output ~ 0
-JTAG_TDO_M2C
+FPGA_JTAG_TDO_FMC_TDI_1V8
 Wire Wire Line
 	2450 4850 2900 4850
 Text HLabel 2900 4850 2    50   Input ~ 0
-JTAG_TDI_C2M
+FPGA_JTAG_TDI_C2M_1V8
 Wire Wire Line
 	2450 4950 2900 4950
 Text HLabel 2900 4950 2    50   Input ~ 0
-JTAG_TCK_C2M
+FPGA_JTAG_TCK_C2M_1V8
 Wire Wire Line
 	2450 5150 2900 5150
 Text HLabel 2900 5150 2    50   Input ~ 0
@@ -233,9 +233,9 @@ HPA07_MIPI_A1_D1_P
 Text HLabel 5900 3250 2    50   Input ~ 0
 HPA07_MIPI_A1_D1_N
 Text HLabel 5900 3450 2    50   Input ~ 0
-HPA11_MIPI_A2_D0_P
+HPA11_P
 Text HLabel 5900 3550 2    50   Input ~ 0
-HPA11_MIPI_A2_D0_N
+HPA11_N
 Text HLabel 5900 4050 2    50   Input ~ 0
 HDA03
 Text HLabel 5900 4150 2    50   Input ~ 0
@@ -269,9 +269,9 @@ MIO51_SDIO_CLK
 Text HLabel 5900 6450 2    50   Output ~ 0
 MIO58_USB_STP
 Text HLabel 5900 6850 2    50   Input ~ 0
-MIO70_UART_RXD
+MIO70
 Text HLabel 5900 6950 2    50   Output ~ 0
-MIO71_UART_TXD
+MIO71
 Text HLabel 5900 7050 2    50   Input ~ 0
 MIO72
 Text HLabel 5900 7350 2    50   Input ~ 0
@@ -440,15 +440,15 @@ HPA02_MIPI_A0_D1_P
 Text HLabel 11900 2950 2    50   Input ~ 0
 HPA02_MIPI_A0_D1_N
 Text HLabel 11900 3750 2    50   Input ~ 0
-HPA14_MIPI_A2_D3_P
+HPA14_P
 Text HLabel 11900 3850 2    50   Input ~ 0
-HPA14_MIPI_A2_D3_N
+HPA14_N
 Text HLabel 11900 4050 2    50   Input ~ 0
 HDA00_CC
-Text HLabel 11900 4150 2    50   Input ~ 0
-HDA01
-Text HLabel 11900 4250 2    50   Input ~ 0
-HDA02
+Text HLabel 11900 4150 2    50   Output ~ 0
+HDA01_CAM0_GPIO_1
+Text HLabel 11900 4250 2    50   Output ~ 0
+HDA02_DP_PWR_EN
 Text HLabel 11900 4550 2    50   Input ~ 0
 HDA13
 Text HLabel 11900 4650 2    50   Input ~ 0
@@ -476,7 +476,7 @@ MIO53_USB_DIR
 Text HLabel 11900 6250 2    50   BiDi ~ 0
 MIO54_USB_DATA2
 Text HLabel 11900 6450 2    50   Output ~ 0
-MIO64_SPI0_SCLK
+MIO64
 Text HLabel 11900 6850 2    50   Input ~ 0
 MIO76
 Text HLabel 11900 6950 2    50   Input ~ 0
@@ -613,11 +613,11 @@ Connection ~ 2600 3550
 Wire Wire Line
 	2450 3650 2900 3650
 Text HLabel 2900 3650 2    50   Input ~ 0
-HPA13_MIPI_A2_D2_P
+HPA13_P
 Wire Wire Line
 	2450 3750 2900 3750
 Text HLabel 2900 3750 2    50   Input ~ 0
-HPA13_MIPI_A2_D2_N
+HPA13_N
 Wire Wire Line
 	2600 3550 2600 3850
 Wire Wire Line
@@ -795,7 +795,7 @@ HDA18
 Wire Wire Line
 	8450 4750 8900 4750
 Text HLabel 8900 4750 2    50   Input ~ 0
-HDA19
+HDA19_ALERT_INA260
 Wire Wire Line
 	8450 5050 8900 5050
 Text HLabel 8900 5050 2    50   Output ~ 0
@@ -875,11 +875,11 @@ Connection ~ 8600 3550
 Wire Wire Line
 	8450 3650 8900 3650
 Text HLabel 8900 3650 2    50   Input ~ 0
-HPA10_CC_MIPI_A2_CLK_P
+HPA10_CC_P
 Wire Wire Line
 	8450 3750 8900 3750
 Text HLabel 8900 3750 2    50   Input ~ 0
-HPA10_CC_MIPI_A2_CLK_N
+HPA10_CC_N
 Wire Wire Line
 	8600 3550 8600 3850
 Wire Wire Line
@@ -919,15 +919,15 @@ Wire Wire Line
 Wire Wire Line
 	8450 6650 8900 6650
 Text HLabel 8900 6650 2    50   Output ~ 0
-MIO67_SPI0_CS_N
+MIO67
 Wire Wire Line
 	8450 6750 8900 6750
 Text HLabel 8900 6750 2    50   Input ~ 0
-MIO68_SPI0_MISO
+MIO68
 Wire Wire Line
 	8450 6850 8900 6850
 Text HLabel 8900 6850 2    50   Output ~ 0
-MIO69_SPI0_MOSI
+MIO69
 Wire Wire Line
 	8450 7850 8600 7850
 Connection ~ 8600 7850
@@ -1053,7 +1053,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 4850 8900 4850
 Text HLabel 8900 4850 2    50   Output ~ 0
-HDA20_FAN
+HDA20
 Wire Wire Line
 	8600 3850 8600 4150
 Wire Wire Line
@@ -1108,7 +1108,7 @@ Connection ~ 11600 4350
 Wire Wire Line
 	11600 4350 11600 4750
 Text HLabel 11900 4450 2    50   Input ~ 0
-HDA12
+HDA12_DP_PWR_FAULT
 Wire Wire Line
 	11450 4450 11900 4450
 Wire Wire Line
@@ -1213,4 +1213,8 @@ F 3 "" H 3750 2550 50  0001 C CNN
 $EndComp
 Text GLabel 5900 3850 2    50   Input ~ 0
 PL_3V3
+Text Notes 6320 3855 0    50   ~ 0
+VCCO_HDA (3.3V)
+Text Notes 12395 2635 0    50   ~ 0
+VCC_HPA (1.2V for MIPI)
 $EndSCHEMATC

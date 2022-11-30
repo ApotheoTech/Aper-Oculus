@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 9 20
+Sheet 8 20
 Title "IGLOO nano Reset for Kria Carrier"
 Date "2022-01-04"
 Rev "1.00"
@@ -404,19 +404,19 @@ MIO43_SD_RESET_N
 Wire Wire Line
 	9700 6500 10875 6500
 Text Label 10875 6500 2    50   ~ 0
-MIO43_SD_RESET_3V3
+MIO43_SD_RESET_3V3_N
 Text Label 6045 2850 2    50   ~ 0
-MIO43_SD_RESET_3V3
+MIO43_SD_RESET_3V3_N
 Wire Wire Line
 	9700 6175 10875 6175
 Text Label 10875 6175 2    50   ~ 0
-MIO44_USB_RESET_3V3
+MIO44_USB_RESET_3V3_N
 Text Label 6045 2955 2    50   ~ 0
-MIO44_USB_RESET_3V3
+MIO44_USB_RESET_3V3_N
 Text Label 6045 2750 2    50   ~ 0
-USB_RESET_OUT_3V3
+USB_RESET_OUT_3V3_N
 Text Label 10875 6825 2    50   ~ 0
-USB_RESET_OUT_3V3
+USB_RESET_OUT_3V3_N
 Wire Wire Line
 	9700 6825 10875 6825
 $Comp
@@ -607,64 +607,12 @@ Wire Wire Line
 Wire Wire Line
 	5095 3150 6045 3150
 NoConn ~ 8300 7150
-Text HLabel 2330 3045 0    50   Input ~ 0
-HDB03_CAM0_RESET_N
+Text HLabel 1450 3045 0    50   Input ~ 0
+HDC14_CAM0_RESET_N
 Text Label 4645 1910 3    25   ~ 0
 PS_POR_B_3V3
 Text Label 4545 1910 3    25   ~ 0
 PS_POR_B_DIR
-Text HLabel 10550 9500 2    50   BiDi ~ 0
-PS_POR_B
-Text GLabel 9920 9050 0    50   Input ~ 0
-PS_1V8
-Wire Wire Line
-	10000 9050 9920 9050
-Wire Wire Line
-	10000 9050 10000 9150
-$Comp
-L Device:R R?
-U 1 1 61DC3C3D
-P 10000 9300
-AR Path="/5F71E87D/61DC3C3D" Ref="R?"  Part="1" 
-AR Path="/62C99A69/61DC3C3D" Ref="R?"  Part="1" 
-AR Path="/61AA736C/61DC3C3D" Ref="R159"  Part="1" 
-F 0 "R159" H 10070 9391 50  0000 L CNN
-F 1 "4.7K" H 10070 9300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9930 9300 50  0001 C CNN
-F 3 "~" H 10000 9300 50  0001 C CNN
-F 4 "1%" H 10070 9209 50  0000 L CNN "Tolerance"
-F 5 "CRCW04024K70FKED" H 10000 9300 50  0001 C CNN "PartNumber"
-	1    10000 9300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61DC3C35
-P 10000 10250
-AR Path="/6314F1AA/61DC3C35" Ref="#PWR?"  Part="1" 
-AR Path="/61AA736C/61DC3C35" Ref="#PWR0217"  Part="1" 
-F 0 "#PWR0217" H 10000 10000 50  0001 C CNN
-F 1 "GND" H 10005 10077 50  0000 C CNN
-F 2 "" H 10000 10250 50  0001 C CNN
-F 3 "" H 10000 10250 50  0001 C CNN
-	1    10000 10250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10000 10150 10000 10250
-$Comp
-L ApotheoTech:DMN26D0UFB4-7 Q?
-U 1 1 61DC3C2E
-P 9500 9850
-AR Path="/6314F1AA/61DC3C2E" Ref="Q?"  Part="1" 
-AR Path="/61AA736C/61DC3C2E" Ref="Q21"  Part="1" 
-F 0 "Q21" H 10130 9903 60  0000 L CNN
-F 1 "DMN26D0UFB4-7" H 10130 9797 60  0000 L CNN
-F 2 "ApotheoTech_CXP_Lib:DMN26D0UFB4-7" H 10000 9350 60  0001 C CNN
-F 3 "" H 9500 9850 60  0000 C CNN
-	1    9500 9850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0213
 U 1 1 61DB405C
@@ -697,9 +645,7 @@ Wire Wire Line
 Wire Wire Line
 	6130 9350 6070 9350
 Connection ~ 6070 9350
-Wire Wire Line
-	6070 9170 6070 9350
-Text Notes 11430 9290 0    79   ~ 0
+Text Notes 7740 8900 0    79   ~ 0
 Pull up, DIR high is translation from A to B\nWant POR_B to be controlled by carrier card,\nit is held in reset until PS side is good\nRefer to p age 24 of UG1089\nOnce CC_PS is good, check the PS_POR_B\nto reset all PS reliant domains
 Wire Wire Line
 	7160 9350 7160 9650
@@ -803,8 +749,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 9850 5970 9850
 Wire Wire Line
-	6100 9750 5670 9750
-Wire Wire Line
 	6500 9350 6430 9350
 $Comp
 L power:GND #PWR?
@@ -838,17 +782,6 @@ F 3 "" H 6900 9750 60  0000 C CNN
 	1    6900 9750
 	1    0    0    -1  
 $EndComp
-Text Label 8800 9850 0    50   ~ 0
-PS_POR_B_3V3_L
-Wire Wire Line
-	8800 9850 9500 9850
-Wire Wire Line
-	10000 9450 10000 9500
-Wire Wire Line
-	10550 9500 10000 9500
-Connection ~ 10000 9500
-Wire Wire Line
-	10000 9500 10000 9550
 Text Label 4350 1910 3    25   ~ 0
 PS_POR_B_3V3_L
 Text GLabel 6045 3150 2    50   Input ~ 0
@@ -956,8 +889,6 @@ Wire Wire Line
 	3750 2300 3750 2110
 Wire Wire Line
 	4250 2300 4250 2110
-Wire Wire Line
-	3300 3045 2330 3045
 Wire Wire Line
 	2355 3345 3300 3345
 Wire Wire Line
@@ -1077,13 +1008,12 @@ AR Path="/6314F1AA/628F3D2A" Ref="R?"  Part="1"
 AR Path="/6314F719/628F3D2A" Ref="R?"  Part="1" 
 AR Path="/61AA736C/628F3D2A" Ref="R35"  Part="1" 
 F 0 "R35" H 11370 2791 50  0000 L CNN
-F 1 "10K" H 11370 2700 50  0000 L CNN
+F 1 "100K" H 11370 2700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 11230 2700 50  0001 C CNN
 F 3 "~" H 11300 2700 50  0001 C CNN
 F 4 "1%" H 11370 2609 50  0000 L CNN "Tolerance"
-F 5 "1/10W" H 11300 2700 50  0001 C CNN "Power"
-F 6 "ERJ-2RKF1002X" H 11300 2700 50  0001 C CNN "PartNumber"
-F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 11300 2700 50  0001 C CNN "URL"
+F 5 "1/5W" H 11300 2700 50  0001 C CNN "Power"
+F 6 "CRCW0402100KFKEDHP" H 11300 2700 50  0001 C CNN "PartNumber"
 	1    11300 2700
 	1    0    0    -1  
 $EndComp
@@ -1196,10 +1126,8 @@ $EndComp
 Wire Wire Line
 	3850 2300 3850 2000
 NoConn ~ 3850 2000
-Wire Wire Line
-	3300 3145 2330 3145
-Text HLabel 2330 3145 0    50   Input ~ 0
-HDB04_CAM1_RESET_N
+Text HLabel 1450 3145 0    50   Input ~ 0
+HDC06_CAM1_RESET_N
 Wire Wire Line
 	3300 2950 3000 2950
 Wire Wire Line
@@ -1214,11 +1142,182 @@ Text Label 3050 2950 0    20   ~ 0
 VADJ_FMC_PG_MCU
 Wire Wire Line
 	3755 4100 3755 4400
-NoConn ~ 3755 4400
 Wire Wire Line
 	3855 4100 3855 4400
 NoConn ~ 3855 4400
 Wire Wire Line
 	3955 4100 3955 4400
 NoConn ~ 3955 4400
+$Comp
+L Device:R R?
+U 1 1 63D47F9C
+P 1500 2700
+AR Path="/5F71E87D/63D47F9C" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/63D47F9C" Ref="R?"  Part="1" 
+AR Path="/6314F719/63D47F9C" Ref="R?"  Part="1" 
+AR Path="/61AA736C/63D47F9C" Ref="R42"  Part="1" 
+F 0 "R42" H 1570 2791 50  0000 L CNN
+F 1 "10K" H 1570 2700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1430 2700 50  0001 C CNN
+F 3 "~" H 1500 2700 50  0001 C CNN
+F 4 "1%" H 1570 2609 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 1500 2700 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 1500 2700 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 1500 2700 50  0001 C CNN "URL"
+	1    1500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 63D4FE45
+P 1800 2700
+AR Path="/5F71E87D/63D4FE45" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/63D4FE45" Ref="R?"  Part="1" 
+AR Path="/6314F719/63D4FE45" Ref="R?"  Part="1" 
+AR Path="/61AA736C/63D4FE45" Ref="R43"  Part="1" 
+F 0 "R43" H 1870 2791 50  0000 L CNN
+F 1 "10K" H 1870 2700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1730 2700 50  0001 C CNN
+F 3 "~" H 1800 2700 50  0001 C CNN
+F 4 "1%" H 1870 2609 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 1800 2700 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 1800 2700 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 1800 2700 50  0001 C CNN "URL"
+	1    1800 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1300 2400 0    50   Input ~ 0
+UTIL_3V3
+Wire Wire Line
+	1300 2400 1500 2400
+Wire Wire Line
+	1500 2400 1500 2550
+Wire Wire Line
+	1500 2400 1800 2400
+Wire Wire Line
+	1800 2400 1800 2550
+Connection ~ 1500 2400
+Wire Wire Line
+	1450 3045 1500 3045
+Wire Wire Line
+	1500 2850 1500 3045
+Connection ~ 1500 3045
+Wire Wire Line
+	1500 3045 3300 3045
+Wire Wire Line
+	1800 2850 1800 3145
+Wire Wire Line
+	1800 3145 3300 3145
+Wire Wire Line
+	1800 3145 1450 3145
+Connection ~ 1800 3145
+Text Notes 5360 2630 0    50   ~ 0
+Place all *_N pins as high (1) when not in reset
+Text HLabel 3755 4400 3    50   Output ~ 0
+VADJ_EN
+Wire Wire Line
+	10000 9500 10000 9550
+Wire Wire Line
+	10550 9500 10000 9500
+Connection ~ 10000 9500
+Wire Wire Line
+	10000 9450 10000 9500
+Wire Wire Line
+	8800 9850 9250 9850
+Text Label 8800 9850 0    50   ~ 0
+PS_POR_B_3V3_L
+$Comp
+L ApotheoTech:DMN26D0UFB4-7 Q?
+U 1 1 61DC3C2E
+P 9500 9850
+AR Path="/6314F1AA/61DC3C2E" Ref="Q?"  Part="1" 
+AR Path="/61AA736C/61DC3C2E" Ref="Q21"  Part="1" 
+F 0 "Q21" H 10130 9903 60  0000 L CNN
+F 1 "DMN26D0UFB4-7" H 10130 9797 60  0000 L CNN
+F 2 "ApotheoTech_CXP_Lib:DMN26D0UFB4-7" H 10000 9350 60  0001 C CNN
+F 3 "" H 9500 9850 60  0000 C CNN
+	1    9500 9850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 10150 10000 10250
+$Comp
+L power:GND #PWR?
+U 1 1 61DC3C35
+P 10000 10250
+AR Path="/6314F1AA/61DC3C35" Ref="#PWR?"  Part="1" 
+AR Path="/61AA736C/61DC3C35" Ref="#PWR0217"  Part="1" 
+F 0 "#PWR0217" H 10000 10000 50  0001 C CNN
+F 1 "GND" H 10005 10077 50  0000 C CNN
+F 2 "" H 10000 10250 50  0001 C CNN
+F 3 "" H 10000 10250 50  0001 C CNN
+	1    10000 10250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 9050 10000 9150
+Wire Wire Line
+	10000 9050 9920 9050
+Text GLabel 9920 9050 0    50   Input ~ 0
+PS_1V8
+Text HLabel 10550 9500 2    50   BiDi ~ 0
+PS_POR_B
+Wire Wire Line
+	6100 9750 5670 9750
+Wire Wire Line
+	6070 9170 6070 9350
+$Comp
+L Device:R R?
+U 1 1 61DC3C3D
+P 10000 9300
+AR Path="/5F71E87D/61DC3C3D" Ref="R?"  Part="1" 
+AR Path="/62C99A69/61DC3C3D" Ref="R?"  Part="1" 
+AR Path="/61AA736C/61DC3C3D" Ref="R159"  Part="1" 
+F 0 "R159" H 10070 9391 50  0000 L CNN
+F 1 "DNP" H 10070 9300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9930 9300 50  0001 C CNN
+F 3 "~" H 10000 9300 50  0001 C CNN
+F 4 "1%" H 10070 9209 50  0000 L CNN "Tolerance"
+F 5 "CRCW04024K70FKED" H 10000 9300 50  0001 C CNN "PartNumber"
+F 6 "DNP" H 10000 9300 50  0000 C CNN "DNP"
+F 7 "4.7K" H 10000 9300 50  0001 C CNN "DNP_Val"
+	1    10000 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR044
+U 1 1 6348FEC5
+P 9250 10350
+F 0 "#PWR044" H 9250 10100 50  0001 C CNN
+F 1 "GND" H 9255 10177 50  0000 C CNN
+F 2 "" H 9250 10350 50  0001 C CNN
+F 3 "" H 9250 10350 50  0001 C CNN
+	1    9250 10350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 10350 9250 10230
+Wire Wire Line
+	9250 9930 9250 9850
+$Comp
+L Device:R R?
+U 1 1 6348FECF
+P 9250 10080
+AR Path="/5F71E87D/6348FECF" Ref="R?"  Part="1" 
+AR Path="/5F71E4A6/6348FECF" Ref="R?"  Part="1" 
+AR Path="/61AA736C/6348FECF" Ref="R52"  Part="1" 
+F 0 "R52" H 9320 10171 50  0000 L CNN
+F 1 "4.7K" H 9320 10080 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9180 10080 50  0001 C CNN
+F 3 "~" H 9250 10080 50  0001 C CNN
+F 4 "1%" H 9320 9989 50  0000 L CNN "Tolerance"
+F 5 "CRCW04024K70FKED" H 9250 10080 50  0001 C CNN "PartNumber"
+	1    9250 10080
+	-1   0    0    1   
+$EndComp
+Connection ~ 9250 9850
+Wire Wire Line
+	9250 9850 9500 9850
+Text Notes 10505 9235 0    50   ~ 0
+PS_POR is pulled up 4.7K to 1.8V on SOM
 $EndSCHEMATC

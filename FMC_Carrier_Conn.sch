@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 19 20
+Sheet 18 20
 Title "FMC Connection"
 Date "2022-01-04"
 Rev "1.00"
@@ -267,7 +267,7 @@ FMC_TCK_1V8
 Wire Wire Line
 	10800 5000 11500 5000
 Text HLabel 14280 9575 0    50   Input ~ 0
-FMC_TDI_1V8
+FPGA_JTAG_TDO_FMC_TDI_1V8
 Wire Wire Line
 	10800 5200 11500 5200
 Text HLabel 14280 9250 0    50   Input ~ 0
@@ -327,7 +327,7 @@ FMC_12V
 Wire Wire Line
 	10800 5100 11500 5100
 Text HLabel 14670 12500 0    50   Output ~ 0
-FMC_TDO_FMC_1V8
+FMC_JTAG_TDO_1V8
 Wire Wire Line
 	10800 5800 11050 5800
 Wire Wire Line
@@ -346,7 +346,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 2200 3100 2200
 Text HLabel 3100 2200 0    50   Output ~ 0
-RX_DP1_M2C_P
+GTH_DP0_C2M_RX_DP1_M2C_P
 Wire Wire Line
 	3800 2100 3700 2100
 Wire Wire Line
@@ -446,7 +446,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 2300 3100 2300
 Text HLabel 3100 2300 0    50   Output ~ 0
-RX_DP1_M2C_N
+GTH_DP0_C2M_RX_DP1_M2C_N
 Wire Wire Line
 	3800 2600 3100 2600
 Wire Wire Line
@@ -478,27 +478,27 @@ DP5_M2C_N
 Wire Wire Line
 	3800 4200 3100 4200
 Text HLabel 3100 4200 0    50   Input ~ 0
-TX_DP1_C2M_P
+GTH_DP0_M2C_TX_DP1_C2M_P
 Wire Wire Line
 	3800 4300 3100 4300
 Text HLabel 3100 4300 0    50   Input ~ 0
-TX_DP1_C2M_N
+GTH_DP0_M2C_TX_DP1_C2M_N
 Wire Wire Line
 	3800 4600 3100 4600
 Text HLabel 3100 4600 0    50   Input ~ 0
-TX_DP2_C2M_P
+GTH_DP3_M2C_TX_DP2_C2M_P
 Wire Wire Line
 	3800 4700 3100 4700
 Text HLabel 3100 4700 0    50   Input ~ 0
-TX_DP2_C2M_N
+GTH_DP3_M2C_TX_DP2_C2M_N
 Wire Wire Line
 	3800 5000 3100 5000
 Text HLabel 3100 5000 0    50   Input ~ 0
-TX_DP3_C2M_P
+GTH_DP1_M2C_TX_DP3_C2M_P
 Wire Wire Line
 	3800 5100 3100 5100
 Text HLabel 3100 5100 0    50   Input ~ 0
-TX_DP3_C2M_N
+GTH_DP1_M2C_TX_DP3_C2M_N
 Wire Wire Line
 	3800 5400 3100 5400
 Wire Wire Line
@@ -749,59 +749,59 @@ Wire Wire Line
 Wire Wire Line
 	9800 2200 9100 2200
 Text HLabel 9100 2200 0    50   Input ~ 0
-TX_DP0_C2M_P
+GTH_DP2_M2C_TX_DP0_C2M_P
 Wire Wire Line
 	9800 2300 9100 2300
 Text HLabel 9100 2300 0    50   Input ~ 0
-TX_DP0_C2M_N
+GTH_DP2_M2C_TX_DP0_C2M_N
 Wire Wire Line
 	9800 2600 9100 2600
 Text HLabel 9100 2600 0    50   Output ~ 0
-RX_DP0_M2C_P
+GTH_DP2_C2M_RX_DP0_M2C_P
 Wire Wire Line
 	9800 2700 9100 2700
 Text HLabel 9100 2700 0    50   Output ~ 0
-RX_DP0_M2C_N
+GTH_DP2_C2M_RX_DP0_M2C_N
 Wire Wire Line
 	9800 3000 9100 3000
 Text HLabel 9100 3000 0    50   Output ~ 0
-LA06_P
+HPB01_LA06_P
 Wire Wire Line
 	9800 3100 9100 3100
 Text HLabel 9100 3100 0    50   Output ~ 0
-LA06_N
+HPB01_LA06_N
 Wire Wire Line
 	9800 3400 9100 3400
 Text HLabel 9100 3400 0    50   Output ~ 0
-LA10_P
+HPB05_CC_LA10_P
 Wire Wire Line
 	9800 3500 9100 3500
 Text HLabel 9100 3500 0    50   Output ~ 0
-LA10_N
+HPB05_CC_LA10_N
 Wire Wire Line
 	9800 3800 9100 3800
 Text HLabel 9100 3800 0    50   Output ~ 0
-LA14_P
+HPB11_LA14_P
 Wire Wire Line
 	9800 3900 9100 3900
 Text HLabel 9100 3900 0    50   Output ~ 0
-LA14_N
+HPB11_LA14_N
 Wire Wire Line
 	9800 4200 9100 4200
 Text HLabel 9100 4200 0    50   Output ~ 0
-LA18_CC_P
+HPC08_LA18_CC_P
 Wire Wire Line
 	9800 4300 9100 4300
 Text HLabel 9100 4300 0    50   Output ~ 0
-LA18_CC_N
+HPC08_LA18_CC_N
 Wire Wire Line
 	9800 4600 9100 4600
 Text HLabel 9100 4600 0    50   Output ~ 0
-LA27_P
+HPC07_LA27_P
 Wire Wire Line
 	9800 4700 9100 4700
 Text HLabel 9100 4700 0    50   Output ~ 0
-LA27_N
+HPC07_LA27_N
 Wire Wire Line
 	9800 5000 9100 5000
 Wire Wire Line
@@ -811,67 +811,67 @@ FMC_SCL
 Text GLabel 9100 5100 0    50   BiDi ~ 0
 FMC_SDA
 Text HLabel 11500 3800 2    50   Output ~ 0
-LA13_N
+HPB06_LA13_N
 Wire Wire Line
 	10800 3800 11500 3800
 Text HLabel 11500 3700 2    50   Output ~ 0
-LA13_P
+HPB06_LA13_P
 Wire Wire Line
 	10800 3700 11500 3700
 Text HLabel 11500 3500 2    50   Output ~ 0
-LA09_N
+HPB12_LA09_N
 Wire Wire Line
 	10800 3500 11500 3500
 Text HLabel 11500 3400 2    50   Output ~ 0
-LA09_P
+HPB12_LA09_P
 Wire Wire Line
 	10800 3400 11500 3400
 Text HLabel 11500 3200 2    50   Output ~ 0
-LA05_N
+HPB14_LA05_N
 Wire Wire Line
 	10800 3200 11500 3200
 Text HLabel 11500 3100 2    50   Output ~ 0
-LA05_P
+HPB14_LA05_P
 Wire Wire Line
 	10800 3100 11500 3100
 Text HLabel 11500 2900 2    50   Output ~ 0
-LA01_CC_N
+HPB15_CC_LA01_CC_N
 Wire Wire Line
 	10800 2900 11500 2900
 Text HLabel 11500 2800 2    50   Output ~ 0
-LA01_CC_P
+HPB15_CC_LA01_CC_P
 Wire Wire Line
 	10800 2800 11500 2800
 Text HLabel 11500 2500 2    50   Output ~ 0
-GBTCLK0_M2C_N
+GTH_REFCLK1_C2M_GBTCLK0_M2C_N
 Wire Wire Line
 	10800 2500 11500 2500
 Text HLabel 11500 2400 2    50   Output ~ 0
-GBTCLK0_M2C_P
+GTH_REFCLK1_C2M_GBTCLK0_M2C_P
 Wire Wire Line
 	10800 2400 11500 2400
 Text HLabel 11500 4400 2    50   Output ~ 0
-LA23_N
+HPC13_LA23_N
 Wire Wire Line
 	10800 4400 11500 4400
 Text HLabel 11500 4300 2    50   Output ~ 0
-LA23_P
+HPC13_LA23_P
 Wire Wire Line
 	10800 4300 11500 4300
 Text HLabel 11500 4100 2    50   Output ~ 0
-LA17_CC_N
+HPB17_LA17_CC_N
 Wire Wire Line
 	10800 4100 11500 4100
 Text HLabel 11500 4000 2    50   Output ~ 0
-LA17_CC_P
+HPB17_LA17_CC_P
 Wire Wire Line
 	10800 4000 11500 4000
 Text HLabel 11500 4700 2    50   Output ~ 0
-LA26_N
+HPC14_LA26_N
 Wire Wire Line
 	10800 4700 11500 4700
 Text HLabel 11500 4600 2    50   Output ~ 0
-LA26_P
+HPC14_LA26_P
 Wire Wire Line
 	10800 4600 11500 4600
 Wire Wire Line
@@ -1141,99 +1141,75 @@ Wire Wire Line
 Wire Wire Line
 	3800 8200 3100 8200
 Text HLabel 3100 8200 0    50   Output ~ 0
-CLK1_M2C_P
+HPB_CLK0_CLK1_M2C_P
 Wire Wire Line
 	3800 8300 3100 8300
 Text HLabel 3100 8300 0    50   Output ~ 0
-CLK1_M2C_N
+HPB_CLK0_CLK1_M2C_N
 Wire Wire Line
 	3800 8600 3100 8600
 Text HLabel 3100 8600 0    50   Output ~ 0
-LA00_CC_P
+HPB09_LA00_CC_P
 Wire Wire Line
 	3800 8700 3100 8700
 Text HLabel 3100 8700 0    50   Output ~ 0
-LA00_CC_N
+HPB09_LA00_CC_N
 Wire Wire Line
 	3800 8900 3100 8900
 Text HLabel 3100 8900 0    50   Output ~ 0
-LA03_P
+HPB07_LA03_P
 Wire Wire Line
 	3800 9000 3100 9000
 Text HLabel 3100 9000 0    50   Output ~ 0
-LA03_N
+HPB07_LA03_N
 Wire Wire Line
 	3800 9200 3100 9200
 Text HLabel 3100 9200 0    50   Output ~ 0
-LA08_P
+HPB00_CC_LA08_P
 Wire Wire Line
 	3800 9300 3100 9300
 Text HLabel 3100 9300 0    50   Output ~ 0
-LA08_N
+HPB00_CC_LA08_N
 Wire Wire Line
 	3800 9500 3100 9500
 Text HLabel 3100 9500 0    50   Output ~ 0
-LA12_P
+HPB04_LA12_P
 Wire Wire Line
 	3800 9600 3100 9600
 Text HLabel 3100 9600 0    50   Output ~ 0
-LA12_N
+HPB04_LA12_N
 Wire Wire Line
 	3800 9800 3100 9800
 Text HLabel 3100 9800 0    50   Output ~ 0
-LA16_P
+HPB16_LA16_P
 Wire Wire Line
 	3800 9900 3100 9900
 Text HLabel 3100 9900 0    50   Output ~ 0
-LA16_N
+HPB16_LA16_N
 Wire Wire Line
 	3800 10100 3100 10100
 Wire Wire Line
 	3800 10200 3100 10200
-Text Label 3175 10100 0    50   ~ 0
-LA20_P
-Text Label 3175 10200 0    50   ~ 0
-LA20_N
 Wire Wire Line
 	3800 10400 3100 10400
 Wire Wire Line
 	3800 10500 3100 10500
-Text Label 3175 10400 0    50   ~ 0
-LA22_P
-Text Label 3175 10500 0    50   ~ 0
-LA22_N
 Wire Wire Line
 	3800 10700 3100 10700
 Wire Wire Line
 	3800 10800 3100 10800
-Text Label 3175 10700 0    50   ~ 0
-LA25_P
-Text Label 3175 10800 0    50   ~ 0
-LA25_N
 Wire Wire Line
 	3800 11000 3100 11000
 Wire Wire Line
 	3800 11100 3100 11100
-Text Label 3175 11000 0    50   ~ 0
-LA29_P
-Text Label 3175 11100 0    50   ~ 0
-LA29_N
 Wire Wire Line
 	3800 11300 3100 11300
 Wire Wire Line
 	3800 11400 3100 11400
-Text Label 3175 11300 0    50   ~ 0
-LA31_P
-Text Label 3175 11400 0    50   ~ 0
-LA31_N
 Wire Wire Line
 	3800 11600 3100 11600
 Wire Wire Line
 	3800 11700 3100 11700
-Text Label 3175 11600 0    50   ~ 0
-LA33_P
-Text Label 3175 11700 0    50   ~ 0
-LA33_N
 Wire Wire Line
 	15800 2200 15100 2200
 Wire Wire Line
@@ -1482,8 +1458,8 @@ Text Label 17425 4000 2    50   ~ 0
 HA19_N
 Wire Wire Line
 	4800 8200 5500 8200
-Text HLabel 5500 8200 2    50   Input ~ 0
-PRSNT_M2C_B
+Text HLabel 5500 8200 2    50   Output ~ 0
+HDC18_PRSNT_M2C_B
 Wire Wire Line
 	4800 8100 5500 8100
 Text HLabel 5500 8100 2    50   Input ~ 0
@@ -1568,99 +1544,75 @@ $EndComp
 Wire Wire Line
 	4800 8500 5500 8500
 Text HLabel 5500 8500 2    50   Output ~ 0
-CLK0_M2C_N
+HPC_CLK0_CLK0_M2C_N
 Wire Wire Line
 	4800 8400 5500 8400
 Text HLabel 5500 8400 2    50   Output ~ 0
-CLK0_M2C_P
+HPC_CLK0_CLK0_M2C_P
 Wire Wire Line
 	4800 8800 5500 8800
 Text HLabel 5500 8800 2    50   Output ~ 0
-LA02_N
+HPB10_CC_LA02_N
 Wire Wire Line
 	4800 8700 5500 8700
 Text HLabel 5500 8700 2    50   Output ~ 0
-LA02_P
+HPB10_CC_LA02_P
 Wire Wire Line
 	4800 9100 5500 9100
 Text HLabel 5500 9100 2    50   Output ~ 0
-LA04_N
+HPB08_LA04_N
 Wire Wire Line
 	4800 9000 5500 9000
 Text HLabel 5500 9000 2    50   Output ~ 0
-LA04_P
+HPB08_LA04_P
 Wire Wire Line
 	4800 9400 5500 9400
 Text HLabel 5500 9400 2    50   Output ~ 0
-LA07_N
+HPB02_LA07_N
 Wire Wire Line
 	4800 9300 5500 9300
 Text HLabel 5500 9300 2    50   Output ~ 0
-LA07_P
+HPB02_LA07_P
 Wire Wire Line
 	4800 9700 5500 9700
 Text HLabel 5500 9700 2    50   Output ~ 0
-LA11_N
+HPB13_LA11_N
 Wire Wire Line
 	4800 9600 5500 9600
 Text HLabel 5500 9600 2    50   Output ~ 0
-LA11_P
+HPB13_LA11_P
 Wire Wire Line
 	4800 10000 5500 10000
 Text HLabel 5500 10000 2    50   Output ~ 0
-LA15_N
+HPB18_LA15_N
 Wire Wire Line
 	4800 9900 5500 9900
 Text HLabel 5500 9900 2    50   Output ~ 0
-LA15_P
+HPB18_LA15_P
 Wire Wire Line
 	4800 10200 5500 10200
 Wire Wire Line
 	4800 10300 5500 10300
-Text Label 5425 10200 2    50   ~ 0
-LA19_P
-Text Label 5425 10300 2    50   ~ 0
-LA19_N
 Wire Wire Line
 	4800 10500 5500 10500
 Wire Wire Line
 	4800 10600 5500 10600
-Text Label 5425 10500 2    50   ~ 0
-LA21_P
-Text Label 5425 10600 2    50   ~ 0
-LA21_N
 Wire Wire Line
 	4800 10800 5500 10800
 Wire Wire Line
 	4800 10900 5500 10900
-Text Label 5425 10800 2    50   ~ 0
-LA24_P
-Text Label 5425 10900 2    50   ~ 0
-LA24_N
 Wire Wire Line
 	4800 11100 5500 11100
 Wire Wire Line
 	4800 11200 5500 11200
-Text Label 5425 11100 2    50   ~ 0
-LA28_P
-Text Label 5425 11200 2    50   ~ 0
-LA28_N
 Wire Wire Line
 	4800 11400 5500 11400
 Wire Wire Line
 	4800 11500 5500 11500
-Text Label 5425 11400 2    50   ~ 0
-LA30_P
-Text Label 5425 11500 2    50   ~ 0
-LA30_N
 Wire Wire Line
 	4800 11700 5500 11700
 Wire Wire Line
 	4800 11800 5500 11800
-Text Label 5425 11700 2    50   ~ 0
-LA32_P
-Text Label 5425 11800 2    50   ~ 0
-LA32_N
 Wire Wire Line
 	9800 8100 9700 8100
 Wire Wire Line
@@ -2089,53 +2041,53 @@ NoConn ~ 5500 2100
 Text Notes 1270 5765 0    50   ~ 0
 The TX, and RX are in respect to\nthe carrier (Kria SOM)
 Text HLabel 5500 10300 2    50   Output ~ 0
-LA19_N
+HPB19_LA19_N
 Text HLabel 5500 10200 2    50   Output ~ 0
-LA19_P
+HPB19_LA19_P
 Text HLabel 5500 10600 2    50   Output ~ 0
-LA21_N
+HPC16_LA21_N
 Text HLabel 5500 10500 2    50   Output ~ 0
-LA21_P
+HPC16_LA21_P
 Text HLabel 5500 10900 2    50   Output ~ 0
-LA24_N
+HPC05_CC_LA24_N
 Text HLabel 5500 10800 2    50   Output ~ 0
-LA24_P
+HPC05_CC_LA24_P
 Text HLabel 5500 11200 2    50   Output ~ 0
-LA28_N
+HPC04_LA28_N
 Text HLabel 5500 11100 2    50   Output ~ 0
-LA28_P
+HPC04_LA28_P
 Text HLabel 5500 11500 2    50   Output ~ 0
-LA30_N
+HDB19_LA30_N
 Text HLabel 5500 11400 2    50   Output ~ 0
-LA30_P
+HDB18_LA30_P
 Text HLabel 5500 11800 2    50   Output ~ 0
-LA32_N
+HDB16_CC_LA32_N
 Text HLabel 5500 11700 2    50   Output ~ 0
-LA32_P
+HDB15_LA32_P
 Text HLabel 3100 10100 0    50   Output ~ 0
-LA20_P
+HPB03_LA20_P
 Text HLabel 3100 10200 0    50   Output ~ 0
-LA20_N
+HPB03_LA20_N
 Text HLabel 3100 10400 0    50   Output ~ 0
-LA22_P
+HPC19_LA22_P
 Text HLabel 3100 10500 0    50   Output ~ 0
-LA22_N
+HPC19_LA22_N
 Text HLabel 3100 10700 0    50   Output ~ 0
-LA25_P
+HPC15_CC_LA25_P
 Text HLabel 3100 10800 0    50   Output ~ 0
-LA25_N
+HPC15_CC_LA25_N
 Text HLabel 3100 11000 0    50   Output ~ 0
-LA29_P
+HPC18_LA29_P
 Text HLabel 3100 11100 0    50   Output ~ 0
-LA29_N
+HPC18_LA29_N
 Text HLabel 3100 11300 0    50   Output ~ 0
-LA31_P
+HPC03_LA31_P
 Text HLabel 3100 11400 0    50   Output ~ 0
-LA31_N
+HPC03_LA31_N
 Text HLabel 3100 11600 0    50   Output ~ 0
-LA33_P
+HDB21_LA33_P
 Text HLabel 3100 11700 0    50   Output ~ 0
-LA33_N
+HDB22_LA33_N
 Text GLabel 17500 6000 2    50   Input ~ 0
 VADJ_FMC_BUS
 Text GLabel 15100 5900 0    50   Input ~ 0
@@ -2326,23 +2278,8 @@ Text GLabel 16655 8825 2    50   Input ~ 0
 UTIL_3V3
 Text Notes 13375 7725 0    118  ~ 0
 JTAG Voltage Level Shifter (1.8V to 3.3V)
-$Comp
-L power:GND #PWR?
-U 1 1 6291123C
-P 16280 13100
-AR Path="/61AA736C/6291123C" Ref="#PWR?"  Part="1" 
-AR Path="/61F0E9E7/6291123C" Ref="#PWR0157"  Part="1" 
-F 0 "#PWR0157" H 16280 12850 50  0001 C CNN
-F 1 "GND" H 16285 12927 50  0000 C CNN
-F 2 "" H 16280 13100 50  0001 C CNN
-F 3 "" H 16280 13100 50  0001 C CNN
-	1    16280 13100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	16160 12100 16425 12100
-Wire Wire Line
-	16280 13100 16280 12980
 Text GLabel 15160 11920 2    50   Input ~ 0
 PS_1V8
 Wire Wire Line
@@ -2547,8 +2484,8 @@ Wire Wire Line
 	16380 9900 16925 9900
 Text Label 16925 9900 2    50   ~ 0
 FMC_TCK
-Text Notes 19520 8735 0    50   ~ 0
-Bus switch to automatically short FMC TDI to TDO\nif PRSRST is not low (FMC attached)
+Text Notes 19335 8570 0    50   ~ 0
+Bus switch to automatically short FMC TDI to TDO\nif PRSNT_M2C_B is not low (FMC attached)
 Wire Wire Line
 	19800 9300 19700 9300
 Wire Wire Line
@@ -2564,10 +2501,8 @@ F 3 "" H 19700 9400 50  0001 C CNN
 	1    19700 9400
 	1    0    0    -1  
 $EndComp
-Text Label 4950 8200 0    50   ~ 0
-PRSNT_M2C
-Text Label 21250 9100 2    50   ~ 0
-PRSNT_M2C
+Text Label 21250 9100 2    39   ~ 0
+HDC18_PRSNT_M2C_B
 Wire Wire Line
 	19800 9100 19200 9100
 Wire Wire Line
@@ -2588,10 +2523,26 @@ U 1 1 635B35D4
 P 20250 9200
 F 0 "IC21" H 20225 9655 50  0000 C CNN
 F 1 "MC74VHC1GT66" H 20225 9564 50  0000 C CNN
-F 2 "ApotheoTech_CXP_Lib:SN74CB3T1G125DBVR" H 21100 9330 50  0001 L CNN
+F 2 "ApotheoTech_CXP_Lib:M74VHC1GT66" H 21100 9330 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/sn74cb3t1g125" H 21100 9230 50  0001 L CNN
 F 4 "MC74VHC1GT66" H 20225 9473 50  0000 C CNN "PartNumber"
 	1    20250 9200
 	1    0    0    -1  
 $EndComp
+Text Notes 890  4530 0    50   ~ 0
+Look on right hand side:\nC2M for VITA 57.1 is TX
+Text Notes 8890 1550 0    50   ~ 0
+Refer to page /  of ZCU106 for pinout of FMC.\nOr Refer to page / of VITA 57.1 documentation
+Text Label 5450 8200 2    39   ~ 0
+HDC18_PRSNT_M2C_B
+Text Notes 17215 12120 0    50   ~ 0
+DIR is high, goes from A to B\nReferenced from VCCA (3.3V here)
+Text GLabel 16350 13100 2    50   Input ~ 0
+UTIL_3V3
+Wire Wire Line
+	16350 13100 16280 13100
+Wire Wire Line
+	16280 13100 16280 12980
+Text Notes 19420 9860 0    50   ~ 0
+Note, switch only operates 3.3V to 5V\nThis is why we need to have switch on 3.3V side
 $EndSCHEMATC

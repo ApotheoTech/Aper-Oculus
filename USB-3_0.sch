@@ -387,22 +387,6 @@ F 3 "" H 5210 5340 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 613AD852
-P 4460 4705
-AR Path="/5F71E87D/613AD852" Ref="R?"  Part="1" 
-AR Path="/5F71E4A6/613AD852" Ref="R?"  Part="1" 
-AR Path="/6314DEA9/613AD852" Ref="R71"  Part="1" 
-F 0 "R71" V 4500 4875 50  0000 L CNN
-F 1 "160" V 4510 4450 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4390 4705 50  0001 C CNN
-F 3 "~" H 4460 4705 50  0001 C CNN
-F 4 "1%" V 4400 4480 50  0000 L CNN "Tolerance"
-F 5 "ERJ-2RKF1600X" H 4460 4705 50  0001 C CNN "PartNumber"
-	1    4460 4705
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:LED D?
 U 1 1 613AD859
 P 5010 4705
@@ -502,7 +486,7 @@ Wire Wire Line
 Wire Wire Line
 	6960 2850 6960 3140
 Wire Wire Line
-	7200 2850 6960 2850
+	7200 2850 7000 2850
 Connection ~ 7200 2850
 Wire Wire Line
 	7750 2850 9605 2850
@@ -761,26 +745,6 @@ F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/48
 $EndComp
 $Comp
 L Device:C C?
-U 1 1 614E7F6B
-P 7200 3075
-AR Path="/5F71E87D/614E7F6B" Ref="C?"  Part="1" 
-AR Path="/5F71E4A6/614E7F6B" Ref="C?"  Part="1" 
-AR Path="/6314CDE6/614E7F6B" Ref="C?"  Part="1" 
-AR Path="/6314DEA9/614E7F6B" Ref="C74"  Part="1" 
-F 0 "C74" H 7040 3015 50  0000 C CNN
-F 1 "0.1uF" H 6980 3080 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 7238 2925 50  0001 C CNN
-F 3 "~" H 7200 3075 50  0001 C CNN
-F 4 "TMK105BJ104KVHF" H 7200 3075 50  0001 C CNN "PartNumber"
-F 5 "+-10%" H 7200 3075 50  0001 C CNN "Tolerance"
-F 6 "25V" H 7015 3155 50  0000 C CNN "Voltage"
-F 7 "X5R" H 7200 3075 50  0001 C CNN "Temp_Val"
-F 8 "https://www.digikey.com/en/products/detail/TMK105BJ104KVHF/587-3808-1-ND/4811278?itemSeq=375666509" V 7200 3075 50  0001 C CNN "URL"
-	1    7200 3075
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
 U 1 1 614EDFF4
 P 7750 3075
 AR Path="/5F71E87D/614EDFF4" Ref="C?"  Part="1" 
@@ -810,8 +774,6 @@ F 3 "" H 10600 3800 50  0001 C CNN
 	1    10600 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10600 3750 10600 3800
 Text HLabel 1810 1340 0    50   Input ~ 0
 USB_RESET_N
 $Comp
@@ -913,24 +875,6 @@ Wire Wire Line
 	3885 1950 4350 1950
 Text HLabel 4350 1950 2    50   Input ~ 0
 USB_PHY_REFCLK
-$Comp
-L Device:R R?
-U 1 1 6171449A
-P 10600 3600
-AR Path="/5F71E4A6/6171449A" Ref="R?"  Part="1" 
-AR Path="/5F71E87D/6171449A" Ref="R?"  Part="1" 
-AR Path="/6314CDE6/6171449A" Ref="R?"  Part="1" 
-AR Path="/6314DEA9/6171449A" Ref="R75"  Part="1" 
-F 0 "R75" H 10700 3670 50  0000 C CNN
-F 1 "0" H 10675 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10530 3600 50  0001 C CNN
-F 3 "~" H 10600 3600 50  0001 C CNN
-F 4 "CRCW04020000Z0EDHP" V 10600 3600 50  0001 C CNN "PartNumber"
-F 5 "1/5W" H 10755 3535 50  0000 C CNN "Power"
-F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 10600 3600 50  0001 C CNN "URL"
-	1    10600 3600
-	1    0    0    -1  
-$EndComp
 Text Notes 505  4960 0    50   ~ 0
 Package delay skews and CLK should be between +- 100PS (page 196/347) UG583
 Wire Wire Line
@@ -961,15 +905,13 @@ F 9 "692122030100" H 10955 3050 50  0001 L CNN "Manufacturer_Part_Number"
 	1    10055 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10600 2950 10600 3450
 $Comp
 L Device:D_TVS D2
 U 1 1 6299054C
 P 2950 7000
 F 0 "D2" V 2928 7080 50  0000 L CNN
 F 1 "PESD3V3Y1BSFYL" V 2995 7080 20  0000 L CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 2950 7000 50  0001 C CNN
+F 2 "Diode_SMD:D_0201_0603Metric" H 2950 7000 50  0001 C CNN
 F 3 "~" H 2950 7000 50  0001 C CNN
 F 4 "PESD3V3Y1BSFYL" V 2950 7000 50  0001 C CNN "PartNumber"
 F 5 "https://www.mouser.com/ProductDetail/Nexperia/PESD3V3Y1BSFYL?qs=MLItCLRbWswJ%2F2jJIhlIxQ%3D%3D" V 2950 7000 50  0001 C CNN "URL"
@@ -982,7 +924,7 @@ U 1 1 629C20A9
 P 3350 7000
 F 0 "D3" V 3328 7080 50  0000 L CNN
 F 1 "PESD3V3Y1BSFYL" V 3395 7080 20  0000 L CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 3350 7000 50  0001 C CNN
+F 2 "Diode_SMD:D_0201_0603Metric" H 3350 7000 50  0001 C CNN
 F 3 "~" H 3350 7000 50  0001 C CNN
 F 4 "PESD3V3Y1BSFYL" V 3350 7000 50  0001 C CNN "PartNumber"
 F 5 "https://www.mouser.com/ProductDetail/Nexperia/PESD3V3Y1BSFYL?qs=MLItCLRbWswJ%2F2jJIhlIxQ%3D%3D" V 3350 7000 50  0001 C CNN "URL"
@@ -995,7 +937,7 @@ U 1 1 629C7581
 P 3750 7000
 F 0 "D4" V 3728 7080 50  0000 L CNN
 F 1 "PESD3V3Y1BSFYL" V 3795 7080 20  0000 L CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 3750 7000 50  0001 C CNN
+F 2 "Diode_SMD:D_0201_0603Metric" H 3750 7000 50  0001 C CNN
 F 3 "~" H 3750 7000 50  0001 C CNN
 F 4 "PESD3V3Y1BSFYL" V 3750 7000 50  0001 C CNN "PartNumber"
 F 5 "https://www.mouser.com/ProductDetail/Nexperia/PESD3V3Y1BSFYL?qs=MLItCLRbWswJ%2F2jJIhlIxQ%3D%3D" V 3750 7000 50  0001 C CNN "URL"
@@ -1008,7 +950,7 @@ U 1 1 629D0D7C
 P 4200 7000
 F 0 "D6" V 4178 7080 50  0000 L CNN
 F 1 "PESD3V3Y1BSFYL" V 4245 7080 20  0000 L CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 4200 7000 50  0001 C CNN
+F 2 "Diode_SMD:D_0201_0603Metric" H 4200 7000 50  0001 C CNN
 F 3 "~" H 4200 7000 50  0001 C CNN
 F 4 "PESD3V3Y1BSFYL" V 4200 7000 50  0001 C CNN "PartNumber"
 F 5 "https://www.mouser.com/ProductDetail/Nexperia/PESD3V3Y1BSFYL?qs=MLItCLRbWswJ%2F2jJIhlIxQ%3D%3D" V 4200 7000 50  0001 C CNN "URL"
@@ -1073,4 +1015,83 @@ F 4 "RCLAMP0582BQTCT" H 6900 6250 50  0001 L CNN "PartNumber"
 	1    6050 6550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C?
+U 1 1 62C50742
+P 7200 3075
+AR Path="/5F71E87D/62C50742" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/62C50742" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/62C50742" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/62C50742" Ref="C52"  Part="1" 
+AR Path="/6314F719/62C50742" Ref="C?"  Part="1" 
+F 0 "C52" H 7040 3015 50  0000 C CNN
+F 1 "1uF" H 6980 3080 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7238 2925 50  0001 C CNN
+F 3 "~" H 7200 3075 50  0001 C CNN
+F 4 "C1005X5R1E105K050BE" H 7200 3075 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 7200 3075 50  0001 C CNN "Tolerance"
+F 6 "25V" H 7015 3155 50  0000 C CNN "Voltage"
+F 7 "X5R" H 7200 3075 50  0001 C CNN "Temp_Val"
+F 8 "https://www.digikey.com/en/products/detail/tdk-corporation/C1005X5R1E105K050BE/7907739" V 7200 3075 50  0001 C CNN "URL"
+	1    7200 3075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 613AD852
+P 4460 4705
+AR Path="/5F71E87D/613AD852" Ref="R?"  Part="1" 
+AR Path="/5F71E4A6/613AD852" Ref="R?"  Part="1" 
+AR Path="/6314DEA9/613AD852" Ref="R71"  Part="1" 
+F 0 "R71" V 4500 4875 50  0000 L CNN
+F 1 "160" V 4510 4450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4390 4705 50  0001 C CNN
+F 3 "~" H 4460 4705 50  0001 C CNN
+F 4 "1%" V 4400 4480 50  0000 L CNN "Tolerance"
+F 5 "ERJ-2RKF1600X" H 4460 4705 50  0001 C CNN "PartNumber"
+	1    4460 4705
+	0    -1   -1   0   
+$EndComp
+Text Notes 4095 4580 0    20   ~ 0
+Possibly increase resistor here for less brightness
+Wire Wire Line
+	10600 2950 10600 3800
+$Comp
+L Device:C C?
+U 1 1 631AA0D8
+P 7000 2600
+AR Path="/5F71E87D/631AA0D8" Ref="C?"  Part="1" 
+AR Path="/5F71E4A6/631AA0D8" Ref="C?"  Part="1" 
+AR Path="/6314CDE6/631AA0D8" Ref="C?"  Part="1" 
+AR Path="/6314DEA9/631AA0D8" Ref="C53"  Part="1" 
+F 0 "C53" H 7160 2670 50  0000 C CNN
+F 1 "4.7uF" H 7220 2590 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7038 2450 50  0001 C CNN
+F 3 "~" H 7000 2600 50  0001 C CNN
+F 4 "CL05A475KP5NRNC " H 7000 2600 50  0001 C CNN "PartNumber"
+F 5 "+-10%" H 7000 2600 50  0001 C CNN "Tolerance"
+F 6 "10V" H 7200 2510 50  0000 C CNN "Voltage"
+F 7 "X5R" H 7000 2600 50  0001 C CNN "Temp_Coeff"
+F 8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL05A475KP5NRNC/1276-1480-1-ND/3889566" H 7000 2600 50  0001 C CNN "URL"
+	1    7000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2750 7000 2850
+Connection ~ 7000 2850
+Wire Wire Line
+	7000 2850 6960 2850
+$Comp
+L power:GND #PWR043
+U 1 1 631B553E
+P 7000 2350
+F 0 "#PWR043" H 7000 2100 50  0001 C CNN
+F 1 "GND" H 7005 2177 50  0000 C CNN
+F 2 "" H 7000 2350 50  0001 C CNN
+F 3 "" H 7000 2350 50  0001 C CNN
+	1    7000 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 2350 7000 2450
 $EndSCHEMATC

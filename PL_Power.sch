@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 13 20
+Sheet 12 20
 Title "PL Power Kria"
 Date "2022-01-04"
 Rev "1.00"
@@ -1764,4 +1764,6 @@ F 6 "1/10W" H 13200 8200 50  0001 C CNN "Power"
 $EndComp
 Wire Wire Line
 	12150 8700 12150 9100
+Text Notes 6210 6900 0    50   ~ 0
+Page 15/18 of datasheet\nR1 = 200K,\nR2 = R1/((Vout/0.6)-1) = 100k
 $EndSCHEMATC

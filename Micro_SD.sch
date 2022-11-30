@@ -786,4 +786,6 @@ Wire Wire Line
 	9030 2515 9030 2815
 Text Notes 1755 5335 0    50   ~ 0
 Refer to page 195/347 UG583\n30 Ohm Reistor should be placed near the Zynq MPSOC MIO pins\n
+Text Notes 9350 2275 0    50   ~ 0
+Note, pinout correct here for Q9,\nBut drawing of FET is incorrect, \n2 is Source, and 3 is drain
 $EndSCHEMATC
