@@ -1,0 +1,3 @@
+[submodule "SW/Aper-Oculus_PIC_SW"]
+	path = SW/Aper-Oculus_PIC_SW
+	url = https://github.com/ApotheoTech/Aper-Oculus_PIC_SW.git
