@@ -1258,7 +1258,7 @@ F 0 "L14" V 6825 5835 50  0000 C CNN
 F 1 "1.2uH" V 6810 6185 50  0000 C CNN
 F 2 "ApotheoTech_CXP_Lib:XAL5030-122ME" H 6750 6000 50  0001 C CNN
 F 3 "~" H 6750 6000 50  0001 C CNN
-F 4 "XAL5030-122ME " V 6750 6000 50  0001 C CNN "PartNumber"
+F 4 "XEL5030-122ME " V 6750 6000 50  0001 C CNN "PartNumber"
 	1    6750 6000
 	0    -1   -1   0   
 $EndComp
@@ -1887,12 +1887,12 @@ $EndComp
 Wire Wire Line
 	3500 3375 3600 3375
 Wire Wire Line
-	2050 3175 3500 3175
+	2050 3175 2225 3175
 Wire Wire Line
 	2050 2875 2800 2875
 Connection ~ 2800 2875
 Text Notes 1080 4450 0    50   ~ 0
-Plug detect will force board to an off state if no plug\nis currently in the 12V In jack.\nThis means we cannot have this tied here without a switch if we want to power via CoaXPress
+PJ-063B has no plug detect. This means that PWROFF_C2M_N will always be activated high when voltage goes live. 
 Text Notes 1780 7920 0    50   ~ 0
 Pull up resistor with turn on MOSFET\n(pulls up PWROFF_C2M_N to high, to start SOM)
 $Comp
@@ -1919,7 +1919,7 @@ Text Notes 6855 5715 0    50   ~ 0
 Text Notes 6845 5605 0    50   ~ 0
 Max current Draw for SOM (all are max current into SOM)\n5V@4A for SOM (20W)\nHPA           1.2V@1A (1.2W)\nHDA, HDC 3.3V@1A (6.6W)\nHPC, HPB, HDB VADJ@1A (worst case 6W)\nSLVS-EC FRAMOS 3.8V@0.6A, 1.8V@0.6A (3.36W)\nMIPI Cameras (per 1 3.3V@0.5A) 1.65W (x2) (3.3W)\nDP power (3.3V@0.5A) 1.65W\nFMC 3V3 PWR (3.3V@3.1A) 10.23W\nFMC VADJ PWR(VADJ@4A) (worst case 8W)\n\nTotal \n60W for all peripherals on at same time, with max power draw (Probably not ever going to happen)
 Text Notes 1125 2490 0    50   ~ 0
-PJ-202BH is rated for 5A so total of 60W to board
+PJ-063B is rated for 8A so total of 96W
 Wire Wire Line
 	2225 3620 2225 3695
 Wire Wire Line
@@ -2213,23 +2213,22 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 61A10DB5
-P 2225 3420
+P 2025 3620
 AR Path="/5F71E4A6/61A10DB5" Ref="R?"  Part="1" 
 AR Path="/5F71E87D/61A10DB5" Ref="R?"  Part="1" 
 AR Path="/6374AD8D/61A10DB5" Ref="R8"  Part="1" 
-F 0 "R8" V 2185 3200 50  0000 C CNN
-F 1 "0" V 2195 3560 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2155 3420 50  0001 C CNN
-F 3 "~" H 2225 3420 50  0001 C CNN
-F 4 "CRCW04020000Z0EDHP" V 2225 3420 50  0001 C CNN "PartNumber"
-F 5 "1/5W" V 2315 3420 50  0000 C CNN "Power"
-F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 2225 3420 50  0001 C CNN "URL"
-	1    2225 3420
-	1    0    0    -1  
+F 0 "R8" V 1930 3635 50  0000 C CNN
+F 1 "0" V 2020 3620 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1955 3620 50  0001 C CNN
+F 3 "~" H 2025 3620 50  0001 C CNN
+F 4 "CRCW04020000Z0EDHP" V 2025 3620 50  0001 C CNN "PartNumber"
+F 5 "1/5W" V 2115 3620 50  0000 C CNN "Power"
+F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW04020000Z0EDHP/541-0-0YBCT-ND/2223008" V 2025 3620 50  0001 C CNN "URL"
+	1    2025 3620
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2225 3570 2225 3620
-Connection ~ 2225 3620
+	2175 3620 2225 3620
 Text GLabel 12950 6525 0    50   Input ~ 0
 I2C_SCL_PS_SIDE
 Text GLabel 12950 6625 0    50   BiDi ~ 0
@@ -2260,8 +2259,6 @@ F 6 "1.02" H 1850 2975 50  0001 L BNN "PARTREV"
 $EndComp
 Wire Wire Line
 	3500 3175 3500 3375
-Wire Wire Line
-	2225 3270 2225 3075
 Wire Wire Line
 	2225 3075 2050 3075
 Wire Wire Line
@@ -2336,4 +2333,13 @@ Wire Wire Line
 Connection ~ 6050 2875
 Wire Wire Line
 	6050 2875 6650 2875
+Connection ~ 2225 3620
+Wire Wire Line
+	1875 3620 1750 3620
+NoConn ~ 1750 3620
+Wire Wire Line
+	2225 3075 2225 3175
+Connection ~ 2225 3175
+Wire Wire Line
+	2225 3175 3500 3175
 $EndSCHEMATC

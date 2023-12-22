@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name ApotheoTech)(type Legacy)(uri ${KIPRJMOD}/ApotheoTech.lib)(options "")(descr ""))
-  (lib (name APT-KRIA-FMC-rescue)(type Legacy)(uri ${KIPRJMOD}/APT-KRIA-FMC-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "ApotheoTech")(type "Legacy")(uri "${KIPRJMOD}/ApotheoTech.lib")(options "")(descr ""))
+  (lib (name "APT-KRIA-FMC-rescue")(type "KiCad")(uri "${KIPRJMOD}/APT-KRIA-FMC-rescue.kicad_sym")(options "")(descr ""))
 )

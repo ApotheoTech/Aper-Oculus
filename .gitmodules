@@ -1,6 +1,0 @@
-[submodule "SW/Aper-Oculus_PIC_SW"]
-	path = SW/Aper-Oculus_PIC_SW
-	url = https://github.com/ApotheoTech/Aper-Oculus_PIC_SW.git
-[submodule "SW/FPGA_Example_Designs/gtaylormb_imx219"]
-	path = SW/FPGA_Example_Designs/gtaylormb_imx219
-	url = https://github.com/ApotheoTech/gtaylormb_imx219.git

@@ -983,7 +983,7 @@ F 3 "" H 4900 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4900 6000 4900 5950
-Text HLabel 2200 5250 0    50   Input ~ 0
+Text HLabel 1850 5250 0    50   Input ~ 0
 VADJ_EN
 $Comp
 L Device:C C?
@@ -2862,12 +2862,50 @@ $EndComp
 Wire Wire Line
 	2300 5200 2300 5250
 Connection ~ 2300 5250
-Wire Wire Line
-	2300 5250 2200 5250
 Text GLabel 2150 4800 0    50   Input ~ 0
 UTIL_3V3
 Wire Wire Line
 	2150 4800 2300 4800
 Wire Wire Line
 	2300 4800 2300 4900
+$Comp
+L Device:R R?
+U 1 1 63AE0F0C
+P 2000 5450
+AR Path="/5F71E87D/63AE0F0C" Ref="R?"  Part="1" 
+AR Path="/6314F1AA/63AE0F0C" Ref="R?"  Part="1" 
+AR Path="/6314F719/63AE0F0C" Ref="R?"  Part="1" 
+AR Path="/6314DEA9/63AE0F0C" Ref="R?"  Part="1" 
+AR Path="/62011758/63AE0F0C" Ref="R53"  Part="1" 
+F 0 "R53" H 2070 5541 50  0000 L CNN
+F 1 "DNP" H 2070 5450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1930 5450 50  0001 C CNN
+F 3 "~" H 2000 5450 50  0001 C CNN
+F 4 "1%" H 2070 5359 50  0000 L CNN "Tolerance"
+F 5 "1/10W" H 2000 5450 50  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" H 2000 5450 50  0001 C CNN "PartNumber"
+F 7 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073" H 2000 5450 50  0001 C CNN "URL"
+	1    2000 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 5250 2000 5250
+Wire Wire Line
+	2000 5300 2000 5250
+Connection ~ 2000 5250
+Wire Wire Line
+	2000 5250 2300 5250
+Wire Wire Line
+	2000 5600 2000 5700
+$Comp
+L power:GND #PWR045
+U 1 1 63BA4A79
+P 2000 5700
+F 0 "#PWR045" H 2000 5450 50  0001 C CNN
+F 1 "GND" H 2005 5527 50  0000 C CNN
+F 2 "" H 2000 5700 50  0001 C CNN
+F 3 "" H 2000 5700 50  0001 C CNN
+	1    2000 5700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

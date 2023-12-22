@@ -954,10 +954,8 @@ Wire Wire Line
 NoConn ~ 3000 3440
 Wire Wire Line
 	3300 2850 3000 2850
-NoConn ~ 3000 2850
 Wire Wire Line
 	3300 2750 3000 2750
-NoConn ~ 3000 2750
 Wire Wire Line
 	5095 3250 5395 3250
 NoConn ~ 5395 3250
@@ -1144,7 +1142,6 @@ Wire Wire Line
 	3755 4100 3755 4400
 Wire Wire Line
 	3855 4100 3855 4400
-NoConn ~ 3855 4400
 Wire Wire Line
 	3955 4100 3955 4400
 NoConn ~ 3955 4400
@@ -1222,9 +1219,7 @@ Wire Wire Line
 Connection ~ 10000 9500
 Wire Wire Line
 	10000 9450 10000 9500
-Wire Wire Line
-	8800 9850 9250 9850
-Text Label 8800 9850 0    50   ~ 0
+Text Label 8550 9850 0    50   ~ 0
 PS_POR_B_3V3_L
 $Comp
 L ApotheoTech:DMN26D0UFB4-7 Q?
@@ -1307,11 +1302,12 @@ AR Path="/5F71E87D/6348FECF" Ref="R?"  Part="1"
 AR Path="/5F71E4A6/6348FECF" Ref="R?"  Part="1" 
 AR Path="/61AA736C/6348FECF" Ref="R52"  Part="1" 
 F 0 "R52" H 9320 10171 50  0000 L CNN
-F 1 "4.7K" H 9320 10080 50  0000 L CNN
+F 1 "DNP" H 9320 10080 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9180 10080 50  0001 C CNN
 F 3 "~" H 9250 10080 50  0001 C CNN
 F 4 "1%" H 9320 9989 50  0000 L CNN "Tolerance"
 F 5 "CRCW04024K70FKED" H 9250 10080 50  0001 C CNN "PartNumber"
+F 6 "DNP" H 9250 10080 50  0000 C CNN "DNP"
 	1    9250 10080
 	-1   0    0    1   
 $EndComp
@@ -1320,4 +1316,38 @@ Wire Wire Line
 	9250 9850 9500 9850
 Text Notes 10505 9235 0    50   ~ 0
 PS_POR is pulled up 4.7K to 1.8V on SOM
+Wire Wire Line
+	8550 9850 9250 9850
+$Comp
+L Device:R R?
+U 1 1 63C13053
+P 9250 9600
+AR Path="/5F71E87D/63C13053" Ref="R?"  Part="1" 
+AR Path="/5F71E4A6/63C13053" Ref="R?"  Part="1" 
+AR Path="/61AA736C/63C13053" Ref="R54"  Part="1" 
+F 0 "R54" H 9320 9691 50  0000 L CNN
+F 1 "4.7K" H 9320 9600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9180 9600 50  0001 C CNN
+F 3 "~" H 9250 9600 50  0001 C CNN
+F 4 "1%" H 9320 9509 50  0000 L CNN "Tolerance"
+F 5 "CRCW04024K70FKED" H 9250 9600 50  0001 C CNN "PartNumber"
+	1    9250 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9250 9850 9250 9750
+Text GLabel 9100 9350 0    50   Input ~ 0
+UTIL_3V3
+Wire Wire Line
+	9100 9350 9250 9350
+Wire Wire Line
+	9250 9350 9250 9450
+Text Notes 8625 10975 0    50   ~ 0
+Reasoning: Want PS_POR_B to be pulled \nlow here during startup (Q21 Gate High)\nSo PS_POR_B is low. On Powerup, PIC \npulls PS_POR_B_3V3_L low to deassert PS_POR_B
+Text HLabel 3855 4400 3    28   Input ~ 0
+HDC20_VADJ_ALERT
+Text HLabel 3000 2850 0    50   Input ~ 0
+HDC19_INA226_ALERT
+Text HLabel 3000 2750 0    50   Input ~ 0
+HDC18_PRSNT_M2C_B
 $EndSCHEMATC
