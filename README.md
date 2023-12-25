@@ -1,5 +1,5 @@
 # Aper-Oculus
-CopyRight 2022 ApotheoTech
+CopyRight 2023 ApotheoTech
 
 ## Description
 
@@ -15,9 +15,7 @@ The Aper-Oculus will be released with example designs using the SLVS-EC encrypte
 
 ### Example Designs Progress:
 
-* FRAMOS SLVS-EC FSM to PS side DisplayPort  (in progress)
-
-* FRAMOS SLVS-EC FSM to CoaXPress FMC Board  (expected by March 2023)
+* ~~FRAMOS SLVS-EC FSM to PS side DisplayPort~~
 
 * ~~ApotheoTech's CoaXPress FMC board to Basler Boost. Streaming video via PS side Displayport @3840x2160, 30fps (PS-DP is bottleneck).~~ (Working on ZCU104, will port to Aper-Oculus when boards arrive)
 
@@ -31,20 +29,20 @@ The Aper-Oculus will be released with example designs using the SLVS-EC encrypte
 * Medical prototyping devices 
 * Expensive embedded computer?
 
-## Todo
 
-The current launch date of this project is expected March of 2023. Part shortages are a terrible thing. Prototypes are expected in January. 
+Launched! On [CrowdSupply](https://www.crowdsupply.com/apotheotech-llc/aper-oculus)
 
-Things left to complete:
-
-* Create Power controller Software for PIC
-* Release pinout XDC file with expected signal standards
-* Create modular chassis for mounting to different Lens threads and or Telescope (M42)
+* ~~Create Power controller Software for PIC~~
+* ~~Release pinout XDC file with expected signal standards~~
 * ~~Length match appropriate diff pairs, and intra pair lengths~~ <- Finished May 2022
 * ~~Review layout of JTAG and other critical design paths~~ <- Finished May 2022
 * ~~Finish MVP layout for Review~~
 
 ## Updates
+
+### 12/21/2023
+
+Fixed some small resistor part numbers, mostly been working on FPGA design side of things. Restructuring repository for easier movement. 
 
 ### 11/29/2022
 
